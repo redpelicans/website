@@ -4,9 +4,10 @@ angular.module('landingApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'pascalprecht.translate'
 ])
-  .config(function ($routeProvider, $locationProvider, $httpProvider) {
+  .config(function ($routeProvider, $locationProvider, $httpProvider, $translateProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'partials/main',
@@ -45,6 +46,11 @@ angular.module('landingApp', [
         }
       };
     }]);
+
+    $translateProvider.useStaticFilesLoader({prefix: 'i18n/', suffix: '.json'});
+    $translateProvider.preferredLanguage('en'); // avoid FOUC
+    $translateProvider.fallbackLanguage('en');
+    $translateProvider.useCookieStorage();
   })
   .run(function ($rootScope, $location, Auth) {
 
