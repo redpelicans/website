@@ -1,12 +1,31 @@
 <div ng-include="'partials/navbar'"></div>
 
 <div class="jumbotron">
-  <h1>'Allo, 'Allo <span ng-show="currentUser">{{ currentUser.name }}</span>!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <h1>Full Stack.</h1>
+        <h1>Software.</h1>
+        <h1>Company.</h1>
+        <h2>We are redpelicans.</h2>
+      </div>
+      <div class="col-lg-4">
+      </div>
+      <div class="col-lg-4 text-right">
+        <span class="glyphicon glyphicon-send splash"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row breadcrumb">
+  <div class="container text-center">
+    <h3>
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      We provide complete solution from the very first step of your project to its happy end.
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </h3>
+  </div>
 </div>
 
 <div class="row marketing">
@@ -16,6 +35,4 @@
   </div>
 </div>
 
-<div class="footer">
-  <p>♥ from the Yeoman team</p>
-</div>
+<div ng-include="'partials/footer'"></div>
