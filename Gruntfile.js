@@ -47,6 +47,13 @@ module.exports = function (grunt) {
       }
     },
     watch: {
+      less: {
+        files: [ '<%= yeoman.app %>/styles/{,*/}*.less' ],
+        tasks: ['newer:less:all'],
+        options: {
+          livereload: true
+        }
+      },
       js: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
         tasks: ['newer:jshint:all'],
@@ -110,6 +117,18 @@ module.exports = function (grunt) {
           jshintrc: 'test/.jshintrc'
         },
         src: ['test/spec/{,*/}*.js']
+      }
+    },
+
+    less: {
+      all: {
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.app %>/styles/', // relative path
+          src: ['**/*.less'],
+          dest: '.tmp/styles/',
+          ext: '.css'
+        }]
       }
     },
 
@@ -375,6 +394,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
+      'less:all',
       'bower-install',
       'concurrent:server',
       'autoprefixer',
@@ -391,6 +411,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', [
     'clean:server',
+    'less', // default usage
     'concurrent:test',
     'autoprefixer',
     'karma'
@@ -399,6 +420,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'bower-install',
+    'less:all',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
