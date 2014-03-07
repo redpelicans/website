@@ -1,0 +1,17 @@
+@path: '/fonts';
+.include-font(@family, @weight: normal, @style: normal, @variant: normal) {
+  @font-face {
+    font-family: @family;
+
+    src: url("@{path}/@{family}.eot");
+    src:
+      url("@{path}/@{family}.eot?iefix") format('embedded-opentype'),
+      url("@{path}/@{family}.woff") format('woff'),
+      url("@{path}/@{family}.ttf") format('truetype'),
+      url("@{path}/@{family}.svg#@{family}") format('svg');
+
+    font-weight: @weight;
+    font-style: @style;
+    font-variant: @variant;
+  }
+}
