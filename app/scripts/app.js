@@ -47,10 +47,11 @@ angular.module('landingApp', [
       };
     }]);
 
-    $translateProvider.useStaticFilesLoader({prefix: 'i18n/', suffix: '.json'});
-    $translateProvider.preferredLanguage('en'); // avoid FOUC
-    $translateProvider.fallbackLanguage('en');
-    $translateProvider.useCookieStorage();
+    $translateProvider
+      .useStaticFilesLoader({ prefix: 'i18n/', suffix: '.json' })
+      .preferredLanguage('en') // avoid FOUC
+      .fallbackLanguage('en')
+      .useCookieStorage();
   })
   .run(function ($rootScope, $location, Auth) {
 
