@@ -3,35 +3,105 @@
 <div class="jumbotron">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4">
-        <h1>Full Stack.</h1>
-        <h1>Software.</h1>
-        <h1>Company.</h1>
-        <h2>We are redpelicans.</h2>
+      <div class="col-lg-6">
+        <h1 translate>{{ 'GENERAL.FULLSTACK' }}</h1>
+        <h1 translate>{{ 'GENERAL.SOFTWARE' }}</h1>
+        <h1 translate>{{ 'GENERAL.COMPANY' }}</h1>
+        <h2 translate>{{ 'GENERAL.WAR' }}</h2>
       </div>
-      <div class="col-lg-4">
-      </div>
-      <div class="col-lg-4 text-right">
+      <div class="col-lg-6 text-right">
         <span class="glyphicon glyphicon-send splash"></span>
       </div>
     </div>
   </div>
 </div>
 
-<div class="row breadcrumb">
-  <div class="container text-center">
-    <h3>
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      We provide complete solution from the very first step of your project to its happy end.
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </h3>
+<div class="line underline">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="text-center" translate>{{ 'GENERAL.UNDERLINE1' }}</h3>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="row marketing">
-  <div ng-repeat="thing in awesomeThings">
-      <h4>{{thing.name}}</h4>
-      <p>{{thing.info}}</p>
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <h3 class="text-center" translate>{{ 'MEAN.MONGODB.H' }}</h3>
+        <p class="text-center" translate>{{ 'MEAN.MONGODB.P' }}</p>
+      </div>
+      <div class="col-lg-5 col-lg-offset-2">
+        <h3 class="text-center" translate>{{ 'MEAN.EXPRESS.H' }}</h3>
+        <p class="text-center" translate>{{ 'MEAN.EXPRESS.P' }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5">
+        <h3 class="text-center" translate>{{ 'MEAN.ANGULARJS.H' }}</h3>
+        <p class="text-center" translate>{{ 'MEAN.ANGULARJS.P' }}</p>
+      </div>
+      <div class="col-lg-5 col-lg-offset-2">
+        <h3 class="text-center" translate>{{ 'MEAN.NODEJS.H' }}</h3>
+        <p class="text-center" translate>{{ 'MEAN.NODEJS.P' }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="line interline">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="text-center" translate>{{ 'GENERAL.UNDERLINE2' }}</h3>
+        <h4 class="text-center" translate>{{ 'GENERAL.EMAILUS' }}</a></h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <h3 class="text-center" translate>{{ 'MEAN.MONGODB.H' }}</h3>
+        <p class="text-center" translate>{{ 'MEAN.MONGODB.P' }}</p>
+      </div>
+      <div class="col-lg-5 col-lg-offset-2">
+        <h3 class="text-center" translate>{{ 'MEAN.EXPRESS.H' }}</h3>
+        <p class="text-center" translate>{{ 'MEAN.EXPRESS.P' }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5">
+        <h3 class="text-center" translate>{{ 'MEAN.ANGULARJS.H' }}</h3>
+        <p class="text-center" translate>{{ 'MEAN.ANGULARJS.P' }}</p>
+      </div>
+      <div class="col-lg-5 col-lg-offset-2">
+        <h3 class="text-center" translate>{{ 'MEAN.NODEJS.H' }}</h3>
+        <p class="text-center" translate>{{ 'MEAN.NODEJS.P' }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="line bottomline">
+  <div class="container">
+    <h3 class="text-center" translate>{{ 'GENERAL.TALKUS' }}</h3>
+    <h4 class="text-center" translate>{{ 'GENERAL.EMAILUS' }}</h4>
+    <h4 class="text-center" translate>{{ 'GENERAL.FILLFORM' }}</h4>
+    <form role="form">
+      <div class="row">
+        <div class="col-lg-6">
+          <input type="text" class="form-control" placeholder="{{ 'FORM.NAME' | translate }}">
+          <input type="email" class="form-control" placeholder="{{ 'FORM.NAME' | translate }}">
+        </div>
+        <div class="col-lg-6">
+          <textarea class="form-control" rows=4 placeholder="{{ 'FORM.NAME' | translate }}"></textarea>
+        </div>
+      </div>
   </div>
 </div>
 
