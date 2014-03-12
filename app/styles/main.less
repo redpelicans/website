@@ -40,14 +40,12 @@ body {
   h1 { font-family: @amble-regular-font; }
   h2 {
     font-family: @fanwood-regular-font;
-    margin-top: 50px;
-  }
-  h3 {
-    color: @dark-grey;
+    margin-top: 60px;
+    font-size: 24px;
   }
   .splash {
-    margin: 20px 0 10px 0;
-    font-size: 300px;
+    margin: 40px 0 10px 0;
+    font-size: 320px;
   }
 }
 
@@ -71,6 +69,8 @@ body {
 }
 
 .interline, .bottomline {
+  border-top: 1px solid @darker-grey;
+  border-bottom: 1px solid @darker-grey;
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: @dark-grey;
@@ -88,7 +88,6 @@ body {
 }
 
 .bottomline {
-  border-top: 1px solid @darker-grey;
   margin-bottom: 0;
   h4 { margin-bottom: 20px; }
   form {
@@ -115,8 +114,12 @@ body {
 
 .footer {
   background-color: @darker-grey;
-  color: @grey;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  span {color: @red; }
+  padding-top: 25px;
+  padding-bottom: 25px;
+  p {
+    span { color: @grey; }
+    span.glyphicon { color: @red; }
+    color: @dark-grey;
+    margin: 0;
+  }
 }

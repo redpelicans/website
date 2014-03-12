@@ -1,13 +1,19 @@
 {
   "REDPELICANS": "redpelicans",
-  "COPYRIGHT": "Copyright 2014",
+  "FOOTER": {
+    "COPYRIGHT": "Copyright &copy;2014",
+    "RIGHTS": "All rights reserved"
+  },
   "GENERAL": {
     "FULLSTACK": "Full Stack",
-    "SOFTWARE": "Software",
+    "JAVASCRIPT": "Javascript",
     "COMPANY": "Company",
     "WAR": "&mdash;&nbsp;We are redpelicans.",
-    "UNDERLINE1": "We provide a <span>complete solution</span> from the very first step of your project to its happy end.",
-    "UNDERLINE2": "The <span>MEAN Stack</span> has kept your attention, <br />you want to know how to capitalize on it?",
+    "MISSION": "We are dedicated to helping businesses succed with full stack javascript through strategic consulting and support.",
+    "SERVICES": "Services",
+    "STORIES": "Stories",
+    "LAB": "Lab",
+    "UNDERLINE": "We provide a <span>complete solution</span> from the very first step of your project to its happy end.",
     "CONTACTUS": "Contact us",
     "EMAILUS": "Email us at <a href='mailto:contact@redplicans.com'>contact@redplicans.com</a>",
     "TALKUS": "Want to talk to us about your project?",
@@ -18,22 +24,26 @@
     "EMAIL": "Your email",
     "ENQUIRY": "Your enquiry"
   },
-  "MEAN": {
-    "MONGODB": {
-      "H": "<span>M</span>ongoDB",
-      "P": "The shells flashed all round him, and he was seen to advance a few paces, stagger, and go down. Everybody yelled together, and the guns were reloaded in frantic haste. The overthrown Martian set up a prolonged ululation, and immediately a second glittering giant, answering him, appeared over the trees to the south. It would seem that a leg of the tripod had been smashed by one of the shells. The whole of the second volley flew wide of the Martian on the ground, and, simultaneously, both his companions brought their Heat-Rays to bear on the battery. The ammunition blew up, the pine trees all about the guns flashed into fire, and only one or two of the men who were already running over the crest of the hill escaped."
+  "HOME": {
+    "NOSQL": {
+      "H": "NoSQL",
+      "P": "The shells flashed all round him, and he was seen to advance a few paces, stagger, and go down. Everybody yelled together, and the guns were reloaded in frantic haste."
     },
-    "EXPRESS": {
-      "H": "<span>E</span>xpress",
-      "P": "It was this howling and firing of the guns at Ripley and St. George's Hill that we had heard at Upper Halliford. The Ripley gunners, unseasoned artillery volunteers who ought never to have been placed in such a position, fired one wild, premature, ineffectual volley, and bolted on horse and foot through the deserted village, while the Martian, without using his Heat-Ray, walked serenely over their guns, stepped gingerly among them, passed in front of them, and so came unexpectedly upon the guns in Painshill Park, which he destroyed."
+    "DATAVISUALIZATION": {
+      "H": "Data-Visualization",
+      "P": "It was this howling and firing of the guns at Ripley and St. George's Hill that we had heard at Upper Halliford. The Ripley gunners, unseasoned artillery volunteers who ought never to have been placed in such a position."
     },
-    "ANGULARJS": {
-      "H": "<span>A</span>ngularJS",
-      "P": "A dozen rockets sprang out of the hills before them so soon as they began to move, and warned the waiting batteries about Ditton and Esher. At the same time four of their fighting machines, similarly armed with tubes, crossed the river, and two of them, black against the western sky, came into sight of myself and the curate as we hurried wearily and painfully along the road that runs northward out of Halliford. They moved, as it seemed to us, upon a cloud, for a milky mist covered the fields and rose to a third of their height."
+    "FRONTEND": {
+      "H": "Rich Web Application",
+      "P": "A dozen rockets sprang out of the hills before them so soon as they began to move. At the same time four of their fighting machines, similarly armed with tubes."
     },
-    "NODEJS": {
-      "H": "<span>N</span>odeJS",
-      "P": "The occasional howling of the Martians had ceased; they took up their positions in the huge crescent about their cylinders in absolute silence. It was a crescent with twelve miles between its horns. Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect--the Martians seemed in solitary possession of the darkling night, lit only as it was by the slender moon, the stars, the afterglow of the daylight, and the ruddy glare from St. George's Hill and the woods of Painshill."
+    "BACKEND": {
+      "H": "Application server",
+      "P": "The occasional howling of the Martians had ceased; they took up their positions in the huge crescent about their cylinders in absolute silence. It was a crescent with twelve miles between its horns."
+    },
+    "CONSULTING": {
+      "H": "Consulting",
+      "P": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect."
     }
   }
 }
