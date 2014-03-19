@@ -3,3 +3,5 @@ bower_modules
 
 *.swp
 .tmp
+
+dist
