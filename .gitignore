@@ -6,3 +6,4 @@ bower_modules
 
 dist
 app/index.html
+app/.styles
