@@ -1,9 +1,10 @@
 'use strict';
 
 module.exports = {
-  html: 'index.html'
+  html: 'dist/index.html'
 , options: {
-    dest: 'dist'
+    root: './'
+  , dest: 'dist'
   , flow: {
       steps: {
         js: ['concat']

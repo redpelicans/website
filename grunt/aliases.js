@@ -2,10 +2,9 @@
 
 module.exports = {
   serve: [
-    'clean:tmp'
-  , 'clean:dist'
+    'clean:dev'
   , 'copy:dev'
-  , 'bower-install:dist'
+  , 'bower-install:dev'
   , 'less:dist'
   , 'connect:dev'
   , 'watch'
@@ -20,7 +19,6 @@ module.exports = {
   , 'cssmin:generated'
   , 'rev'
   , 'usemin'
-  , 'replace:ghpages'
   , 'clean:tmp'
   ]
 , 'serve-dist': [

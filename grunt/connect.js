@@ -14,6 +14,7 @@ module.exports = {
 , dist: {
     options: {
       livereload: false
+    , base: 'dist'
     }
   }
 };

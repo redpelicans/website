@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  html: 'index.html'
+  html: 'dist/index.html'
 , css: 'dist/styles/**/*.css'
 , options: {
     assetsDirs: ['dist', 'dist/fonts']

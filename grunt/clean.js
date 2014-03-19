@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = {
-  dist: ['dist', 'index.html']
+  dist: ['dist', '.tmp']
+, dev: ['.tmp', 'index.html']
 , tmp: ['.tmp']
 };

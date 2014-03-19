@@ -8,7 +8,7 @@ module.exports = {
   }
 , dist: {
     files: [
-      { 'index.html': 'app/index.html' }
+      { 'dist/index.html': 'app/index.html' }
     , { expand: true
       , dot: true
       , cwd: 'app'
@@ -23,7 +23,7 @@ module.exports = {
       }
     , { expand: true
       , dest: 'dist'
-      , src: 'bower_components/**/*'
+      , src: 'bower_modules/**/*'
       }
     ]
   }
