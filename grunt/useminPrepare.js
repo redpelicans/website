@@ -3,8 +3,7 @@
 module.exports = {
   html: 'dist/index.html'
 , options: {
-    root: './'
-  , dest: 'dist'
+    dest: 'dist'
   , flow: {
       steps: {
         js: ['concat']

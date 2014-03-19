@@ -5,15 +5,15 @@ module.exports = {
     'clean:dev'
   , 'copy:dev'
   , 'bower-install:dev'
-  , 'less:dist'
+  , 'less:all'
   , 'connect:dev'
   , 'watch'
   ]
 , build: [
     'clean:dist'
+  , 'less:all'
   , 'copy:dist'
   , 'bower-install:dist'
-  , 'less:dist'
   , 'useminPrepare'
   , 'concat:generated'
   , 'cssmin:generated'

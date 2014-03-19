@@ -6,7 +6,7 @@ module.exports = {
   , ignorePath: 'app/'
   }
 , dev: {
-    html: 'index.html'
+    html: 'app/index.html'
   , ignorePath: 'app/'
   }
 };

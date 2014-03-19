@@ -9,6 +9,7 @@ module.exports = {
     options: {
       livereload: 35729 // livereload port
     , debug: true
+    , base: 'app'
     }
   }
 , dist: {

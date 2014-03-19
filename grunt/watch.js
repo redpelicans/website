@@ -10,12 +10,12 @@ module.exports = {
   }
 , styles: {
     files: 'app/styles/**/*.less'
-  , tasks: ['newer:less:dist']
+  , tasks: ['newer:less:dev']
   }
 , views: {
     files: 'app/views/**/*.html'
   }
 , index: {
-    files: 'app/index.html'
+    files: 'index.html'
   }
 };

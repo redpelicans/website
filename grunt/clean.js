@@ -2,6 +2,6 @@
 
 module.exports = {
   dist: ['dist', '.tmp']
-, dev: ['.tmp', 'index.html']
+, dev: ['.tmp', 'app/index.html', 'app/.styles']
 , tmp: ['.tmp']
 };

@@ -3,27 +3,26 @@
 module.exports = {
   dev: {
     files: {
-      'index.html': 'app/index.html'
+      'app/index.html': 'index.html'
     }
   }
 , dist: {
     files: [
-      { 'dist/index.html': 'app/index.html' }
+      { 'dist/index.html': 'index.html' }
     , { expand: true
       , dot: true
       , cwd: 'app'
       , dest: 'dist'
       , src: [
           '*.{ico,png,txt}'
+        , '{styles,.styles}/**/*.css'
+        , 'scripts/**/*.js'
         , 'views/{,*/}*.html'
         , 'images/**/*.{png,jpg,jpeg,gif,webp,svg}'
         , 'i18n/**/*.json'
         , 'fonts/**/*'
+        , 'bower_modules/**/*'
         ]
-      }
-    , { expand: true
-      , dest: 'dist'
-      , src: 'bower_modules/**/*'
       }
     ]
   }
