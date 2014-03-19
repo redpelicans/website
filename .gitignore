@@ -5,3 +5,5 @@ bower_modules
 .tmp
 
 dist
+
+index.html
