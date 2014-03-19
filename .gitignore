@@ -5,5 +5,4 @@ bower_modules
 .tmp
 
 dist
-
-index.html
+app/index.html
