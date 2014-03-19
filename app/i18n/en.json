@@ -1,0 +1,49 @@
+{
+  "REDPELICANS": "redpelicans",
+  "FOOTER": {
+    "COPYRIGHT": "Copyright &copy;2014",
+    "RIGHTS": "All rights reserved"
+  },
+  "GENERAL": {
+    "FULLSTACK": "Full Stack",
+    "JAVASCRIPT": "Javascript",
+    "COMPANY": "Company",
+    "WAR": "&mdash;&nbsp;We are redpelicans.",
+    "MISSION": "We are dedicated to helping businesses succed with full stack javascript through strategic consulting and support.",
+    "SERVICES": "Services",
+    "STORIES": "Stories",
+    "LAB": "Lab",
+    "UNDERLINE": "We provide a <span>complete solution</span> from the very first step of your project to its happy end.",
+    "CONTACTUS": "Contact us",
+    "EMAILUS": "Email us at <a href='mailto:contact@redplicans.com'>contact@redplicans.com</a>",
+    "TALKUS": "Want to talk to us about your project?",
+    "FILLFORM": "Or fill in the form below and we'll get back to you."
+  },
+  "FORM": {
+    "NAME": "Your name",
+    "EMAIL": "Your email",
+    "ENQUIRY": "Your enquiry"
+  },
+  "HOME": {
+    "NOSQL": {
+      "H": "NoSQL",
+      "P": "The shells flashed all round him, and he was seen to advance a few paces, stagger, and go down. Everybody yelled together, and the guns were reloaded in frantic haste."
+    },
+    "DATAVISUALIZATION": {
+      "H": "Data-Visualization",
+      "P": "It was this howling and firing of the guns at Ripley and St. George's Hill that we had heard at Upper Halliford. The Ripley gunners, unseasoned artillery volunteers who ought never to have been placed in such a position."
+    },
+    "FRONTEND": {
+      "H": "Rich Web Application",
+      "P": "A dozen rockets sprang out of the hills before them so soon as they began to move. At the same time four of their fighting machines, similarly armed with tubes."
+    },
+    "BACKEND": {
+      "H": "Application server",
+      "P": "The occasional howling of the Martians had ceased; they took up their positions in the huge crescent about their cylinders in absolute silence. It was a crescent with twelve miles between its horns."
+    },
+    "CONSULTING": {
+      "H": "Consulting",
+      "P": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect."
+    }
+  }
+}
