@@ -1,5 +1,5 @@
 Website of redpelicans
-=====================
+======================
 Website of redpelicans: [http://redpelicans.github.io/](http://redpelicans.github.io/)
 
 Usage
@@ -15,7 +15,8 @@ In development, run `grunt serve`.
 
 Use `grunt serve-dist` to build and test locally.
 
-Run `grunt deploy` to update remote website. (TODO)
+Run `grunt deploy` to update remote website.  
+([https://github.com/redpelicans/redpelicans.github.io](https://github.com/redpelicans/redpelicans.github.io))
 
 Requirement
 ===
