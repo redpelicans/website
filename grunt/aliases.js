@@ -1,15 +1,7 @@
 'use strict';
 
 module.exports = {
-  serve: [
-    'clean:dev'
-  , 'copy:dev'
-  , 'bower-install:dev'
-  , 'less:all'
-  , 'connect:dev'
-  , 'watch'
-  ]
-, build: [
+  build: [
     'clean:dist'
   , 'less:all'
   , 'copy:dist'
@@ -21,8 +13,20 @@ module.exports = {
   , 'usemin'
   , 'clean:tmp'
   ]
+, serve: [
+    'clean:dev'
+  , 'copy:dev'
+  , 'bower-install:dev'
+  , 'less:all'
+  , 'connect:dev'
+  , 'watch'
+  ]
 , 'serve-dist': [
     'build'
   , 'connect:dist:keepalive'
+  ]
+, deploy: [
+    'build'
+  , 'gh-pages:dist'
   ]
 };
