@@ -20,9 +20,9 @@ Run `grunt deploy` to update remote website.
 
 Requirement
 ===
-[git](http://git-scm.com/) and [nodejs](http://nodejs.org/) for [npm](https://www.npmjs.org/)
+[git](http://git-scm.com/) and [nodejs](http://nodejs.org/)
 
-_npm is the package manager of grunt modules_  
+_[npm](https://www.npmjs.org/) is the package manager of grunt modules_  
 _[grunt-cli](https://github.com/gruntjs/grunt-cli) is the [grunt](http://gruntjs.com/)'s command line interface_  
 _[bower](http://bower.io/) is the package manager of the client-side application_
 
