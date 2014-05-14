@@ -1,0 +1,152 @@
+@red: #D74B4B; @grey: #DCDDD8; @dark-grey: #424242; @darker-grey: #333;
+@darkest-grey: #2B2B2B;
+
+.header {
+  z-index: 1001;
+  position: fixed;
+  top: 0;
+  height: 75px;
+  width: 100%;
+  border-bottom: 1px solid @grey;
+  background-color: @red;
+  a.home, a.contact {
+    position: fixed;
+    z-index: 1001;
+    top: 19px;
+    color: @grey;
+    font-size: 30px;
+  }
+  a.home { left: 50%; }
+  a.contact { right: 20px; }
+  nav.slide-menu {
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border: 0 solid @darkest-grey;
+    background-color: rgba(0,0,0,0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
+    -moz-transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
+    transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
+    ul {
+      top: 75px;
+      left: 0;
+      position: fixed;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: -webkit-transform 0.3s, opacity 0.2s, visibility 0s 0.3s;
+        -moz-transition: -webkit-transform 0.3s, opacity 0.2s, visibility 0s 0.3s;
+        transition: transform 0.3s, opacity 0.2s, visibility 0s 0.3s;
+        a {
+          padding: 0 20px;
+          box-shadow: inset 0 1px rgba(0,0,0,0.2);
+          color: @grey;
+          font-size: 14px;
+          display: block;
+          outline: none;
+          text-decoration: none;
+          -webkit-transition: color 0.2s;
+          -moz-transition: color 0.2s;
+          transition: color 0.2s;
+          &:hover { color: @red; }
+        }
+        &:last-child a {
+          box-shadow: inset 0 1px rgba(0,0,0,0.2), inset 0 -1px rgba(0,0,0,0.2);
+        }
+      }
+    }
+    .overlay {
+      position: absolute;
+      width: 100%;
+      z-index: 1000;
+    }
+    a.toggle {
+      z-index: 1001;
+      position: fixed;
+      top: 15px;
+      left: 20px;
+      display: block;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      span {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        margin-top: -2px;
+        background-color: @grey;
+        font-size: 0px;
+        -webkit-transition: background-color 0.3s;
+        -moz-transition: background-color 0.3s;
+        transition: background-color 0.3s;
+        &:before, &:after {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: @grey;
+          content: '';
+          -webkit-transition: -webkit-transform 0.3s;
+          -moz-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+        }
+        &:before {
+          -webkit-transform: translateY(250%);
+          -moz-transform: translateY(250%);
+          transform: translateY(250%);
+        }
+        &:after {
+          -webkit-transform: translateY(-250%);
+          -moz-transform: translateY(-250%);
+          transform: translateY(-250%);
+        }
+      }
+    }
+    &.active {
+      height: 100%;
+      border-width: 0 0 0 150px;
+      background-color: rgba(0,0,0,0.15);
+      -webkit-transition: border-width 0.3s, background-color 0.3s;
+      -moz-transition: border-width 0.3s, background-color 0.3s;
+      transition: border-width 0.3s, background-color 0.3s;
+      .overlay { height: 100%; }
+      ul {
+        li {
+          visibility: visible;
+          opacity: 1;
+          -webkit-transition: -webkit-transform 0.3s, opacity 0.3s 0.1s;
+          -moz-transition: -webkit-transform 0.3s, opacity 0.3s 0.1s;
+          transition: transform 0.3s, opacity 0.3s;
+        }
+      }
+      a.toggle {
+        span {
+          background-color: transparent;
+          &:before {
+            -webkit-transform: translateY(0) rotate(-45deg);
+            -moz-transform: translateY(0) rotate(-45deg);
+            transform: translateY(0) rotate(-45deg);
+          }
+          &:after {
+            -webkit-transform: translateY(0) rotate(45deg);
+            -moz-transform: translateY(0) rotate(45deg);
+            transform: translateY(0) rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+}

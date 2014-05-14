@@ -1,0 +1,17 @@
+<div class="header">
+  <nav class="slide-menu" role="navigation" ng-controller="SlideMenuCtrl" ng-class="{'active': isActive}">
+    <a href="#" class="toggle" ng-click="toggle()"><span>Menu</span></a>
+    <ul>
+      <li><a href="/services" translate>{{ 'GENERAL.SERVICES' }}</a></li>
+      <li><a href="/stories" translate>{{ 'GENERAL.STORIES' }}</a></li>
+      <li><a href="/lab" translate>{{ 'GENERAL.LAB' }}</a></li>
+    </ul>
+    <div class="overlay" ng-click="toggle()"></div>
+  </nav>
+  <a href="/" class="home">
+    <span class="glyphicon glyphicon-send"></span>
+  </a>
+  <a href="mailto:contact@redpelicans.com" class="contact">
+    <span class="glyphicon glyphicon-envelope"></span>
+  </a>
+</div>

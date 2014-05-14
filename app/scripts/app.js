@@ -1,8 +1,11 @@
 'use strict';
 
 var app = angular.module(
-  'app'
-, ['ngCookies', 'ngRoute', 'pascalprecht.translate']
+  'rpApp'
+, [ 'ngCookies', 'ngRoute'
+  , 'pascalprecht.translate'
+  , 'rpApp.controllers'
+  ]
 );
 
 app.config(function($routeProvider, $locationProvider, $translateProvider) {
