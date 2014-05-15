@@ -5,6 +5,7 @@ var app = angular.module(
 , [ 'ngCookies', 'ngRoute'
   , 'pascalprecht.translate'
   , 'rpApp.controllers'
+  , 'rpApp.directives'
   ]
 );
 

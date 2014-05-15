@@ -5,9 +5,7 @@
     "RIGHTS": "All rights reserved"
   },
   "GENERAL": {
-    "FULLSTACK": "Full Stack",
-    "JAVASCRIPT": "Javascript",
-    "COMPANY": "Company",
+    "CATCH": "Full Stack Software Company",
     "WAR": "&mdash;&nbsp;We are redpelicans.",
     "MISSION": "We are dedicated to helping businesses succed with full stack javascript through strategic consulting and support.",
     "SERVICES": "Services",
@@ -16,13 +14,7 @@
     "UNDERLINE": "We provide a <span>complete solution</span> from the very first step of your project to its happy end.",
     "CONTACTUS": "Contact us",
     "EMAILUS": "Email us at <a href='mailto:contact@redplicans.com'>contact@redplicans.com</a>",
-    "TALKUS": "Want to talk to us about your project?",
-    "FILLFORM": "Or fill in the form below and we'll get back to you."
-  },
-  "FORM": {
-    "NAME": "Your name",
-    "EMAIL": "Your email",
-    "ENQUIRY": "Your enquiry"
+    "TALKUS": "Want to talk to us about your project?"
   },
   "HOME": {
     "NOSQL": {

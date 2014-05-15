@@ -1,6 +1,6 @@
-<div class="header">
+<div class="header" ng-controller="HeaderCtrl" scroll-position="scroll">
   <nav class="slide-menu" role="navigation" ng-controller="SlideMenuCtrl" ng-class="{'active': isActive}">
-    <a href="#" class="toggle" ng-click="toggle()"><span>Menu</span></a>
+    <a href="#" class="toggle" ng-click="toggle()"><span></span></a>
     <ul>
       <li><a href="/services" translate>{{ 'GENERAL.SERVICES' }}</a></li>
       <li><a href="/stories" translate>{{ 'GENERAL.STORIES' }}</a></li>
@@ -8,10 +8,8 @@
     </ul>
     <div class="overlay" ng-click="toggle()"></div>
   </nav>
-  <a href="/" class="home">
-    <span class="glyphicon glyphicon-send"></span>
-  </a>
-  <a href="mailto:contact@redpelicans.com" class="contact">
+  <a class="brand" href="/" translate ng-show="scroll > 607">{{ 'REDPELICANS' }}</span></a>
+  <a class="contact" href="mailto:contact@redpelicans.com" ng-show="scroll > 607">
     <span class="glyphicon glyphicon-envelope"></span>
   </a>
 </div>

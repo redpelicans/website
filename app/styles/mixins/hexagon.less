@@ -1,0 +1,38 @@
+.hexagon(@size, @color) {
+  @hex-coefficient: tan(30 * pi() / 180);
+  @width: @size * 1px;
+  @_height: @size / sqrt(3);
+  @height: @_height * 1px;
+  @sp1: @_height * @hex-coefficient * 1px;
+  @sp2: @size / 2 * 1px;
+
+  position: relative;
+  width: @width; 
+  height: @height;
+  background-color: @color;
+  margin: @sp1 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: @sp2 solid transparent;
+    border-right: @sp2 solid transparent;
+  }
+
+  &:before {
+    bottom: 100%;
+    border-bottom: @sp1 solid @color;
+  }
+
+  &:after {
+    top: 100%;
+    width: 0;
+    border-top: @sp1 solid @color;
+  }
+}
+
