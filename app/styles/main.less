@@ -1,4 +1,5 @@
 @import './globals';
+@import './mixins/hexagon';
 
 @media (min-width: 1200px) {
   .container { max-width: 970px; }
@@ -70,6 +71,26 @@ body {
 }
 
 .content {
+  .background-outer {
+    position: absolute;
+    padding: 5%;
+    .background-inner {
+      padding: 10%;
+      // position: relative;
+      // // top: 50%;
+      // left: 50%;
+      // -webkit-transform: translateY(-50%);
+      // -moz-transform: translateY(-50%);
+      // transform: translateY(-50%);
+      // -webkit-transform: translateX(-50%);
+      // -moz-transform: translateX(-50%);
+      // transform: translateX(-50%);
+      span {
+        display: block;
+        .hexagon(400, @grey);
+      }
+    }
+  }
   h3 {
     font-family: @amble-regular-font;
     border-bottom: 1px solid @grey;
