@@ -2,10 +2,18 @@
 @import './mixins/hexagon';
 
 .splash {
-  .separator {
+  .separator-dark-red {
     span {
       display: block;
       .hexagon(20, @dark-red);
+    }
+  }
+  .separator-grey {
+    position: relative;
+    top: 12px;
+    span {
+      display: block;
+      .hexagon(20, @grey);
     }
   }
   background-color: @red;
@@ -20,8 +28,11 @@
     margin-top: 0;
   }
   h3 {
-    font-family: @fanwood-regular-font;
+    font-family: @amble-regular-font;
+    text-transform: uppercase;
+    color: @grey;
     margin-bottom: 30px;
+    font-size: 22px;
   }
   h4 {
     margin-top: 25px;
