@@ -1,0 +1,18 @@
+@import './globals';
+@import './mixins/hexagon';
+
+.footer {
+  background-color: @darker-grey;
+  p {
+    span { color: @grey; }
+    span.glyphicon { color: @dark-grey; }
+  }
+  .separator-grey {
+    position: relative;
+    top: -12px;
+    span {
+      display: block;
+      .hexagon(20, @grey);
+    }
+  }
+}
