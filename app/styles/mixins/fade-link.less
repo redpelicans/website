@@ -1,0 +1,30 @@
+@import '../globals';
+
+.fade-link(@base: @red, @hover: @grey) {
+  font-family: @amble-regular-font;
+  font-size: 16px;
+  color: @hover;
+  background-color: @base;
+  border: 1px solid @hover;
+  cursor: pointer;
+  padding: 15px 25px;
+  display: inline-block;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  &:hover, &:active {
+    color: @base;
+    background-color: @hover;
+    text-decoration: none;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+}
