@@ -15,6 +15,9 @@ module.exports = {
 , views: {
     files: 'app/views/**/*.html'
   }
+, i18n: {
+    files: 'app/i18n/*.json'
+  }
 , index: {
     files: 'index.html'
   }
