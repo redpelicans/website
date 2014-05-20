@@ -8,6 +8,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <base href="/">
+
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
@@ -22,7 +24,9 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div ng-view=""></div>
+    <div ng-include="'views/header.html'"></div>
+    <ng-view></ng-view>
+    <div ng-include="'views/footer.html'"></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

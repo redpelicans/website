@@ -1,10 +1,31 @@
 <div class="header" ng-controller="HeaderCtrl" scroll-position="scroll">
   <nav class="slide-menu" role="navigation" ng-controller="SlideMenuCtrl" ng-class="{'active': isActive}">
-    <a href="#" class="toggle" ng-click="toggle()"><span></span></a>
+    <a href="" class="toggle" ng-click="toggle()"><span></span></a>
     <ul>
-      <li><a href="/services" translate>{{ 'GENERAL.SERVICES' }}</a></li>
-      <li><a href="/stories" translate>{{ 'GENERAL.STORIES' }}</a></li>
-      <li><a href="/lab" translate>{{ 'GENERAL.LAB' }}</a></li>
+      <li>
+        <a href="/">
+          <span class="glyphicon glyphicon-home"></span>
+          {{ 'GENERAL.HOME' | translate }}
+        </a>
+      </li>
+      <li>
+        <a href="/#/services/home">
+          <span class="glyphicon glyphicon-briefcase"></span>
+          {{ 'GENERAL.SERVICES' | translate }}
+        </a>
+      </li>
+      <li>
+        <a href="/#/stories">
+          <span class="glyphicon glyphicon-book"></span>
+          {{ 'GENERAL.STORIES' | translate }}
+        </a>
+      </li>
+      <li>
+        <a href="/#/lab">
+          <span class="glyphicon glyphicon-cog"></span>
+          {{ 'GENERAL.LAB' | translate }}
+        </a>
+      </li>
     </ul>
     <div class="overlay" ng-click="toggle()"></div>
   </nav>

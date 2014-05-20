@@ -11,10 +11,18 @@ var app = angular.module(
 
 app.config(function($routeProvider, $locationProvider, $translateProvider) {
   $routeProvider
-    .when('/', { templateUrl: 'views/main.html' })
-    .otherwise({ redirectTo: '/' });
+    .when('/', {
+      templateUrl: 'views/home.html'
+    })
+    .when('/services/:state', {
+      templateUrl: 'views/services.html'
+    , controller: 'ServicesCtrl'
+    })
+    .otherwise({
+      redirectTo: '/'
+    });
 
-  $locationProvider.html5Mode(true);
+  // $locationProvider.html5Mode(true);
 
   $translateProvider
     .useStaticFilesLoader({ prefix: 'i18n/', suffix: '.json' })

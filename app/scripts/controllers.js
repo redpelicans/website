@@ -12,3 +12,7 @@ controllers.controller('SlideMenuCtrl', function($scope) {
     $scope.isActive = !$scope.isActive;
   }
 });
+
+controllers.controller('ServicesCtrl', function($scope, $routeParams) {
+  console.log($routeParams);
+});

@@ -6,7 +6,7 @@ module.exports = {
   }
 , scripts: {
     files: 'app/scripts/**/*.js'
-  , tasks: ['newer:jshint:dev']
+  // , tasks: ['newer:jshint:dev']
   }
 , styles: {
     files: 'app/styles/**/*.less'
