@@ -14,7 +14,7 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
     .when('/', {
       templateUrl: 'views/home.html'
     })
-    .when('/services/:state', {
+    .when('/services/:stateId', {
       templateUrl: 'views/services.html'
     , controller: 'ServicesCtrl'
     })

@@ -2,15 +2,18 @@
   "name": "redpelicans.github.io",
   "version": "0.0.1",
   "dependencies": {
-    "jquery": "~2.1.0"
-  , "modernizr": "~2.7.2"
-  , "bootstrap": "~3.0.3"
-  , "classie": "1.0.1"
-  , "angular": "1.2.11"
-  , "angular-cookies": "1.2.11"
-  , "angular-route": "1.2.11"
-  , "angular-translate": "2.0.1"
-  , "angular-translate-storage-cookie": "2.0.0"
-  , "angular-translate-loader-static-files": "2.0.0"
+    "jquery": "~2.1.0",
+    "modernizr": "~2.7.2",
+    "bootstrap": "~3.0.3",
+    "classie": "1.0.1",
+    "angular": "1.2.11",
+    "angular-cookies": "1.2.11",
+    "angular-route": "1.2.11",
+    "angular-translate": "2.0.1",
+    "angular-translate-storage-cookie": "2.0.0",
+    "angular-translate-loader-static-files": "2.0.0",
+    "angular-ui-bootstrap-bower": "0.11.0",
+    "angular-touch": "~1.2.16",
+    "underscore": "~1.6.0"
   }
 }
