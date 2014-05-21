@@ -1,0 +1,26 @@
+@import './globals';
+
+.rp-line {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  h3 {
+    color: @red;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 26px;
+    span { color: @dark-grey; }
+  }
+  &.top {
+    h3 {
+      border-bottom: 1px solid @grey;
+      padding-bottom: 70px;
+    }
+  }
+  &.bottom {
+    h3 {
+      border-top: 1px solid @grey;
+      padding-top: 70px;
+    }
+  }
+}

@@ -16,3 +16,17 @@ directives.directive('scrollPosition', function($window) {
     }
   };
 });
+
+directives.directive('rpLine', function() {
+  return {
+    restrict: 'E'
+  , replace: true
+  , scope: {}
+  , transclude: true
+  , templateUrl: 'views/line.html'
+  , link: function($scope, element, $attrs) {
+      $scope.translationKey = $attrs.translationKey;
+      $scope.position = $attrs.position;
+    }
+  };
+});

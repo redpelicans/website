@@ -1,15 +1,7 @@
 <div ng-include="'views/splash.html'"></div>
 
 <div class="home">
-  <div class="line underline">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h3 class="text-center" translate>{{ 'GENERAL.UNDERLINE' }}</h3>
-        </div>
-      </div>
-    </div>
-  </div>
+  <rp-line data-position="top" data-translation-key="GENERAL.UNDERLINE"></rp-line>
 
   <div class="content">
     <div class="container">
@@ -49,12 +41,9 @@
     </div>
   </div>
 
-  <div class="line bottomline">
-    <div class="container">
-      <h3 class="text-center" translate>{{ 'GENERAL.TALKUS' }}</h3>
-      <h4 class="text-center">
-        <a href="mailto:contact@redpelicans.com" translate>{{ 'GENERAL.EMAILUS' }}</a>
-      </h4>
-    </div>
-  </div>
+  <rp-line data-position="bottom" data-translation-key="GENERAL.TALKUS">
+    <h4 class="text-center">
+      <a href="mailto:contact@redpelicans.com" translate>{{ 'GENERAL.EMAILUS' }}</a>
+    </h4>
+  </rp-line>
 </div>
