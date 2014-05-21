@@ -20,10 +20,15 @@
       font-size: 20px;
       display: block;
       color: @grey;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s;
+      &:hover, &:active { color: white; }
     }
     &.brand {
       color: @grey;
       font-size: 16px;
+      text-transform: uppercase;
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s;
       transition: all 0.5s;
@@ -95,6 +100,12 @@
       width: 20px;
       height: 20px;
       cursor: pointer;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      transition: all 0.5s;
+      &:hover, &:active {
+        span, span:before, span:after { background-color: white; }
+      }
       span {
         position: absolute;
         top: 50%;
@@ -113,9 +124,9 @@
           height: 100%;
           background: @grey;
           content: '';
-          -webkit-transition: -webkit-transform 0.3s;
-          -moz-transition: -moz-transform 0.3s;
-          transition: transform 0.3s;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s;
         }
         &:before {
           -webkit-transform: translateY(250%);
