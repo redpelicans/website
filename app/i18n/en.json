@@ -38,5 +38,27 @@
       "H": "Consulting",
       "P": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect."
     }
+  },
+  "SERVICES": {
+    "UNDERLINE": "Our Offer"
+  , "HOME": {
+      "DESCRIPTION": {
+        "P1": "L’objet de RedPelicans est de promouvoir la construction de Systèmes d’Information à base de solutions open source et plus particulièrement autour de solutions Javascript."
+      , "P2": "Vous souhaitez profiter des solutions Mongodb, Nodejs, AngularJS et D3, mais préférez être accompagnés, RedPelicans est présent et à votre service pour vous faire profiter de l’expérience de ses consultants."
+      , "P3": "Les associés de RedPelicans comptabilisent plus de 30 ans d’expérience dans les métiers de l’informatique liés à la finance dont 20 de directions informatiques au sein d’acteurs majeurs. C’est cette expérience que RedPelicans vous offre."
+      }
+    , "LIST": {
+        "P": "Nous mettons à votre disposition nos ingénieurs en forfait ou en régie pour satisfaire vos besoins:"
+      , "LI0": "Urbanisation du Système d’Information"
+      , "LI1": "Rédaction de cahiers des charges"
+      , "LI2": "Pilotage de projets"
+      , "LI3": "Organisation du processus déveveloppement (agilité, intégration continue)"
+      , "LI4": "Choix de solutions (benchmark et prototypage)"
+      , "LI5": "Développement d’applications web et mobiles"
+      , "LI6": "Portage de solutions vers des technologies web"
+      , "LI7": "Sauvetage de projets"
+      , "LI8": "Data-Visualisation"
+      }
+    }
   }
 }

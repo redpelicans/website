@@ -25,8 +25,7 @@ directives.directive('rpLine', function() {
   , transclude: true
   , templateUrl: 'views/line.html'
   , link: function($scope, element, $attrs) {
-      $scope.translationKey = $attrs.translationKey;
-      $scope.position = $attrs.position;
+      $scope.overrides = $attrs.overrides;
     }
   };
 });

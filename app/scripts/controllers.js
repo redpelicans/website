@@ -20,7 +20,11 @@ controllers.controller('SlideMenuCtrl', function($scope) {
 controllers.controller('ServicesCtrl', function($scope, $routeParams) {
   $scope.states = {
     home: {template: 'home', index: 0}
-  , node: {template: 'node', index: 1}
+  , angular: {template: 'angular', index: 1}
+  , d3: {template: 'd3', index: 2}
+  , node: {template: 'node', index: 3}
+  , mongo: {template: 'mongo', index: 4}
+  , consulting: {template: 'consulting', index: 5}
   };
   $scope.state = $scope.states[0];
   $scope.changeState = function(newStateId) {

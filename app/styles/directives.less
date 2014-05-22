@@ -1,9 +1,11 @@
 @import './globals';
 @import './mixins/fade-link';
 
+@base: 50px;
+
 .rp-line {
-  margin-top: 70px;
-  margin-bottom: 50px;
+  margin-top: @base + 20;
+  margin-bottom: @base;
   h3 {
     color: @red;
     text-transform: uppercase;
@@ -15,14 +17,19 @@
   &.top {
     h3 {
       border-bottom: 1px solid @grey;
-      padding-bottom: 70px;
+      padding-bottom: @base + 20;
     }
   }
   &.bottom {
     h3 {
       border-top: 1px solid @grey;
-      padding-top: 70px;
+      padding-top: @base + 20;
     }
   }
   a { .fade-link(@white, @red); }
+  &.condensed {
+    margin-top: @base - 20px;
+    margin-bottom: @base;
+    h3 { padding-bottom: @base - 20; }
+  }
 }

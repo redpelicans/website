@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 406 706" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <defs>
+  <marker refY="50" refX="50" markerHeight="5" markerWidth="5" viewBox="0 0 100 100" se_type="leftarrow" orient="auto" markerUnits="strokeWidth" id="se_marker_start_svg_24">
+   <path stroke-width="10" stroke="#000000" fill="#000000" d="m0,50l100,40l-30,-40l30,-40z"/>
+  </marker>
+  <marker refY="50" refX="50" markerHeight="5" markerWidth="5" viewBox="0 0 100 100" se_type="rightarrow" orient="auto" markerUnits="strokeWidth" id="se_marker_end_svg_24">
+   <path stroke-width="10" stroke="#000000" fill="#000000" d="m100,50l-100,40l30,-40l-30,-40z"/>
+  </marker>
+  <marker refY="50" refX="50" markerHeight="5" markerWidth="5" viewBox="0 0 100 100" se_type="leftarrow" orient="auto" markerUnits="strokeWidth" id="se_marker_start_svg_26">
+   <path stroke-width="10" stroke="#000000" fill="#000000" d="m0,50l100,40l-30,-40l30,-40z"/>
+  </marker>
+  <marker refY="50" refX="50" markerHeight="5" markerWidth="5" viewBox="0 0 100 100" se_type="rightarrow" orient="auto" markerUnits="strokeWidth" id="se_marker_end_svg_26">
+   <path stroke-width="10" stroke="#000000" fill="#000000" d="m100,50l-100,40l30,-40l-30,-40z"/>
+  </marker>
+  <marker refY="50" refX="50" markerHeight="5" markerWidth="5" viewBox="0 0 100 100" se_type="leftarrow" orient="auto" markerUnits="strokeWidth" id="se_marker_start_svg_29">
+   <path stroke-width="10" stroke="#000000" fill="#000000" d="m0,50l100,40l-30,-40l30,-40z"/>
+  </marker>
+  <marker refY="50" refX="50" markerHeight="5" markerWidth="5" viewBox="0 0 100 100" se_type="rightarrow" orient="auto" markerUnits="strokeWidth" id="se_marker_end_svg_29">
+   <path stroke-width="10" stroke="#000000" fill="#000000" d="m100,50l-100,40l30,-40l-30,-40z"/>
+  </marker>
+  <marker refY="50" refX="50" markerHeight="5" markerWidth="5" viewBox="0 0 100 100" se_type="leftarrow" orient="auto" markerUnits="strokeWidth" id="se_marker_start_svg_28">
+   <path stroke-width="10" stroke="#000000" fill="#000000" d="m0,50l100,40l-30,-40l30,-40z"/>
+  </marker>
+  <marker refY="50" refX="50" markerHeight="5" markerWidth="5" viewBox="0 0 100 100" se_type="rightarrow" orient="auto" markerUnits="strokeWidth" id="se_marker_end_svg_28">
+   <path stroke-width="10" stroke="#000000" fill="#000000" d="m100,50l-100,40l30,-40l-30,-40z"/>
+  </marker>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <polyline marker-end="url(#se_marker_end_svg_24)" marker-start="url(#se_marker_start_svg_24)" se:connector="svg_1 svg_5" fill="none" stroke-width="5" stroke="#000000" points="203,118 203,153 203,188.00001525878906" id="svg_24"/>
+  <g id="svg_34">
+   <g id="svg_3">
+    <rect stroke="#000000" id="svg_1" height="100" width="400" y="3" x="3" stroke-width="5" fill="#FF0000"/>
+    <text xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" id="svg_2" y="61.156233" x="203.000078" stroke-width="0" stroke="#000000" fill="#000000">AngularJS</text>
+   </g>
+   <g id="svg_7">
+    <rect x="3" id="svg_5" stroke="#000000" height="100" width="400" y="203.000008" stroke-width="5" fill="#FF0000"/>
+    <text id="svg_6" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="261.15624" x="203.000078" stroke-width="0" stroke="#000000" fill="#000000">NodeJS</text>
+   </g>
+   <g id="svg_20">
+    <rect stroke="#000000" id="svg_12" height="100" width="200" y="403" x="203" stroke-width="5" fill="#FF0000"/>
+    <text stroke="#000000" id="svg_13" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="448.499998" x="302.992265" stroke-width="0" fill="#000000">Application server</text>
+    <text xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" id="svg_17" y="472.5" x="303" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">(Java)</text>
+   </g>
+   <g id="svg_21">
+    <rect stroke="#000000" x="23" id="svg_9" height="100" width="160" y="603" stroke-width="5" fill="#FF0000"/>
+    <text stroke="#000000" id="svg_10" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="648.500013" x="103.00007" stroke-width="0" fill="#000000">NoSQL</text>
+    <text id="svg_19" stroke="#000000" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="672.500013" x="102.992257" stroke-width="0" fill="#000000">(MongoDB)</text>
+   </g>
+   <g id="svg_22">
+    <rect stroke="#000000" id="svg_15" height="100" width="160" y="603" x="223" stroke-width="5" fill="#FF0000"/>
+    <text id="svg_16" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="660.500015" x="302.992257" stroke-width="0" stroke="#000000" fill="#000000">RDMS</text>
+   </g>
+   <line marker-end="url(#se_marker_end_svg_28)" marker-start="url(#se_marker_start_svg_28)" id="svg_28" y2="588" x2="103" y1="318" x1="103" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="none"/>
+   <line marker-end="url(#se_marker_end_svg_29)" marker-start="url(#se_marker_start_svg_29)" id="svg_29" y2="588" x2="303" y1="518" x1="303" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="none"/>
+   <g id="svg_32">
+    <line marker-end="url(#se_marker_end_svg_26)" marker-start="url(#se_marker_start_svg_26)" id="svg_26" y2="388" x2="303" y1="318" x1="303" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="none"/>
+    <text class="tag" id="svg_31" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" y="360.5" x="227" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">JSON, MOM</text>
+   </g>
+   <g id="svg_33">
+    <text class="tag" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="24" id="svg_30" y="160.500008" x="160" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">JSON</text>
+   </g>
+  </g>
+ </g>
+</svg>
