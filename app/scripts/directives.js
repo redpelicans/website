@@ -7,7 +7,7 @@ directives.directive('scrollPosition', function($window) {
     scope: {
       scroll: '=scrollPosition'
     }
-  , link: function($scope, element, $attrs) {
+  , link: function($scope) {
       var window = angular.element($window)
         , handler = function() { $scope.scroll = window.scrollTop(); };
       
@@ -24,8 +24,8 @@ directives.directive('rpLine', function() {
   , scope: {}
   , transclude: true
   , templateUrl: 'views/line.html'
-  , link: function($scope, element, $attrs) {
-      $scope.overrides = $attrs.overrides;
+  , link: function($scope, $element, attrs) {
+      $scope.overrides = attrs.overrides;
     }
   };
 });

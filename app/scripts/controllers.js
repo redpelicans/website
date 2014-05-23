@@ -37,10 +37,10 @@ controllers.controller('ServicesCtrl', function($scope, $routeParams) {
 
   $scope.carousel = {};
   $scope.carousel.interval = -1;
-  $scope.carousel.slides = $scope.states;
-  // $scope.carousel.slides = _.map($scope.states, function(state) {
-  //   return { template: state.template };
-  // });
+  $scope.carousel.index = 0;
+  $scope.carousel.slides = _.map($scope.states, function(state) {
+    return { template: state };
+  });
 
   // $scope.carousel.changeSlide = function(index) {
   //   if (_.isNumber(index) && index < $scope.carousel.slides.length) {
@@ -48,14 +48,16 @@ controllers.controller('ServicesCtrl', function($scope, $routeParams) {
   //   }
   // }
 
-  // $scope.$watch(
-  //   'state'
-  // , function(newState) {
-  //     if (newState && _.has(newState, 'index')) {
-  //       $scope.carousel.changeSlide(newState.index);
-  //     }
-  //   }
-  // , true);
+  $scope.$watch($scope.carousel.index, function() {
+    console.log($scope.carousel.index)      
+    // if (newState && _.has(newState, 'index')) {
+    //   $scope.carousel.changeSlide(newState.index);
+    // }
+  });
+
+  $scope.test = function($event) {
+    console.log($event)
+  }
 
   $scope.changeState(_.indexOf($scope.states, $routeParams.stateId));
 });

@@ -14,9 +14,9 @@
         </div>
       </div>
       <div class="col-lg-8">
-        <carousel interval="carousel.interval">
-          <slide ng-repeat="slide in states" active="slide.active">
-            <div ng-include="'views/services/'+slide+'.html'"></div>
+        <carousel interval="carousel.interval" ng-click=test()>
+          <slide ng-repeat="slide in carousel.slides" active="slide.active">
+            <div ng-include="'views/services/'+slide.template+'.html'"></div>
           </slide>
         </carousel>
       </div>
