@@ -2,7 +2,9 @@
 
 var app = angular.module(
   'rpApp'
-, [ 'ngCookies', 'ngRoute'
+, [ 'ngCookies'
+  , 'ngRoute'
+  , 'ngAnimate'
   , 'pascalprecht.translate'
   , 'rpApp.controllers'
   , 'rpApp.directives'

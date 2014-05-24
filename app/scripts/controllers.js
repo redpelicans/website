@@ -3,8 +3,8 @@
 var controllers = angular.module(
   'rpApp.controllers'
 , [ 'ngTouch'
-  , 'ui.bootstrap'
-]);
+  ]
+);
 
 controllers.controller('HeaderCtrl', function($scope) {
   $scope.scroll = 0;
