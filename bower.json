@@ -4,7 +4,7 @@
   "dependencies": {
     "jquery": "~2.1.0",
     "modernizr": "~2.7.2",
-    "bootstrap": "~3.0.3",
+    "bootstrap": "~3.1",
     "underscore": "~1.6.0",
     "angular": "~1.2",
     "angular-cookies": "~1.2",
@@ -14,6 +14,9 @@
     "angular-translate-loader-static-files": "2.0.0",
     "angular-touch": "~1.2.16",
     "angular-animate": "~1.2",
-    "animate.css": "~3.1.1"
+    "animate.css": "~3.1.1",
+    "angular-strap": "~2.0.2",
+    "bootstrap-additions": "~0.2.2",
+    "angular-motion": "~0.3.2"
   }
 }

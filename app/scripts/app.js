@@ -6,6 +6,7 @@ var app = angular.module(
   , 'ngRoute'
   , 'ngAnimate'
   , 'pascalprecht.translate'
+  , 'mgcrea.ngStrap.aside'
   , 'rpApp.controllers'
   , 'rpApp.directives'
   ]
