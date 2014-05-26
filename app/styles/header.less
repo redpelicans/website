@@ -1,7 +1,9 @@
 @import './globals';
+@import './menu';
+@import './mixins/transition';
 
 .header {
-  z-index: 1001;
+  z-index: 1000;
   position: fixed;
   top: 0;
   height: 45px;
@@ -13,163 +15,21 @@
   a {
     cursor: pointer;
     text-decoration: none;
-    &.contact {
+    color: @grey;
+    .transition();
+    &:hover, &:active { color: @white; }
+    &.contact, &.menu {
       position: fixed;
       top: 10px;
-      right: 15px;
       font-size: 20px;
       display: block;
-      color: @grey;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      transition: all 0.5s;
-      &:hover, &:active { color: @white; }
     }
+    &.contact { right: 15px; }
+    &.menu { left: 15px; }
     &.brand {
-      color: @grey;
       font-size: 16px;
       text-transform: uppercase;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      transition: all 0.5s;
-      &:hover, &:active { color: @white; }
     }
-  }
-  nav.slide-menu {
-    z-index: 1001;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    border: 0 solid @darkest-grey;
-    background-color: rgba(0,0,0,0);
-    -webkit-backface-visibility: hidden;
-    -webkit-transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
-    -moz-transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
-    transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
-    ul {
-      top: 44px;
-      left: 0;
-      position: fixed;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      visibility: hidden;
-      opacity: 0;
-      li {
-        width: 150px;
-        height: 50px;
-        line-height: 50px;
-        border-top: 1px solid @darker-grey;
-        a {
-          padding: 0 20px;
-          color: @grey;
-          display: block;
-          outline: none;
-          text-decoration: none;
-          text-transform: uppercase;
-          text-align: left;
-          -webkit-transition: all 0.3s;
-          -moz-transition: all 0.3s;
-          transition: all 0.3s;
-          span { margin-right: 10px; }
-          &:hover {
-            color: @red;
-            // -webkit-transform: translateX(20px);
-            // -moz-transform: translateX(20px);
-            // transform: translateX(20px);
-          }
-        }
-      }
-      &:last-child li {
-        border-bottom: 1px solid @darker-grey;
-      }
-    }
-    .overlay {
-      position: absolute;
-      width: 100%;
-      z-index: 1000;
-    }
-    a.toggle {
-      z-index: 1001;
-      position: fixed;
-      top: 10px;
-      left: 15px;
-      display: block;
-      width: 20px;
-      height: 20px;
-      cursor: pointer;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      transition: all 0.5s;
-      &:hover, &:active {
-        span, span:before, span:after { background-color: @white; }
-      }
-      span {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 3px;
-        background-color: @grey;
-        -webkit-transition: background-color 0.3s;
-        -moz-transition: background-color 0.3s;
-        transition: background-color 0.3s;
-        &:before, &:after {
-          position: absolute;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: @grey;
-          content: '';
-          -webkit-transition: all 0.3s;
-          -moz-transition: all 0.3s;
-          transition: all 0.3s;
-        }
-        &:before {
-          -webkit-transform: translateY(250%);
-          -moz-transform: translateY(250%);
-          transform: translateY(250%);
-        }
-        &:after {
-          -webkit-transform: translateY(-250%);
-          -moz-transform: translateY(-250%);
-          transform: translateY(-250%);
-        }
-      }
-    }
-    &.active {
-      height: 100%;
-      border-width: 0 0 0 150px;
-      background-color: rgba(0,0,0,0.15);
-      -webkit-transition: border-width 0.3s, background-color 0.3s;
-      -moz-transition: border-width 0.3s, background-color 0.3s;
-      transition: border-width 0.3s, background-color 0.3s;
-      .overlay { height: 100%; }
-      ul {
-        visibility: visible;
-        opacity: 1;
-        -webkit-transition: -webkit-transform 0.3s, opacity 0.3s 0.2s;
-        -moz-transition: -webkit-transform 0.3s, opacity 0.3s 0.2s;
-        transition: transform 0.3s, opacity 0.3s 0.2s;
-      }
-      a.toggle {
-        span {
-          background-color: transparent;
-          &:before {
-            -webkit-transform: translateY(0) rotate(-45deg);
-            -moz-transform: translateY(0) rotate(-45deg);
-            transform: translateY(0) rotate(-45deg);
-          }
-          &:after {
-            -webkit-transform: translateY(0) rotate(45deg);
-            -moz-transform: translateY(0) rotate(45deg);
-            transform: translateY(0) rotate(45deg);
-          }
-        }
-      }
-    }
+    &.menu { left: 15px; }
   }
 }

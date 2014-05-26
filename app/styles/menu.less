@@ -1,0 +1,35 @@
+@import './globals';
+@import './overrides/aside';
+@import './mixins/transition';
+
+.menu {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      width: 150px;
+      height: 50px;
+      line-height: 50px;
+      border-top: 1px solid @darker-grey;
+      a {
+        padding: 0 20px;
+        color: @grey;
+        display: block;
+        outline: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: left;
+        .transition();
+        span { margin-right: 10px; }
+        &:hover {
+          color: @red;
+          // -webkit-transform: translateX(20px);
+          // -moz-transform: translateX(20px);
+          // transform: translateX(20px);
+        }
+      }
+    }
+    &:last-child li { border-bottom: 1px solid @darker-grey; }
+  }
+}

@@ -1,8 +1,6 @@
 @import './globals';
-@import './mixins/hexagon';
-@import './mixins/fade-link';
-
 @import './directives';
+@import './mixins/animation';
 
 @media (min-width: 1200px) {
   .container { max-width: 970px; }
@@ -11,14 +9,10 @@
 body {
   padding-top: 45px;
   font-family: @amble-regular-font;
+  #ng-view {
+    &.ng-enter { .animation(fadeInDown, 1s); }
+  }
 }
-
-// Original Bootstrap's CSS depends on empty href attributes to style cursors for
-// several components (pagination, tabs etc.). But in AngularJS adding empty href
-// attributes to link tags will cause unwanted route changes. This is why we need
-// to remove empty href attributes from directive templates and as a result styling
-// is not applied correctly. The remedy is simple, just use the following styling:
-.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
 @import './header';
 @import './splash';

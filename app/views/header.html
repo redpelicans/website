@@ -1,35 +1,8 @@
-<div class="header" ng-controller="HeaderCtrl" scroll-position="scroll">
-  <nav class="slide-menu" role="navigation" ng-controller="SlideMenuCtrl" ng-class="{'active': isActive}">
-    <a href="" class="toggle" ng-click="toggle()"><span></span></a>
-    <ul>
-      <li>
-        <a href="/">
-          <span class="glyphicon glyphicon-home"></span>
-          {{ 'GENERAL.HOME' | translate }}
-        </a>
-      </li>
-      <li>
-        <a href="/#/services/home">
-          <span class="glyphicon glyphicon-briefcase"></span>
-          {{ 'GENERAL.SERVICES' | translate }}
-        </a>
-      </li>
-      <li>
-        <a href="/#/stories">
-          <span class="glyphicon glyphicon-book"></span>
-          {{ 'GENERAL.STORIES' | translate }}
-        </a>
-      </li>
-      <li>
-        <a href="/#/lab">
-          <span class="glyphicon glyphicon-cog"></span>
-          {{ 'GENERAL.LAB' | translate }}
-        </a>
-      </li>
-    </ul>
-    <div class="overlay" ng-click="toggle()"></div>
-  </nav>
-  <a class="brand" href="/" translate>{{ 'REDPELICANS' }}</span></a>
+<div class="header">
+  <a class="menu" placement="left" animation="am-slide-left" bs-aside container="body" content-template="views/menu.html">
+    <span class="glyphicon glyphicon-th-list"></span>
+  </a>
+  <a class="brand" href="/" translate>{{ 'REDPELICANS' }}</a>
   <a class="contact" href="mailto:contact@redpelicans.com">
     <span class="glyphicon glyphicon-envelope"></span>
   </a>
