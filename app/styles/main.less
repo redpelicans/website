@@ -12,10 +12,13 @@ body {
   #ng-view {
     &.ng-enter { .animation(fadeInDown, 1s); }
   }
+  a {
+    outline: none;
+    cursor: pointer;
+  }
 }
 
 @import './header';
-@import './splash';
 @import './home';
 @import './services';
 @import './footer';
