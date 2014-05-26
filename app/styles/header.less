@@ -13,23 +13,20 @@
   text-align: center;
   padding-top: 10px;
   a {
-    cursor: pointer;
     text-decoration: none;
     color: @grey;
     .transition();
     &:hover, &:active { color: @white; }
-    &.contact, &.menu {
+    &.contact {
       position: fixed;
       top: 10px;
       font-size: 20px;
       display: block;
+      right: 15px;
     }
-    &.contact { right: 15px; }
-    &.menu { left: 15px; }
     &.brand {
       font-size: 16px;
       text-transform: uppercase;
     }
-    &.menu { left: 15px; }
   }
 }
