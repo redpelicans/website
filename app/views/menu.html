@@ -1,28 +1,12 @@
 <div class="menu">
-  <ul>
-    <li>
-      <a href="/">
-        <span class="glyphicon glyphicon-home"></span>
-        {{ 'GENERAL.HOME' | translate }}
-      </a>
-    </li>
-    <li>
-      <a href="/#/services/home">
-        <span class="glyphicon glyphicon-briefcase"></span>
-        {{ 'GENERAL.SERVICES' | translate }}
-      </a>
-    </li>
-    <li>
-      <a href="/#/stories">
-        <span class="glyphicon glyphicon-book"></span>
-        {{ 'GENERAL.STORIES' | translate }}
-      </a>
-    </li>
-    <li>
-      <a href="/#/lab">
-        <span class="glyphicon glyphicon-cog"></span>
-        {{ 'GENERAL.LAB' | translate }}
-      </a>
-    </li>
-  </ul>
+  <a 
+    class="toggle"
+    bs-aside
+    placement="left"
+    animation="am-slide-left"
+    container="body"
+    content-template="views/menu/content.html"
+  >
+    <span></span>
+  </a>
 </div>
