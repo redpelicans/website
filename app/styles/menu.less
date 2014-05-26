@@ -1,35 +1,78 @@
 @import './globals';
 @import './overrides/aside';
 @import './mixins/transition';
+@import './mixins/transform';
 
 .menu {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    li {
-      width: 150px;
-      height: 50px;
-      line-height: 50px;
-      border-top: 1px solid @darker-grey;
-      a {
-        padding: 0 20px;
-        color: @grey;
-        display: block;
-        outline: none;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: left;
+  a.toggle {
+    z-index: 1090;
+    position: fixed;
+    top: 10px;
+    left: 15px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    &:hover, &:active {
+      span, span:before, span:after { background-color: @white; }
+    }
+    span {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: @grey;
+      .transition();
+      &:before, &:after {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: @grey;
+        content: '';
         .transition();
-        span { margin-right: 10px; }
-        &:hover {
-          color: @red;
-          // -webkit-transform: translateX(20px);
-          // -moz-transform: translateX(20px);
-          // transform: translateX(20px);
-        }
+      }
+      &:before { .transform(translateY(250%)); }
+      &:after { .transform(translateY(-250%)); }
+    }
+    &.active {
+      span {
+        background-color: transparent;
+        &:before { .transform(translateY(0) rotate(-45deg)); }
+        &:after { .transform(translateY(0) rotate(45deg)); }
       }
     }
-    &:last-child li { border-bottom: 1px solid @darker-grey; }
+  }
+  .content {
+    ul {
+      margin: 45px 0 0 0;
+      padding: 0;
+      list-style: none;
+      li {
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        border-top: 1px solid @darker-grey;
+        a {
+          padding: 0 20px;
+          color: @grey;
+          display: block;
+          outline: none;
+          text-decoration: none;
+          text-transform: uppercase;
+          text-align: left;
+          .transition();
+          span { margin-right: 10px; }
+          &:hover {
+            color: @red;
+            // -webkit-transform: translateX(20px);
+            // -moz-transform: translateX(20px);
+            // transform: translateX(20px);
+          }
+        }
+      }
+      &:last-child li { border-bottom: 1px solid @darker-grey; }
+    }
   }
 }
