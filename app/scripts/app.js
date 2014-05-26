@@ -7,6 +7,7 @@ var app = angular.module(
   , 'ngAnimate'
   , 'pascalprecht.translate'
   , 'mgcrea.ngStrap.aside'
+  , 'rpApp.services'
   , 'rpApp.controllers'
   , 'rpApp.directives'
   ]
@@ -19,7 +20,7 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
     })
     .when('/services/:stateId', {
       templateUrl: 'views/services.html'
-    , controller: 'ServicesCtrl'
+    // , controller: 'ServicesCtrl'
     })
     .otherwise({
       redirectTo: '/'

@@ -1,13 +1,6 @@
-<div class="menu">
-  <a 
-    class="toggle"
-    rp-toggle-class="active"
-    bs-aside
-    placement="left"
-    animation="am-slide-left"
-    container="body"
-    content-template="views/menu/content.html"
-  >
+<div class="menu" ng-controller="MenuCtrl">
+  <a class="toggle" ng-class="{active: active}" ng-click="toggle()">
     <span></span>
   </a>
+  <span>{{ item.name }}</span>
 </div>

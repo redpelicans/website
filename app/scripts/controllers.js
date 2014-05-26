@@ -2,62 +2,43 @@
 
 var controllers = angular.module(
   'rpApp.controllers'
-, [ 'ngTouch'
-  ]
+, []
 );
 
-controllers.controller('HeaderCtrl', function($scope) {
-  $scope.scroll = 0;
-});
-
-controllers.controller('SlideMenuCtrl', function($scope) {
-  $scope.isActive = false;
+controllers.controller('MenuCtrl', function($scope, MenuSrvc, $aside) {
+  $scope.item = {};
+  $scope.$watch(
+    function() { return MenuSrvc.item.current; }
+  , function(newItem) { $scope.item = newItem;}
+  );
+  $scope.active = MenuSrvc.state.isOpen;
   $scope.toggle = function() {
-    $scope.isActive = !$scope.isActive;
+    $scope.active = MenuSrvc.state.isOpen = !MenuSrvc.state.isOpen;
   }
-});
 
-controllers.controller('ServicesCtrl', function($scope, $routeParams) {
-  $scope.states = [
-    'home'
-  , 'angular'
-  , 'd3'
-  , 'node'
-  , 'mongo'
-  , 'consulting'
-  ];
-  $scope.state = $scope.states[0];
-  $scope.changeState = function(index) {
-    if (_.isNumber(index) && index < $scope.states.length) {
-      $scope.state = $scope.states[index];
-    } else {
-      $scope.state = $scope.states[0];
+  $scope.items = MenuSrvc.items;
+  $scope.change = function(item) {
+    MenuSrvc.item.change(item);
+  }
+  var aside = $aside({
+    scope: $scope
+  , placement: "left"
+  , animation: "am-slide-left"
+  , container: "body"
+  , contentTemplate: "views/menu/content.html"
+  , show: false
+  });
+  aside.$promise.then(function() {
+    aside.show();
+    aside.hide();
+  });
+  $scope.$watch(
+    function() { return MenuSrvc.state.isOpen; }
+  , function(isOpen) {
+      $scope.active = isOpen;
+      aside.$promise.then(function() {
+        isOpen ? aside.show() : aside.hide();
+      });
     }
-  }
-
-  $scope.carousel = {};
-  $scope.carousel.interval = -1;
-  $scope.carousel.index = 0;
-  $scope.carousel.slides = _.map($scope.states, function(state) {
-    return { template: state };
-  });
-
-  // $scope.carousel.changeSlide = function(index) {
-  //   if (_.isNumber(index) && index < $scope.carousel.slides.length) {
-  //     $scope.carousel.slides[index].active = true;
-  //   }
-  // }
-
-  $scope.$watch($scope.carousel.index, function() {
-    console.log($scope.carousel.index)      
-    // if (newState && _.has(newState, 'index')) {
-    //   $scope.carousel.changeSlide(newState.index);
-    // }
-  });
-
-  $scope.test = function($event) {
-    console.log($event)
-  }
-
-  $scope.changeState(_.indexOf($scope.states, $routeParams.stateId));
+  );
 });
