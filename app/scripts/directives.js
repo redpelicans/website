@@ -14,16 +14,3 @@ directives.directive('rpLine', function() {
     }
   };
 });
-
-directives.directive('rpToggleClass', function() {
-  return {
-    restrict: 'A'
-  , compile: function($element, attrs) {
-      $element.on('click', function() {
-        _.each(attrs.rpToggleClass.split(' '), function(c) {
-          $element.toggleClass(c);
-        });
-      });
-    }
-  };
-});
