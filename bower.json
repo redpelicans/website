@@ -6,7 +6,6 @@
     "modernizr": "~2.7.2",
     "animate.css": "~3.1.1",
     "bootstrap": "~3.1",
-    "bootstrap-additions": "~0.2.2",
     "underscore": "~1.6.0",
     "angular": "~1.2",
     "angular-cookies": "~1.2",
@@ -15,8 +14,6 @@
     "angular-translate-storage-cookie": "2.0.0",
     "angular-translate-loader-static-files": "2.0.0",
     "angular-touch": "~1.2",
-    "angular-animate": "~1.2",
-    "angular-strap": "~2.0.2",
-    "angular-motion": "~0.3.2"
+    "angular-animate": "~1.2"
   }
 }
