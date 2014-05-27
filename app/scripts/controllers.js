@@ -5,40 +5,22 @@ var controllers = angular.module(
 , []
 );
 
-controllers.controller('MenuCtrl', function($scope, MenuSrvc, $aside) {
-  $scope.item = {};
-  $scope.$watch(
-    function() { return MenuSrvc.item.current; }
-  , function(newItem) { $scope.item = newItem;}
-  );
-  $scope.active = MenuSrvc.state.isOpen;
-  $scope.toggle = function() {
-    $scope.active = MenuSrvc.state.isOpen = !MenuSrvc.state.isOpen;
-  }
+controllers.controller('MenuCtrl', function($scope) {
+  $scope.menu = {};
 
-  $scope.items = MenuSrvc.items;
-  $scope.change = function(item) {
-    MenuSrvc.item.change(item);
+  $scope.menu.items = [
+    { name: 'HOME', icon: 'home', url: '/' }
+  , { name: 'SERVICES', icon: 'briefcase', url: '/#/services/home' }
+  , { name: 'STORIES', icon: 'book', url: '/#/stories' }
+  , { name: 'LAB', icon: 'cog', url: '/#/lab' }
+  ];
+  $scope.menu.current = $scope.menu.items[0];
+  $scope.menu.isActive = false;
+  $scope.menu.change = function(item) {
+    $scope.menu.current = item;
+    $scope.menu.toggle();
   }
-  var aside = $aside({
-    scope: $scope
-  , placement: "left"
-  , animation: "am-slide-left"
-  , container: "body"
-  , contentTemplate: "views/menu/content.html"
-  , show: false
-  });
-  aside.$promise.then(function() {
-    aside.show();
-    aside.hide();
-  });
-  $scope.$watch(
-    function() { return MenuSrvc.state.isOpen; }
-  , function(isOpen) {
-      $scope.active = isOpen;
-      aside.$promise.then(function() {
-        isOpen ? aside.show() : aside.hide();
-      });
-    }
-  );
+  $scope.menu.toggle = function() {
+    $scope.menu.isActive = !$scope.menu.isActive;
+  }
 });

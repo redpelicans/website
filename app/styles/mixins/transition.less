@@ -1,6 +1,14 @@
-.transition(@property: all, @duration: 0.5s) {
-  -webkit-transition: @property @duration;
-  -moz-transition: @property @duration;
-  -o-transition: @property @duration;
-  transition: @property @duration;
+.transition(@property: all, @duration: 0.5s, @delay: 0s, @timing-function: ease) {
+  -webkit-transition: @property @duration @timing-function @delay;
+  -moz-transition: @property @duration @timing-function @delay;
+  -o-transition: @property @duration @timing-function @delay;
+  transition: @property @duration @timing-function @delay;
+}
+
+.transitions(...) {
+  @properties: ~`"@{arguments}".replace(/[\[\]]|\,\sX/g, '')`;
+  -webkit-transition: @properties;
+  -moz-transition: @properties;
+  -o-transition: @properties;
+  transition: @properties;
 }

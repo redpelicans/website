@@ -1,6 +1,17 @@
 <div class="menu" ng-controller="MenuCtrl">
-  <a class="toggle" ng-class="{active: active}" ng-click="toggle()">
-    <span></span>
-  </a>
-  <span>{{ item.name }}</span>
+  <nav role="navigation" ng-class="{active: menu.isActive}">
+    <a class="toggle" ng-click="menu.toggle()">
+      <span></span>
+    </a>
+    <ul>
+      <li ng-repeat="item in menu.items">
+      <a ng-href="{{ item.url }}" ng-click="menu.change(item)" ng-class="{active: item === menu.current }">
+          <span class="glyphicon glyphicon-{{ item.icon }}"></span>
+          {{ 'MENU.'+item.name | translate }}
+        </a>
+      </li>
+    </ul>
+    <div class="overlay" ng-click="menu.toggle()"></div>
+  </nav>
+  <span class="breadcrumbs">{{ menu.current.name }}</span>
 </div>
