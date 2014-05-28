@@ -1,31 +1,160 @@
 <div class="services">
-  <rp-line data-overrides="top condensed">
-    <h3 class="text-center" translate>{{ 'SERVICES.UNDERLINE' }}</h3>
-  </rp-line>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <!-- Changes to do in svg: -->
-        <!-- - add viewBox="0 0 widthOfSvg heightOfSvg" -->
-        <!-- - add preserveAspectRatio="xMinYMin meet" -->
-        <!-- - remove width and height -->
-        <div class="svg-container">
-          <div ng-include="'images/services.svg'"></div>
+  <div ng-include="'views/services/splash.html'"></div>
+  <nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <a href="#nosql" du-smooth-scroll du-scrollspy>
+            <span class="glyphicon glyphicon-leaf"></span>
+          </a>
+          <h2>{{ 'SERVICES.NOSQL' | translate }}</h2>
+          <p>{{ 'SERVICES.NOSQL.P' | translate}}</p>
+        </div>
+        <div class="col-lg-3">
+          <a href="#node" du-smooth-scroll du-scrollspy>
+            <span class="glyphicon glyphicon-hdd"></span>
+          </a>
+          <h2>{{ 'SERVICES.NOSQL' | translate }}</h2>
+          <p>{{ 'SERVICES.NOSQL.P' | translate}}</p>
+        </div>
+        <div class="col-lg-3">
+          <a href="#rich-web-application" du-smooth-scroll du-scrollspy>
+            <span class="glyphicon glyphicon-dashboard"></span>
+          </a>
+          <h2>{{ 'SERVICES.NOSQL' | translate }}</h2>
+          <p>{{ 'SERVICES.NOSQL.P' | translate}}</p>
+        </div>
+        <div class="col-lg-3">
+          <a href="#data-visualisation" du-smooth-scroll du-scrollspy>
+            <span class="glyphicon glyphicon-stats"></span>
+          </a>
+          <h2>{{ 'SERVICES.NOSQL' | translate }}</h2>
+          <p>{{ 'SERVICES.NOSQL.P' | translate}}</p>
         </div>
       </div>
-      <div class="col-lg-8">
-        <!-- <carousel interval="carousel.interval" ng&#45;click=test()> -->
-        <!--   <slide ng&#45;repeat="slide in carousel.slides" active="slide.active"> -->
-        <!--     <div ng&#45;include="'views/services/'+slide.template+'.html'"></div> -->
-        <!--   </slide> -->
-        <!-- </carousel> -->
+    </div>
+  </nav>
+  <!-- <div class="splash"> -->
+  <!--   <rp&#45;line data&#45;overrides="top condensed"> -->
+  <!--     <h3 class="text&#45;center" translate>Our offer</h3> -->
+  <!--   </rp&#45;line> -->
+  <!--   <div class="container"> -->
+  <!--     <div class="row"> -->
+  <!--       <div class="col&#45;lg&#45;4"> -->
+  <!--         <div class="block"> -->
+  <!--           <span>.JS</span> -->
+  <!--           <p> -->
+  <!--             L’objet de RedPelicans est de promouvoir la construction de Systèmes -->
+  <!--             d’Information à base de solutions open source et plus particulièrement -->
+  <!--             autour de solutions Javascript. -->
+  <!--           </p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--       <div class="col&#45;lg&#45;4"> -->
+  <!--         <div class="block"> -->
+  <!--           <span class="glyphicon glyphicon&#45;send"></span> -->
+  <!--           <p> -->
+  <!--             Vous souhaitez profiter des solutions Mongodb, Nodejs, AngularJS et -->
+  <!--             D3, mais préférez être accompagnés, RedPelicans est présent et à votre -->
+  <!--             service pour vous faire profiter de l’expérience de ses consultants. -->
+  <!--           </p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--       <div class="col&#45;lg&#45;4"> -->
+  <!--         <div class="block"> -->
+  <!--           <span>30y</span> -->
+  <!--           <p> -->
+  <!--             Les associés de RedPelicans comptabilisent plus de 30 ans -->
+  <!--             d’expérience dans les métiers de l’informatique liés à la finance -->
+  <!--             dont 20 de directions informatiques au sein d’acteurs majeurs. -->
+  <!--           </p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--     <div class="row"> -->
+  <!--       <rp&#45;line data&#45;overrides="top condensed"> -->
+  <!--         <h3 class="text&#45;center" translate> -->
+  <!--           Nous mettons à votre disposition nos ingénieurs en forfait ou en régie -->
+  <!--           pour satisfaire vos besoins: -->
+  <!--         </h3> -->
+  <!--       </rp&#45;line> -->
+  <!--       <div class="col&#45;lg&#45;4"> -->
+  <!--         <ul> -->
+  <!--           <li>Urbanisation du Système d’Information</li> -->
+  <!--           <li>Urbanisation du Système d’Information</li> -->
+  <!--           <li>Urbanisation du Système d’Information</li> -->
+  <!--         </ul> -->
+  <!--       </div> -->
+  <!--       <div class="col&#45;lg&#45;4"> -->
+  <!--         <ul> -->
+  <!--           <li>Urbanisation du Système d’Information</li> -->
+  <!--           <li>Urbanisation du Système d’Information</li> -->
+  <!--           <li>Urbanisation du Système d’Information</li> -->
+  <!--         </ul> -->
+  <!--       </div> -->
+  <!--       <div class="col&#45;lg&#45;4"> -->
+  <!--         <ul> -->
+  <!--           <li>Urbanisation du Système d’Information</li> -->
+  <!--           <li>Urbanisation du Système d’Information</li> -->
+  <!--           <li>Urbanisation du Système d’Information</li> -->
+  <!--         </ul> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--   </div> -->
+  <!-- </div> -->
+  <!--  -->
+  <!-- <div class="splash2"> -->
+  <!--   <div class="container"> -->
+  <!--   </div> -->
+  <!-- </div> -->
+  <div class="container">
+    <div id="nosql" class="row">
+      <div class="col-lg-6">
+        <span class="glyphicon glyphicon-leaf"></span>
+      </div>
+      <div class="col-lg-6">
+        <h3>NOSQL</h3>
+        <p>The first thing to talk about is types. The dynamic revolution has
+        happened, static types are definitely not “in”. However, what most
+        people rail against in type systems is essentially the Java
+        implementation. Dart takes a very different, more tasteful approach.
+        
+        First, there is no runtime type checking. The type system is only there
+        to catch a certain class of compile time errors for you, provide
+        documentation, and give you the tools to express protocols and
+        interfaces explicitly. If you don’t want to use static typing for
+        something, you don’t have to. In fact, the official Dart style guide
+        says type annotations should only be used in method / class signatures.
+        What that means is that we are going from building out documentation
+        like this</p>
+      </div>
+    </div>
+    <div id="node" class="row">
+      <div class="col-lg-6">
+        <h3>NODE</h3>
+        <p>The first thing to talk about is types. The dynamic revolution has
+        happened, static types are definitely not “in”. However, what most
+        people rail against in type systems is essentially the Java
+        implementation. Dart takes a very different, more tasteful approach.
+        
+        First, there is no runtime type checking. The type system is only there
+        to catch a certain class of compile time errors for you, provide
+        documentation, and give you the tools to express protocols and
+        interfaces explicitly. If you don’t want to use static typing for
+        something, you don’t have to. In fact, the official Dart style guide
+        says type annotations should only be used in method / class signatures.
+        What that means is that we are going from building out documentation
+        like this</p>
+      </div>
+      <div class="col-lg-6">
+        <span class="glyphicon glyphicon-hdd"></span>
       </div>
     </div>
   </div>
   <rp-line data-overrides="bottom">
-    <h3 class="text-center" translate>{{ 'GENERAL.TALKUS' }}</h3>
+    <h3 class="text-center" translate>{{ 'TALKUS' }}</h3>
     <h4 class="text-center">
-      <a href="mailto:contact@redpelicans.com" translate>{{ 'GENERAL.EMAILUS' }}</a>
+      <a href="mailto:contact@redpelicans.com" translate>{{ 'EMAILUS' }}</a>
     </h4>
   </rp-line>
 </div>

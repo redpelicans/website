@@ -3,6 +3,7 @@
   "CONTACTUS": "Contact us",
   "EMAILUS": "Email us at contact@redplicans.com",
   "TALKUS": "Want to talk to us about your project?",
+  "SEEMORE": "See more",
   "MENU": {
     "HOME": "Home",
     "SERVICES": "Services",
@@ -41,7 +42,10 @@
     }
   },
   "SERVICES": {
-    "UNDERLINE": "Our Offer"
+    "SPLASH": {
+      "CATCH": "We offer you solutions that really work"
+    , "MISSION": "We rely on Open Source and Javascript technologies to bring you efficient and powerful Information Systems which make the difference in your business."
+    }
   , "HOME": {
       "DESCRIPTION": {
         "P1": "L’objet de RedPelicans est de promouvoir la construction de Systèmes d’Information à base de solutions open source et plus particulièrement autour de solutions Javascript."

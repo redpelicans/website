@@ -1,70 +1,22 @@
 @import 'globals';
 @import './mixins/hexagon';
+@import './mixins/transform';
 
 .services {
-  .rp-line.bottom {
-    h3 { padding-bottom: 10px; }
-  }
-
-  .separator-grey {
-    position: relative;
-    span {
-      display: block;
-      .hexagon(10, @light-red);
-    }
-  }
-
-  p { margin: 10px 0 10px 0; }
-  ul { list-style: square outside none; }
-
-  .carousel {
-    .carousel-control { display: none; }
-    .carousel-inner .slide {
-      text-align: left;
-      padding-top: 40px;
-    }
-    .carousel-indicators {
-      top: 0;
-      bottom: inherit;
-      li {
-        border-color: @red;
-        &.active { background-color: @red; }
+  nav {
+    .row > div {
+      a {
+        background: url('../images/hex-shape-border.svg') center center no-repeat;
+        background-size: contain;
+        position: relative;
+        padding: 20px;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        color: @grey;
+        font-size: 50px;
+        span { top: 10px; }
       }
-    }
-  }
-
-  .svg-container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    padding-bottom: 173.89%; /* ratio = height / width; padding-bottom = 50% * ratio */
-    vertical-align: top;
-    overflow: hidden;
-  }
-
-  svg {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    rect {
-      stroke: @dark-red;
-      fill: @red;
-      cursor: pointer;
-    }
-    text {
-      fill: @white;
-      font-family: @amble-regular-font;
-      font-size: 20px;
-      &.tag {
-        fill: @red;
-        cursor: default;
-      }
-    }
-    line, polyline { stroke: @light-red; }
-    path {
-      stroke: @light-red;
-      fill: @light-red;
     }
   }
 }

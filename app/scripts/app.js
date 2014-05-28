@@ -6,6 +6,7 @@ var app = angular.module(
   , 'ngRoute'
   , 'ngAnimate'
   , 'pascalprecht.translate'
+  , 'duScroll'
   , 'rpApp.services'
   , 'rpApp.controllers'
   , 'rpApp.directives'
