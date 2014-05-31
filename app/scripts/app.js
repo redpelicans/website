@@ -17,10 +17,11 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
   $routeProvider
     .when('/', {
       templateUrl: 'views/home.html'
+    , controller: 'HomeCtrl'
     })
-    .when('/services/:stateId', {
+    .when('/services', {
       templateUrl: 'views/services.html'
-    // , controller: 'ServicesCtrl'
+    , controller: 'ServicesCtrl'
     })
     .otherwise({
       redirectTo: '/'

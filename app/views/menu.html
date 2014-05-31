@@ -7,7 +7,7 @@
       <li ng-repeat="item in menu.items">
       <a ng-href="{{ item.url }}" ng-click="menu.change(item)" ng-class="{active: item === menu.current }">
           <span class="glyphicon glyphicon-{{ item.icon }}"></span>
-          {{ 'MENU.'+item.name | translate }}
+          {{ 'MENU.'+item.name | uppercase | translate }}
         </a>
       </li>
     </ul>
