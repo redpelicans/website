@@ -7,3 +7,5 @@ bower_modules
 dist
 app/index.html
 app/.styles
+
+.DS_Store
