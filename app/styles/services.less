@@ -1,22 +1,56 @@
 @import 'globals';
 @import './mixins/hexagon';
+@import './mixins/transition';
 @import './mixins/transform';
 
 .services {
-  nav {
-    .row > div {
-      a {
-        background: url('../images/hex-shape-border.svg') center center no-repeat;
-        background-size: contain;
-        position: relative;
-        padding: 20px;
-        text-align: center;
-        display: block;
-        text-decoration: none;
-        color: @grey;
-        font-size: 50px;
-        span { top: 10px; }
+  .splash {
+    h2 { margin-top: 60px; }
+    nav {
+      margin: 40px 0 20px 0;
+      .row > div {
+        a {
+          background: url('../images/hex-border.svg') center center no-repeat;
+          background-size: contain;
+          position: relative;
+          padding: 20px;
+          text-align: center;
+          display: block;
+          text-decoration: none;
+          color: @grey;
+          font-size: 50px;
+          span { top: 10px; }
+          .transition();
+          &:hover {
+            color: @white;
+            .transform(translateY(10px));
+          }
+        }
+        h3 {
+          font-size: 14px;
+          text-align: center;
+          margin-bottom: 0;
+          text-transform: uppercase;
+        }
+        p {
+          text-align: center;
+          font-size: 12px;
+        }
       }
+    }
+  }
+  &>.container>.row {
+    padding: 20px;
+    h3 {
+      color: @red;
+      text-transform: uppercase;
+      font-size: 26px;
+      padding: 30px 0 15px 0;
+    }
+    img {
+      margin: 40px 0;
+      width: 100%;
+      height: auto;
     }
   }
 }

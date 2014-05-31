@@ -1,153 +1,76 @@
 <div class="services">
   <div ng-include="'views/services/splash.html'"></div>
-  <nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3">
-          <a href="#nosql" du-smooth-scroll du-scrollspy>
-            <span class="glyphicon glyphicon-leaf"></span>
-          </a>
-          <h2>{{ 'SERVICES.NOSQL' | translate }}</h2>
-          <p>{{ 'SERVICES.NOSQL.P' | translate}}</p>
-        </div>
-        <div class="col-lg-3">
-          <a href="#node" du-smooth-scroll du-scrollspy>
-            <span class="glyphicon glyphicon-hdd"></span>
-          </a>
-          <h2>{{ 'SERVICES.NOSQL' | translate }}</h2>
-          <p>{{ 'SERVICES.NOSQL.P' | translate}}</p>
-        </div>
-        <div class="col-lg-3">
-          <a href="#rich-web-application" du-smooth-scroll du-scrollspy>
-            <span class="glyphicon glyphicon-dashboard"></span>
-          </a>
-          <h2>{{ 'SERVICES.NOSQL' | translate }}</h2>
-          <p>{{ 'SERVICES.NOSQL.P' | translate}}</p>
-        </div>
-        <div class="col-lg-3">
-          <a href="#data-visualisation" du-smooth-scroll du-scrollspy>
-            <span class="glyphicon glyphicon-stats"></span>
-          </a>
-          <h2>{{ 'SERVICES.NOSQL' | translate }}</h2>
-          <p>{{ 'SERVICES.NOSQL.P' | translate}}</p>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- <div class="splash"> -->
-  <!--   <rp&#45;line data&#45;overrides="top condensed"> -->
-  <!--     <h3 class="text&#45;center" translate>Our offer</h3> -->
-  <!--   </rp&#45;line> -->
-  <!--   <div class="container"> -->
-  <!--     <div class="row"> -->
-  <!--       <div class="col&#45;lg&#45;4"> -->
-  <!--         <div class="block"> -->
-  <!--           <span>.JS</span> -->
-  <!--           <p> -->
-  <!--             L’objet de RedPelicans est de promouvoir la construction de Systèmes -->
-  <!--             d’Information à base de solutions open source et plus particulièrement -->
-  <!--             autour de solutions Javascript. -->
-  <!--           </p> -->
-  <!--         </div> -->
-  <!--       </div> -->
-  <!--       <div class="col&#45;lg&#45;4"> -->
-  <!--         <div class="block"> -->
-  <!--           <span class="glyphicon glyphicon&#45;send"></span> -->
-  <!--           <p> -->
-  <!--             Vous souhaitez profiter des solutions Mongodb, Nodejs, AngularJS et -->
-  <!--             D3, mais préférez être accompagnés, RedPelicans est présent et à votre -->
-  <!--             service pour vous faire profiter de l’expérience de ses consultants. -->
-  <!--           </p> -->
-  <!--         </div> -->
-  <!--       </div> -->
-  <!--       <div class="col&#45;lg&#45;4"> -->
-  <!--         <div class="block"> -->
-  <!--           <span>30y</span> -->
-  <!--           <p> -->
-  <!--             Les associés de RedPelicans comptabilisent plus de 30 ans -->
-  <!--             d’expérience dans les métiers de l’informatique liés à la finance -->
-  <!--             dont 20 de directions informatiques au sein d’acteurs majeurs. -->
-  <!--           </p> -->
-  <!--         </div> -->
-  <!--       </div> -->
-  <!--     </div> -->
-  <!--     <div class="row"> -->
-  <!--       <rp&#45;line data&#45;overrides="top condensed"> -->
-  <!--         <h3 class="text&#45;center" translate> -->
-  <!--           Nous mettons à votre disposition nos ingénieurs en forfait ou en régie -->
-  <!--           pour satisfaire vos besoins: -->
-  <!--         </h3> -->
-  <!--       </rp&#45;line> -->
-  <!--       <div class="col&#45;lg&#45;4"> -->
-  <!--         <ul> -->
-  <!--           <li>Urbanisation du Système d’Information</li> -->
-  <!--           <li>Urbanisation du Système d’Information</li> -->
-  <!--           <li>Urbanisation du Système d’Information</li> -->
-  <!--         </ul> -->
-  <!--       </div> -->
-  <!--       <div class="col&#45;lg&#45;4"> -->
-  <!--         <ul> -->
-  <!--           <li>Urbanisation du Système d’Information</li> -->
-  <!--           <li>Urbanisation du Système d’Information</li> -->
-  <!--           <li>Urbanisation du Système d’Information</li> -->
-  <!--         </ul> -->
-  <!--       </div> -->
-  <!--       <div class="col&#45;lg&#45;4"> -->
-  <!--         <ul> -->
-  <!--           <li>Urbanisation du Système d’Information</li> -->
-  <!--           <li>Urbanisation du Système d’Information</li> -->
-  <!--           <li>Urbanisation du Système d’Information</li> -->
-  <!--         </ul> -->
-  <!--       </div> -->
-  <!--     </div> -->
-  <!--   </div> -->
-  <!-- </div> -->
-  <!--  -->
-  <!-- <div class="splash2"> -->
-  <!--   <div class="container"> -->
-  <!--   </div> -->
-  <!-- </div> -->
   <div class="container">
+    <div class="row">
+      <h3>{{ "SERVICES.CONSULTING.H" | translate }}</h3>
+      <div class="col-lg-6">
+        <p>{{ "SERVICES.CONSULTING.P1" | translate }}</p>
+      </div>
+      <div class="col-lg-6">
+        <p>{{ "SERVICES.CONSULTING.P2" | translate }}</p>
+      </div>
+      <p>{{ "SERVICES.CONSULTING.P3" | translate }}</p>
+    </div>
     <div id="nosql" class="row">
       <div class="col-lg-6">
-        <span class="glyphicon glyphicon-leaf"></span>
+        <img src="images/mongodb.png" />
       </div>
       <div class="col-lg-6">
-        <h3>NOSQL</h3>
-        <p>The first thing to talk about is types. The dynamic revolution has
-        happened, static types are definitely not “in”. However, what most
-        people rail against in type systems is essentially the Java
-        implementation. Dart takes a very different, more tasteful approach.
-        
-        First, there is no runtime type checking. The type system is only there
-        to catch a certain class of compile time errors for you, provide
-        documentation, and give you the tools to express protocols and
-        interfaces explicitly. If you don’t want to use static typing for
-        something, you don’t have to. In fact, the official Dart style guide
-        says type annotations should only be used in method / class signatures.
-        What that means is that we are going from building out documentation
-        like this</p>
+        <h3>{{ "SERVICES.NOSQL.H" | translate }}</h3>
+        <div class="row">
+          <div class="col-lg-6">
+            <p>{{ "SERVICES.NOSQL.CONTENT.P1" | translate }}</p>
+          </div>
+          <div class="col-lg-6">
+            <p>{{ "SERVICES.NOSQL.CONTENT.P2" | translate }}</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div id="node" class="row">
+    <div id="backend" class="row">
       <div class="col-lg-6">
-        <h3>NODE</h3>
-        <p>The first thing to talk about is types. The dynamic revolution has
-        happened, static types are definitely not “in”. However, what most
-        people rail against in type systems is essentially the Java
-        implementation. Dart takes a very different, more tasteful approach.
-        
-        First, there is no runtime type checking. The type system is only there
-        to catch a certain class of compile time errors for you, provide
-        documentation, and give you the tools to express protocols and
-        interfaces explicitly. If you don’t want to use static typing for
-        something, you don’t have to. In fact, the official Dart style guide
-        says type annotations should only be used in method / class signatures.
-        What that means is that we are going from building out documentation
-        like this</p>
+        <h3>{{ "SERVICES.BACKEND.H" | translate }}</h3>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>{{ "SERVICES.BACKEND.CONTENT.P1" | translate }}</p>
+            <p>{{ "SERVICES.BACKEND.CONTENT.P2" | translate }}</p>
+            <p>{{ "SERVICES.BACKEND.CONTENT.P3" | translate }}</p>
+          </div>
+        </div>
       </div>
       <div class="col-lg-6">
-        <span class="glyphicon glyphicon-hdd"></span>
+        <img src="images/nodejs.png" />
+      </div>
+    </div>
+    <div id="frontend" class="row">
+      <div class="col-lg-6">
+        <img src="images/angularjs.png" />
+      </div>
+      <div class="col-lg-6">
+        <h3>{{ "SERVICES.FRONTEND.H" | translate }}</h3>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>{{ "SERVICES.FRONTEND.CONTENT.P1" | translate }}</p>
+            <p>{{ "SERVICES.FRONTEND.CONTENT.P2" | translate }}</p>
+            <p>{{ "SERVICES.FRONTEND.CONTENT.P3" | translate }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="datavisualization" class="row">
+      <div class="col-lg-6">
+        <h3>{{ "SERVICES.DATAVISUALIZATION.H" | translate }}</h3>
+        <div class="row">
+          <div class="col-lg-6">
+            <p>{{ "SERVICES.DATAVISUALIZATION.CONTENT.P1" | translate }}</p>
+          </div>
+          <div class="col-lg-6">
+            <p>{{ "SERVICES.DATAVISUALIZATION.CONTENT.P2" | translate }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/d3js.png" />
       </div>
     </div>
   </div>
