@@ -15,6 +15,7 @@
     "angular-translate-loader-static-files": "2.0.0",
     "angular-touch": "~1.2",
     "angular-animate": "~1.2",
-    "angular-scroll": "~0.5.7"
+    "angular-scroll": "~0.5.7",
+    "headroom.js": "~0.6.0"
   }
 }

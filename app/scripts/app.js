@@ -7,6 +7,7 @@ var app = angular.module(
   , 'ngAnimate'
   , 'pascalprecht.translate'
   , 'duScroll'
+  , 'headroom'
   , 'rpApp.services'
   , 'rpApp.controllers'
   , 'rpApp.directives'
