@@ -8,28 +8,24 @@
   .content {
     .row > div {
       background: url('../images/hex-border.svg') center center no-repeat;
-      background-size: contain;
-      padding: 50px;
-      position: relative;
-      p { height: 120px; }
-      &.center { background: none; }
-      &>div {
-        padding: 50px;
+      background-size: cover;
+      div {
+        position: relative;
+        padding: 0 25px;
+        margin: 70px 0;
+        p { min-height: 120px; }
+      }
+      &.center {
         background: url('../images/hex-shape-border.svg') center center no-repeat;
-        background-size: contain;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        // height: 100%;
-        height: 345px;
-        width: 100%;
-        margin: -50% 0 0 -50%;
-        h3 {
-          color: @grey;
-          border-color: @dark-red;
+        background-size: cover;
+        div {
+          h3 {
+            color: @grey;
+            border-color: @dark-red;
+          }
+          p { color: @grey; }
+          h4 span { color: @grey; }
         }
-        p { color: @grey; }
-        h4 span { color: @grey; }
       }
     } 
     h3 {
