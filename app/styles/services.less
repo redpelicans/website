@@ -4,44 +4,92 @@
 @import './mixins/transform';
 
 .services {
+  nav {
+    .row > div {
+      a {
+        background: url('../images/hex-border.svg') center center no-repeat;
+        background-size: contain;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        color: @grey;
+        .transition();
+        &:hover { color: @white; }
+      }
+      h3 {
+        text-align: center;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        color: @grey;
+      }
+      p {
+        text-align: center;
+        color: @grey;
+      }
+    }
+  }
+  .headroom {
+    visibility: hidden;
+    position: fixed;
+    z-index: 999;
+    top: 45px;
+    left: 0;
+    right: 0;
+    background-color: @red;
+    border-bottom: 1px solid @dark-red;
+    .transition();
+    nav {
+      padding: 10px 0;
+      .row {
+        position: relative;
+        & > div > div {
+          text-align: center;
+          a {
+            padding: 5px;
+            background: none;
+            background-color: @red;
+            font-size: 28px;
+            &.active { color: @dark-red; }
+          }
+          h3 {
+            font-size: 12px;
+            margin-top: 0;
+          }
+          p { display: none; }
+        }
+        .line {
+          border-top: 1px dotted @grey;
+          position: absolute;
+          top: 15px;
+          right: 120px;
+          left: 120px;
+          display: block;
+          z-index: -1;
+        }
+      }
+    }
+    &.headroom--unpinned, &.headroom--top {
+      .transform(translateY(-100%));
+    }
+    &.headroom--not-top {
+      visibility: visible;
+      .transform(translateY(0%));
+    }
+  }
   .splash {
     h2 { margin-top: 60px; }
-    .headroom--pinned {
-    }
-    .headroom--unpinned {
-      position: fixed;
-      top: 70;
-    }
     nav {
       margin: 40px 0 20px 0;
       .row > div {
         a {
-          background: url('../images/hex-border.svg') center center no-repeat;
-          background-size: contain;
-          position: relative;
           padding: 20px;
-          text-align: center;
-          display: block;
-          text-decoration: none;
-          color: @grey;
           font-size: 50px;
+          display: block;
           span { top: 10px; }
-          .transition();
-          &:hover {
-            color: @white;
-            .transform(translateY(10px));
-          }
+          &:hover { .transform(translateY(10px)); }
         }
-        h3 {
-          font-size: 14px;
-          text-align: center;
-          margin-bottom: 0;
-          text-transform: uppercase;
-        }
-        p {
-          text-align: center;
-          font-size: 12px;
-        }
+        h3 { font-size: 15px; }
+        p { font-size: 12px; }
       }
     }
   }
