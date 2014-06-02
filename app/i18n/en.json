@@ -21,23 +21,23 @@
     "UNDERLINE": "We carry out IT consultancy assignments and we develop your strategic applications... <span>In the javascript way.</span>",
     "NOSQL": {
       "H": "NoSQL",
-      "P": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect."
+      "P": "NoSQL databases, like MongoDB, the leading solution, evolve businesses to be more agile, cost effective and perfectly scalable to satisfy big data needs."
     },
     "DATAVISUALIZATION": {
       "H": "Data-Visualization",
-      "P": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect."
+      "P": "Data is the new oil, D3 the solution to enlighten your web applications, reports, financial dashboard and quant tools in a HTML5 manner."
     },
     "FRONTEND": {
       "H": "Rich Web Application",
-      "P": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect."
+      "P": "Today's HTML5 framework like AngularJS provides a robust set of features for building single and multi-page web applications extraordinarily expressive, readable, and quick to develop."
     },
     "BACKEND": {
       "H": "Application server",
-      "P": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect."
+      "P": "Node.js is a platform built on Google's JavaScript runtime for easily building fast, scalable, cost effective network applications, capable of delivering better results than existing web framwork or legacy application server."
     },
     "CONSULTING": {
       "H": "Consulting",
-      "P": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect."
+      "P": "You want to benefit from Full Stack Javascript solutions with some guidances ? RedPelicans will help you to turn your ideas into reality, thanks to the pertinence and the expertise of its consultants."
     }
   },
   "SERVICES": {

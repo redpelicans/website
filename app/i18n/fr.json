@@ -1,2 +1,93 @@
 {
+  "REDPELICANS": "redpelicans",
+  "CONTACTUS": "Contact us",
+  "EMAILUS": "Email us at contact@redplicans.com",
+  "TALKUS": "Want to talk to us about your project?",
+  "MENU": {
+    "HOME": "Home",
+    "SERVICES": "Services",
+    "STORIES": "Stories",
+    "LAB": "Lab"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Copyright &copy;2014",
+    "RIGHTS": "All rights reserved"
+  },
+  "HOME": {
+    "SPLASH": {
+      "CATCH": "Full Stack Javascript Company",
+      "MISSION": "We are dedicated to helping businesses succeed with full stack javascript through strategic consulting and support."
+    },
+    "UNDERLINE": "We carry out IT consultancy assignments and we develop your strategic applications... <span>In the javascript way.</span>",
+    "NOSQL": {
+      "H": "NoSQL",
+      "P": "NoSQL databases, like MongoDB, the leading solution, evolve businesses to be more agile, cost effective and perfectly scalable to satisfy big data needs."
+    },
+    "DATAVISUALIZATION": {
+      "H": "Data-Visualization",
+      "P": "Data is the new oil, D3 the solution to enlighten your web applications, reports, financial dashboard and quant tools in a HTML5 manner."
+    },
+    "FRONTEND": {
+      "H": "Rich Web Application",
+      "P": "Today's HTML5 framework like AngularJS provides a robust set of features for building single and multi-page web applications extraordinarily expressive, readable, and quick to develop."
+    },
+    "BACKEND": {
+      "H": "Application server",
+      "P": "Node.js is a platform built on Google's JavaScript runtime for easily building fast, scalable, cost effective network applications, capable of delivering better results than existing web framwork or legacy application server."
+    },
+    "CONSULTING": {
+      "H": "Consulting",
+      "P": "Vous souhaitez profiter des solutions FullStack Javascript, mais préférez être accompagnés, RedPelicans est présent et à votre service pour vous faire profiter de l’expérience de ses consultants."
+    }
+  },
+  "SERVICES": {
+    "SPLASH": {
+      "CATCH": "We offer you solutions that really work"
+    , "MISSION": "We rely on Open Source and Javascript technologies to bring you efficient and powerful Information Systems which make the difference in your business."
+    },
+    "CONSULTING": {
+      "H": "Our Offer",
+      "CONTENT": {
+        "P1": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect.",
+        "P2": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect.",
+        "P3": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect."
+      }
+    },
+    "NOSQL": {
+      "H": "NoSQL",
+      "P": "MongoDB",
+      "CONTENT": {
+        "P1": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect.",
+        "P2": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect.",
+        "P3": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect."
+      }
+    },
+    "DATAVISUALIZATION": {
+      "H": "Data-Visualization",
+      "P": "D3JS",
+      "CONTENT": {
+        "P1": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect.",
+        "P2": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect.",
+        "P3": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect."
+      }
+    },
+    "FRONTEND": {
+      "H": "Rich Web Application",
+      "P": "AngularJS",
+      "CONTENT": {
+        "P1": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect.",
+        "P2": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect.",
+        "P3": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect."
+      }
+    },
+    "BACKEND": {
+      "H": "Application server",
+      "P": "NodeJS",
+      "CONTENT": {
+        "P1": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect.",
+        "P2": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect.",
+        "P3": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect."
+      }
+    }
+  }
 }
