@@ -1,9 +1,10 @@
 @import 'globals';
-@import './mixins/hexagon';
-@import './mixins/transition';
-@import './mixins/transform';
+@import './mixins/*';
+// @import './mixins/transition';
+// @import './mixins/transform';
 
 .services {
+  @import './services/splash';
   nav {
     .row > div {
       a {
@@ -75,24 +76,6 @@
     &.headroom--not-top {
       visibility: visible;
       .transform(translateY(0%));
-    }
-  }
-  .splash {
-    background-image: url('/images/pattern-dot-dark-red.png');
-    h2 { margin-top: 60px; }
-    nav {
-      margin: 40px 0 20px 0;
-      .row > div {
-        a {
-          padding: 20px;
-          font-size: 50px;
-          display: block;
-          span { top: 10px; }
-          &:hover { .transform(translateY(10px)); }
-        }
-        h3 { font-size: 15px; }
-        p { font-size: 12px; }
-      }
     }
   }
   &>.container>.row {
