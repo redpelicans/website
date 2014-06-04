@@ -1,3 +1,5 @@
+@imports '../globals';
+
 .hexagon(@size, @color) {
   @hex-coefficient: tan(30 * pi() / 180);
   @width: @size * 1px;
@@ -12,9 +14,7 @@
   background-color: @color;
   margin: @sp1 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  transform: translateX(-50%);
+  .transform(translateX(-50%));
 
   &:before, &:after {
     content: "";

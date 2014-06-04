@@ -1,0 +1,26 @@
+@import '../globals';
+
+nav {
+  .row > div {
+    a {
+      background: url('../images/hex-border.svg') center center no-repeat;
+      background-size: contain;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      color: @grey;
+      .transition();
+      &:hover { color: @white; }
+    }
+    h3 {
+      text-align: center;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      color: @grey;
+    }
+    p {
+      text-align: center;
+      color: @grey;
+    }
+  }
+}

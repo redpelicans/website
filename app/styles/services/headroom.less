@@ -1,0 +1,51 @@
+@import '../globals';
+
+.headroom {
+  visibility: hidden;
+  position: fixed;
+  z-index: 999;
+  top: 45px;
+  left: 0;
+  right: 0;
+  background-color: @red;
+  border-bottom: 1px solid @dark-red;
+  .transition();
+  nav {
+    padding: 10px 0;
+    .row {
+      position: relative;
+      & > div > div {
+        text-align: center;
+        a {
+          padding: 5px;
+          background: none;
+          background-color: @red;
+          font-size: 28px;
+          &.active { color: @dark-red; }
+        }
+        h3 {
+          font-size: 12px;
+          margin-top: 0;
+        }
+        p { display: none; }
+      }
+      .line {
+        border-top: 1px dotted @grey;
+        position: absolute;
+        top: 15px;
+        right: 120px;
+        left: 120px;
+        display: block;
+        z-index: -1;
+        display: none;
+      }
+    }
+  }
+  &.headroom--unpinned, &.headroom--top {
+    .transform(translateY(-100%));
+  }
+  &.headroom--not-top {
+    visibility: visible;
+    .transform(translateY(0%));
+  }
+}
