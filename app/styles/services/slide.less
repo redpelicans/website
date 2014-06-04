@@ -1,0 +1,36 @@
+@import '../globals';
+
+.slide {
+  text-align: center;
+  h2 {
+    color: @red;
+    margin: 0;
+    padding: 60px 0;
+    font-size: 20px;
+    span { color: @dark-grey; }
+  }
+  .head {
+    span {
+      font-size: 60px;
+      color: @red;
+    }
+  }
+  .body {
+    padding-bottom: 60px;
+    h3 {
+      color: @red;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 20px 0 25px 0;
+      font-size: 22px;
+    }
+    p {
+      margin: 0 30px;
+      color: @dark-grey;
+    }
+    a {
+      margin-top: 30%;
+      .fade-link(@white, @red);
+    }
+  }
+}

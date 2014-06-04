@@ -4,6 +4,16 @@
   @import './services/nav';
   @import './services/headroom';
   @import './services/splash';
+  @import './services/slide';
+
+  .consulting1 {
+    background-image: url('/images/pattern-dot-white.png');
+    background-color: @light-grey;
+  }
+  .consulting2 {
+    background-image: url('/images/pattern-dot-light-grey.png');
+    background-color: @white;
+  }
 
   &>.container>.row {
     padding: 20px 0;
@@ -17,46 +27,6 @@
       margin: 40px 0;
       width: 100%;
       height: auto;
-    }
-  }
-  .head {
-    span {
-      font-size: 60px;
-      color: @red;
-    }
-  }
-  .body {
-    padding-bottom: 60px;
-    h3 {
-      color: @red;
-      text-transform: uppercase;
-      margin: 0;
-      padding: 20px 0 25px 0;
-      font-size: 22px;
-    }
-    p {
-      margin: 0 30px;
-      color: @dark-grey;
-    }
-  }
-  .consulting {
-    background-image: url('/images/pattern-dot-light-grey.png');
-    .row>div { text-align: center; }
-    .separator-grey {
-      text-align: left;
-      position: relative;
-      top: 12px;
-      span {
-        display: block;
-        .hexagon(20, @grey);
-      }
-    }
-    h2 {
-      color: @red;
-      margin: 0;
-      padding: 60px 0;
-      font-size: 20px;
-      span { color: @dark-grey; }
     }
   }
   .why-js {
