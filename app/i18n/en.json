@@ -50,23 +50,30 @@
       "P": "We strongly believe in <span>Javascript</span> and <span>Open Source</span> to bring your ideas to life.",
       "CONTENT": {
         "H1": "Pragmatic",
-        "P1": "Relying on open source allow us to always be on the cutting edge of the latest tools, frameworks, and libraries.<br /><br />We are able to build highly-maintainable software with a focus on solving domain problems instead of reinventing wheels.",
+        "P1": "Relying on open source allow us to always be on the cutting edge of the latest tools, frameworks, and libraries.<br /><br />We are able to build highly-maintainable software with a focus on solving domain problems.<br /><br /> We don't reinvent wheels.",
         "H2": "Dedicated",
         "P2": "You want benefit from latest Javascript technologies such as MongoDB, NodeJS, AngularJS and D3JS without taking any risk ?<br /><br />We are here for you.<br /><br />We can advice you, guide you to your next successful business solution.",
         "H3": "Skilled",
         "P3": "We are experienced.<br /><br />Since we account more than 30 years crafting information systems in the finance sector, included 20 in management among key players, we know what matters.<br /><br />This expertise could be yours.",
-        "LIST": {
-          "P": "Our engineers can work on-site or by contract to fulfill your needs and make your vision a reality.",
-          "LI1": "IT master plan",
-          "LI2": "Definition of technological strategy",
-          "LI3": "Projects management",
-          "LI4": "",
-          "LI5": "technologies assessment (benchmarks, prototype)",
-          "LI6": "",
-          "LI7": "",
-          "LI8": "Projects rescue",
-          "LI9": "Improve the User eXperience of your applications through Dataviz"
-        }
+        "H4": "Our engineers can work <span>on-site</span> or <span>by contract</span> to fulfill your needs and make your vision a reality.",
+        "H5": "What we can do",
+        "P5": "Web-Apps and Mobile development<br />Projects management<br />Projects rescue<br />Porting solutions to web-based technologies",
+        "H6": "We also can help you to",
+        "P6": "Define your IT master plan<br />Write your technical specifications<br />Normalize your workflow (Agile methodology)<br />Benchmark and Prototype to make sharp choices"
+      }
+    },
+    "WHYJS": {
+      "HT": "Why Javascript ?",
+      "PT": "Javascript has come a long way. From the early days in Netscape, to the dark ages after the dot-com bust, to a new era of creativity and adoption after 2006-2007. But we can look at JavaScript's progress in a way that admits less subjectivity.<br /><br />That is <span>performance</span>, <span>ecosystem size</span>, and <span>adoption</span>.",
+      "HB": "Javascript is enterprise ready.",
+      "PB": "Undeniably, the enterprises are coming. A rich startup ecosystem is growing around node.js, and big companies like <span>Yahoo</span>, <span>PayPal</span>, and  <span>LinkedIn</span> have invested a lot of resources into adopting it internally. Besides the web giants, NodeJS seems to be catching on in some companies you might not expect, like <span>Walmart</span>.",
+      "CONTENT": {
+        "H1": "Performance",
+        "P1": "This chart by shows performance on the Kraken benchmark, for browsers from Firefox 3.5 to Chrome 23, on the same hardware.",
+        "H2": "Ecosystem",
+        "P2": "The official package manager for NodeJS is npm. Over the last year it has grown to the tune of 10x in packages and traffic.",
+        "H3": "Adoption",
+        "P3": "Some studies show that JavaScript has supplanted Ruby as the language of choice for the plurality of new projects."
       }
     },
     "NOSQL": {

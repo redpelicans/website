@@ -65,6 +65,7 @@
           left: 120px;
           display: block;
           z-index: -1;
+          display: none;
         }
       }
     }
@@ -77,6 +78,7 @@
     }
   }
   .splash {
+    background-image: url('/images/pattern-dot-dark-red.png');
     h2 { margin-top: 60px; }
     nav {
       margin: 40px 0 20px 0;
@@ -107,10 +109,38 @@
       height: auto;
     }
   }
+  .head {
+    span {
+      font-size: 60px;
+      color: @red;
+    }
+  }
+  .body {
+    padding-bottom: 60px;
+    h3 {
+      color: @red;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 20px 0 25px 0;
+      font-size: 22px;
+    }
+    p {
+      margin: 0 30px;
+      color: @dark-grey;
+    }
+  }
   .consulting {
-    margin-bottom: 40px;
-    background-color: @light-grey;
+    background-image: url('/images/pattern-dot-light-grey.png');
     .row>div { text-align: center; }
+    .separator-grey {
+      text-align: left;
+      position: relative;
+      top: 12px;
+      span {
+        display: block;
+        .hexagon(20, @grey);
+      }
+    }
     h2 {
       color: @red;
       margin: 0;
@@ -118,25 +148,27 @@
       font-size: 20px;
       span { color: @dark-grey; }
     }
+  }
+  .why-js {
+    padding-top: 40px;
+    background-color: @light-grey;
+    .row>div { text-align: center; }
+    h2 {
+      color: @red;
+      text-transform: uppercase;
+      font-size: 26px;
+    }
+    h4 {
+      font-size: 14px;
+      span { color: @red; }
+    }
     .head {
-      span {
-        font-size: 60px;
-        color: @red;
-      }
+      span { color: @light-red; }
     }
     .body {
-      padding-bottom: 60px;
-      h3 {
-        color: @red;
-        text-transform: uppercase;
-        margin: 0;
-        padding: 20px 0 25px 0;
-        font-size: 22px;
-      }
-      p {
-        margin: 0 30px;
-        color: @dark-grey;
-      }
+      img { max-width: 100%; }
+      p { margin-bottom: 40px; }
+      span { font-style: italic; }
     }
   }
 }
