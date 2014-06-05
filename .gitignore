@@ -9,3 +9,5 @@ app/index.html
 app/.styles
 
 .DS_Store
+
+npm-debug.log
