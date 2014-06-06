@@ -1,9 +1,7 @@
+<div ng-include="'views/header.html'"></div>
 <div class="home">
   <div ng-include="'views/home/splash.html'"></div>
-
-  <rp-line data-overrides="top">
-    <h3 class="text-center" translate>{{ 'HOME.UNDERLINE' }}</h3>
-  </rp-line>
+  <div ng-include="'views/home/consulting1.html'"></div>
 
   <div class="content">
     <div class="container">
@@ -51,12 +49,7 @@
     </div>
   </div>
 
-  <rp-line data-overrides="bottom">
-    <h3 class="text-center" translate>{{ 'TALKUS' }}</h3>
-    <h4 class="text-center">
-      <a href="mailto:contact@redpelicans.com" translate>{{ 'EMAILUS' }}</a>
-    </h4>
-  </rp-line>
+  <div ng-include="'views/home/consulting2.html'"></div>
 </div>
 
 <div ng-include="'views/footer.html'"></div>

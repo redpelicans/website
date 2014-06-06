@@ -1,31 +1,6 @@
-@import './globals';
-@import './menu';
-
 .header {
-  z-index: 1000;
-  position: fixed;
-  top: 0;
-  height: 45px;
-  width: 100%;
-  background-color: @red;
-  border-bottom: 1px solid @dark-red;
-  text-align: center;
-  padding-top: 10px;
-  a {
-    text-decoration: none;
-    color: @grey;
-    .transition();
-    &:hover, &:active { color: @white; }
-    &.contact {
-      position: fixed;
-      top: 10px;
-      font-size: 20px;
-      display: block;
-      right: 15px;
-    }
-    &.brand {
-      font-size: 16px;
-      text-transform: uppercase;
-    }
-  }
+  @import './header/toggle';
+  @import './header/menu';
+  @import './header/contact';
+  @import './header/headroom';
 }
