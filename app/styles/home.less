@@ -9,38 +9,59 @@
     }
   }
   .content {
-    .row > div {
-      background: url('../images/hex-border.svg') center center no-repeat;
-      background-size: cover;
-      div {
-        position: relative;
-        padding: 0 25px;
-        margin: 70px 0;
-        p { min-height: 120px; }
+    background-image: url('/images/pattern-dot-light-grey.png');
+    background-color: @white;
+    padding: 50px 0;
+    .center-block { float: none; }
+    .center-row {
+      position: relative;
+      height: 135px;
+      &>.row {
+        position: absolute;
+        top: -55%;
       }
-      &.center {
-        background: url('../images/hex-shape-border.svg') center center no-repeat;
-        background-size: cover;
-        div {
-          h3 {
-            color: @grey;
-            border-color: @dark-red;
-          }
-          p { color: @grey; }
-          h4 span { color: @grey; }
-        }
-      }
-    } 
-    h3 {
-      color: @red;
-      font-size: 20px;
-      border-bottom: 1px solid @light-red;
-      padding-bottom: 7px;
-      text-transform: uppercase;
     }
-    h4 span {
-      color: @light-red;
-      font-size: 42px;
+    .hex {
+      &.red {
+        background: url('../images/hex-dark-red-red.svg') center center no-repeat;
+        background-size: cover;
+        color: @grey;
+      }
+      &.light-red {
+        background: url('../images/hex-red-light-red.svg') center center no-repeat;
+        background-size: cover;
+        color: @dark-red;
+      }
+      &.light-grey {
+        background: url('../images/hex-red-light-grey.svg') center center no-repeat;
+        background-size: cover;
+        color: @dark-red;
+      }
+      &.darker-grey {
+        background: url('../images/hex-darker-grey-dark-grey.svg') center center no-repeat;
+        background-size: cover;
+        color: @grey;
+      }
+      &.dark-grey {
+        background: url('../images/hex-dark-grey-grey.svg') center center no-repeat;
+        background-size: cover;
+        color: @dark-grey;
+      }
+      div {
+        margin: 80px 0;
+        min-height: 125px;
+        h3, h4, p {
+          margin: 0;
+          text-align: center;
+        }
+        h3 {
+          font-size: 18px;
+          text-transform: uppercase;
+          padding-top: 20px;
+        }
+        p { padding-top: 5px; }
+        span.glyphicon { font-size: 70px; }
+      }
     }
   }
 }
