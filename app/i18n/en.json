@@ -68,20 +68,33 @@
     , "MISSION": "We rely on Open Source and Javascript technologies to bring you efficient and powerful Information Systems which make the difference in your business."
     },
     "JAVASCRIPT1": {
-      "STRIP": "Why choosing Javascript ?",
-      "H1": "Javascript has come a long way. From the early days in Netscape, to the dark ages after the dot-com bust, to a new era of creativity and adoption after 2006-2007. But we can look at JavaScript's progress in a way that admits less subjectivity.<br /><span>That is performance, ecosystem size, and adoption.</span>",
-      "H2": "Undeniably, the enterprises are coming. A rich startup ecosystem is growing around NodeJS, and big companies like <span>Yahoo</span>, <span>PayPal</span>, and  <span>LinkedIn</span> have invested a lot of resources into adopting it internally. Besides the web giants, NodeJS seems to be catching on in some companies you might not expect, like <span>Walmart</span>.",
+      "H1": "&mdash; Why choosing Javascript?",
+      "P1": "Javascript has come a long way. From the early days in Netscape, to the dark ages after the dot-com bust, to a new era of creativity and adoption after 2006-2007. But we can look at JavaScript's progress in a way that admits less subjectivity.<br /><span>That is performance, ecosystem size and adoption.</span>",
+      "H2": "&mdash; Javascript is enterprise ready.",
+      "P2": "<span>Furthermore, the enterprises are coming.</span><br />A rich startup ecosystem is growing around NodeJS, and big companies like <span>Yahoo</span>, <span>PayPal</span>, and  <span>LinkedIn</span> have invested a lot of resources into adopting it internally. Besides the web giants, NodeJS seems to be catching on in some companies you might not expect, like <span>Walmart</span>.",
       "CONTENT": {
         "H1": "Performance",
         "P1": "This chart by shows performance on the Kraken benchmark, for browsers from Firefox 3.5 to Chrome 23, on the same hardware.",
+        "S1": "<a href='http://krakenbenchmark.mozilla.org/'>krakenbenchmark</a>",
         "H2": "Ecosystem",
         "P2": "The official package manager for NodeJS is npm. Over the last year it has grown to the tune of 10x in packages and traffic.",
+        "S2": "<a href='https://github.com/'>github</a>",
         "H3": "Adoption",
-        "P3": "Some studies show that JavaScript has supplanted Ruby as the language of choice for the plurality of new projects."
+        "P3": "Some studies show that JavaScript has supplanted Ruby as the language of choice for the plurality of new projects.",
+        "S3": "<a href='http://modulecounts.com/'>modulecounts</a>"
       }
     },
     "JAVASCRIPT2": {
-      "STRIP": "Because Javascript is enterprise ready."
+      "H1": "&mdash; Why using Full Stack Javascript?",
+      "P1": "The concept is to use a single language for the complete development life cycle of a rich web application.",
+      "H2": "&mdash; Full Stack Javascript hits all the marks",
+      "P2": "You want to use technologies that allow for rapid development, constant iteration, maximal efficiency, speed, robustness and more. You want to be lean and you want to be agile. You want to use technologies that will help you succeed in the short and long term.",
+      "CONTENT": {
+        "H1": "Client-side",
+        "P1": "JavaScript was designed for the Internet. It’s been here since the beginning, and it’s not going away. Replacing JavaScript without breaking millions of Web pages is impossible, so our goal going forward should be to improve it. And no one is better suited for the job than Technical Committee 39 of ECMA.",
+        "H2": "Server-side",
+        "P2": "JavaScript was actually born server-side in Netscape Enterprise Server, but the language simply wasn’t ready at the time. After years of trial and error, NodeJS finally emerged, which not only put JavaScript on the server, but also promoted the idea of non-blocking programming"
+      }
     },
     "NOSQL": {
       "H": "NoSQL",

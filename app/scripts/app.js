@@ -8,6 +8,7 @@ var app = angular.module(
   , 'pascalprecht.translate'
   , 'duScroll'
   , 'headroom'
+  , 'nvd3ChartDirectives'
   , 'rpApp.services'
   , 'rpApp.controllers'
   , 'rpApp.directives'
@@ -20,7 +21,7 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
       templateUrl: 'views/home.html'
     , controller: 'HomeCtrl'
     })
-    .when('/services', {
+    .when('/services/:id?', {
       templateUrl: 'views/services.html'
     , controller: 'ServicesCtrl'
     })

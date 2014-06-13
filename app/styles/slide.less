@@ -2,13 +2,37 @@
 
 .slide {
   text-align: center;
-  h2 {
+  padding: 60px 0;
+  .strip {
+    &.top {
+      h1 { padding-bottom: 5px; }
+      padding-bottom: 60px;
+    }
+    &.bottom {
+      h1 { padding-top: 5px; }
+      padding-top: 60px;
+    }
+    p { margin: 0; }
+    h1 {
+      color: @red;
+      font-size: 20px;
+      padding: 0;
+    }
+  }
+  h1 {
+    color: @dark-grey;
+    margin: 0;
+    padding-bottom: 60px;
+    font-size: 20px;
+  }
+  h2, h4 {
     color: @red;
     margin: 0;
-    padding: 60px 0;
+    padding-bottom: 60px;
     font-size: 20px;
     span { color: @dark-grey; }
   }
+  h4 { padding: 60px 0 0 0; }
   .head {
     span {
       font-size: 60px;
@@ -16,7 +40,6 @@
     }
   }
   .body {
-    padding-bottom: 60px;
     h3 {
       color: @red;
       text-transform: uppercase;
@@ -28,14 +51,21 @@
       margin: 0 30px;
       color: @dark-grey;
     }
-    a {
+    a.fade-link {
       margin-top: 30%;
       .fade-link(@light-grey, @red);
     }
     img {
-      margin: 40px 0;
+      margin: 40px 0 0 0;
       width: 100%;
       height: auto;
+    }
+    span {
+      a {
+        font-size: 12px;
+        font-style: italic;
+        color: @dark-grey;
+      }
     }
   }
 }

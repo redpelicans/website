@@ -5,6 +5,22 @@ var controllers = angular.module(
 , []
 );
 
+controllers.controller('AppCtrl', function($scope, $routeParams, $document, $location, $anchorScroll) {
+  $scope.$on('$viewContentLoaded', function() {
+    // console.log(document.getElementById('#'+$routeParams.id))
+    // var element = angular.element.find('#'+$routeParams.id);
+    // console.log(angular.element.find('#'+$routeParams.id))
+    // if ($routeParams.id) $document.scrollTo(element[0].height());
+
+    // var someElement = angular.element(document.getElementById($routeParams.id));
+    // console.log(someElement)
+    // $document.scrollToElement(someElement, 0, 2000);
+
+    $location.hash($routeParams.id);
+    $anchorScroll();
+  });
+});
+
 controllers.controller('MenuCtrl', function($scope, MenuSrvc) {
   $scope.menu = {};
 
@@ -28,7 +44,7 @@ controllers.controller("HomeCtrl", function($scope, MenuSrvc) {
   MenuSrvc.select("home");
 });
 
-controllers.controller("ServicesCtrl", function($scope, MenuSrvc) {
+controllers.controller("ServicesCtrl", function($scope, MenuSrvc, $routeParams, $document) {
   MenuSrvc.select("services");
 });
 
