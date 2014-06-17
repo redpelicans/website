@@ -5,26 +5,52 @@
 
   <div ng-include="'views/services/splash.html'"></div>
 
-  <div ng-include="'views/services/javascript1.html'"></div>
-  <div ng-include="'views/services/javascript2.html'"></div>
+  <div class="javascript">
+    <div ng-include="'views/services/javascript1.html'"></div>
+    <div ng-include="'views/services/javascript2.html'"></div>
+  </div>
 
-  <div class="container">
-    <div id="datavisualization" class="row">
-      <div class="col-lg-6">
-        <h3>{{ "SERVICES.DATAVISUALIZATION.H" | translate }}</h3>
-        <div class="row">
-          <div class="col-lg-6">
-            <p>{{ "SERVICES.DATAVISUALIZATION.CONTENT.P1" | translate }}</p>
-          </div>
-          <div class="col-lg-6">
-            <p>{{ "SERVICES.DATAVISUALIZATION.CONTENT.P2" | translate }}</p>
+  <div id="datavisualization">
+    <div class="glide">
+      <div class="head">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-lg-12">
+              <h3 translate>{{ "SERVICES.DATAVISUALIZATION.H" }}</h3>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <img src="images/d3js.png" />
+      <div class="container">
+          <div class="row text-center">
+            <div class="col-lg-10 col-lg-offset-1 top">
+              <p translate>{{ "SERVICES.DATAVISUALIZATION.CONTENT.P1" }}</p>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-lg-6 col-lg-offset-3">
+            <img src="images/d3js.png" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 text-right">
+            <h4 translate>{{ "SERVICES.DATAVISUALIZATION.CONTENT.H2" }}</h4>
+            <p translate>{{ "SERVICES.DATAVISUALIZATION.CONTENT.P2" }}</p>
+          </div>
+          <div class="col-lg-6 text-left">
+            <h4 translate>{{ "SERVICES.DATAVISUALIZATION.CONTENT.H3" }}</h4>
+            <p translate>{{ "SERVICES.DATAVISUALIZATION.CONTENT.P3" }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 text-center bottom">
+            <p translate>{{ "SERVICES.DATAVISUALIZATION.CONTENT.P4" }}</p>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="container">
     <div id="frontend" class="row">
       <div class="col-lg-6">
         <img src="images/angularjs.png" />
@@ -40,6 +66,8 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="container">
     <div id="backend" class="row">
       <div class="col-lg-6">
         <h3>{{ "SERVICES.BACKEND.H" | translate }}</h3>
@@ -55,18 +83,34 @@
         <img src="images/nodejs.png" />
       </div>
     </div>
-    <div id="nosql" class="row">
-      <div class="col-lg-6">
-        <img src="images/mongodb.png" />
-      </div>
-      <div class="col-lg-6">
-        <h3>{{ "SERVICES.NOSQL.H" | translate }}</h3>
-        <div class="row">
-          <div class="col-lg-6">
-            <p>{{ "SERVICES.NOSQL.CONTENT.P1" | translate }}</p>
+  </div>
+  <div id="nosql">
+    <div class="glide">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-10 col-lg-offset-1 top">
+            <h3 translate>{{ "SERVICES.NOSQL.H" }}</h3>
+            <p translate>{{ "SERVICES.NOSQL.CONTENT.P1" }}</p>
           </div>
-          <div class="col-lg-6">
-            <p>{{ "SERVICES.NOSQL.CONTENT.P2" | translate }}</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-lg-offset-3">
+            <img src="images/mongodb.png" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 text-right">
+            <h4 translate>{{ "SERVICES.NOSQL.CONTENT.H2" }}</h4>
+            <p translate>{{ "SERVICES.NOSQL.CONTENT.P2" }}</p>
+          </div>
+          <div class="col-lg-6 text-left">
+            <h4 translate>{{ "SERVICES.NOSQL.CONTENT.H3" }}</h4>
+            <p translate>{{ "SERVICES.NOSQL.CONTENT.P3" }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 text-center bottom">
+            <p translate>{{ "SERVICES.NOSQL.CONTENT.P4" }}</p>
           </div>
         </div>
       </div>

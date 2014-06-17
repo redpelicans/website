@@ -5,7 +5,7 @@
   "TALKUS": "Want to talk to us about your project?",
   "MENU": {
     "HOME": "Home",
-    "SERVICES": "Services",
+    "SERVICES": "Technologies",
     "STORIES": "Stories",
     "LAB": "Lab"
   },
@@ -64,17 +64,17 @@
   },
   "SERVICES": {
     "SPLASH": {
-      "CATCH": "We offer you solutions that really work"
-    , "MISSION": "We rely on Open Source and Javascript technologies to bring you efficient and powerful Information Systems which make the difference in your business."
+      "H1": "We offer you solutions that really work"
+    , "H2": "We use tools that enhance your <span>agility</span> and deliver <span>more value effectively</span>"
+    , "H3": "We rely on <span>Open Source</span> and <span>Javascript</span> technologies to bring you efficient and powerful Information Systems which make the difference in your business."
     },
     "JAVASCRIPT1": {
-      "H1": "&mdash; Why choosing Javascript?",
-      "P1": "Javascript has come a long way. From the early days in Netscape, to the dark ages after the dot-com bust, to a new era of creativity and adoption after 2006-2007. But we can look at JavaScript's progress in a way that admits less subjectivity.<br /><span>That is performance, ecosystem size and adoption.</span>",
-      "H2": "&mdash; Javascript is enterprise ready.",
-      "P2": "<span>Furthermore, the enterprises are coming.</span><br />A rich startup ecosystem is growing around NodeJS, and big companies like <span>Yahoo</span>, <span>PayPal</span>, and  <span>LinkedIn</span> have invested a lot of resources into adopting it internally. Besides the web giants, NodeJS seems to be catching on in some companies you might not expect, like <span>Walmart</span>.",
+      "H1": "Why choosing Javascript?",
+      "P1": "Announced in 1995 by Netscape and Sun, Javascript has come a long way.<br />It was primilary used to make page elements... blink!<br /><br />A lot has changed since then, now <span>Javascript is the Internet</span>.<br /><br />The language is pervasive in our browsers, our operating systems and tomorrow in the Internet of Things.<br />Javascript provides a firm foundation for your business since it steadily increase its performance, ecosystem size and adoption rate.",
+      "H2": "Last but not least, <span>big players</span> have joined the game.<br />Companies like Google, Yahoo, PayPal, LinkedIn, Netflix, DailyMail, Microsoft and Wallmart have invested a lot of resources into adopting it.<br /><br />Javascript is now considered as a mature and stable language.<br /><br /><span>Javascript is enterprise ready.</span>",
       "CONTENT": {
         "H1": "Performance",
-        "P1": "This chart by shows performance on the Kraken benchmark, for browsers from Firefox 3.5 to Chrome 23, on the same hardware.",
+        "P1": "This chart shows performance on the Kraken benchmark, for browsers from Firefox 3.5 to Chrome 23, on the same hardware.",
         "S1": "<a href='http://krakenbenchmark.mozilla.org/'>krakenbenchmark</a>",
         "H2": "Ecosystem",
         "P2": "The official package manager for NodeJS is npm. Over the last year it has grown to the tune of 10x in packages and traffic.",
@@ -85,33 +85,37 @@
       }
     },
     "JAVASCRIPT2": {
-      "H1": "&mdash; Why using Full Stack Javascript?",
-      "P1": "The concept is to use a single language for the complete development life cycle of a rich web application.",
-      "H2": "&mdash; Full Stack Javascript hits all the marks",
-      "P2": "You want to use technologies that allow for rapid development, constant iteration, maximal efficiency, speed, robustness and more. You want to be lean and you want to be agile. You want to use technologies that will help you succeed in the short and long term.",
+      "H1": "What is Full Stack Javascript?",
+      "P1": "We are currently witnessing two major changes on the software development scene which lead to a certitude:<br /><span>JavaScript will rule the world (wide web).</span>",
+      "P2": "The whole offers an extremely competitive Full Stack Javascript ecosystem compared to existings solutions like .net, Java, Ruby or Python.<br /><br /><span>Full Stack Javascript hits all the marks.</span>",
       "CONTENT": {
-        "H1": "Client-side",
-        "P1": "JavaScript was designed for the Internet. It’s been here since the beginning, and it’s not going away. Replacing JavaScript without breaking millions of Web pages is impossible, so our goal going forward should be to improve it. And no one is better suited for the job than Technical Committee 39 of ECMA.",
-        "H2": "Server-side",
-        "P2": "JavaScript was actually born server-side in Netscape Enterprise Server, but the language simply wasn’t ready at the time. After years of trial and error, NodeJS finally emerged, which not only put JavaScript on the server, but also promoted the idea of non-blocking programming"
+        "P1": "The browser becomes the evident execution platform and more and more functionality has moved to the client along with the rise of client-side frameworks which heavily rely on Javascript/HTML5/CSS3.<br />This process is not new but solutions (like AngularJS and D3JS) are now mature and ready for serious business.",
+        "P2": "Javascript is back on the server. This isn't a new phenomenon; Netscape already stuck Javascript in the server way back in 1996, without success. But the emergence of new frameworks like NodeJS or the new breed of NOSQL databases like MongoDB are likely to prove that Javascript, given the quality and speed of resulting apps, is about to become predominant on the server.",
+        "P3": "You want to use technologies that allow for rapid development, constant iteration, maximal efficiency, speed, robustness and more.<br /><span>You want to be lean and you want to be agile.</span><br />You want to use technologies that will help you succeed in the short and long term."
       }
     },
     "NOSQL": {
       "H": "NoSQL",
       "P": "MongoDB",
       "CONTENT": {
-        "P1": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect.",
-        "P2": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect.",
-        "P3": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect."
+        "P1": "MongoDB is a free and open-source document database, and the leading NoSQL database. MongoDB eschews the traditional table-based relational database structure in favor of JSON-like documents with dynamic schemas, making the integration of data in certain types of applications easier and faster.",
+        "H2": "Document oriented and schemaless",
+        "P2": "Unlike relational DBs, MongoDB stores all your data in collections of BSON documents and has no schema. Which in turn tremendously simplifies mapping between domain objects and DB.<br />Things like embedded/nested objects and arrays inside your domain objects are transparently stored in DB. In this way MongoDB becomes a perfect choice for domains with polymorphic data and/or for rapid software development where you basically can’t afford to spend too much time doing schema design. It reduce transactional semantics for performance.",
+        "H3": "Speed/Scaling",
+        "P3": "By keeping related data together in documents, queries can be much faster than in a relational database where related data is separated into multiple tables and then needs to be joined later. MongoDB also makes it easy to scale out your database. Autosharding allows you to scale your cluster linearly by adding more machines. It is possible to increase capacity without any downtime.<br />During our last migration project from Mysql/Rails to MongoDB/Node.js, we observed a huge performance gain (6x) for the last couple.",
+        "P4": "MongoDB remains a database and like these relational ancestors its implementation must be rigorous. Furthermore, it may not be suited for all cases and should be pick carefully. We crafted a portfolio managment application (7 years/men project) in a very competitive environment, using MongoDB ans NodeJS.<br />We achieved more than reading books, we not only know theory but we have a real, concrete long-time experience."
       }
     },
     "DATAVISUALIZATION": {
       "H": "Data-Visualization",
       "P": "D3JS",
       "CONTENT": {
-        "P1": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect.",
-        "P2": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect.",
-        "P3": "Never since the devising of gunpowder was the beginning of a battle so still. To us and to an observer about Ripley it would have had precisely the same effect."
+        "P1": "D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.",
+        "H2": "Data is the new oil",
+        "P2": "In 2006, Michael Palmer wrote &laquo;Data is the new oil! Data is just like crude. It’s valuable, but if unrefined it cannot really be used.&raquo;<br />The ability to take data, to be able to understand it, to process it, to extract value from it, to visualize it, to communicate it is going to be a hugely important skill in the next decades because now we really do have essentially free and ubiquitous data.<br />So the complimentary scarce factor is the ability to understand that data and extract value from it.<br />This ability is hugely easier when done through a Data-Visualization rather than from looking at the raw data or the simple statistics of the data.",
+        "H3": "From very smart people",
+        "P3": "In 2009, Professor Jeff Heer, Ph.D. student Mike Bostock, and M.S. student Vadim Ogievetsky of Stanford University's Visualization Group created Protovis, a JavaScript library to generate SVG graphics from data. The library received notable acceptance both by data visualization practitioners and academics.<br />In 2011, the development of Protovis was stopped to focus on a new project, D3JS. Informed by experiences with Protovis, Bostock, along with Heer and Ogievetsky, developed D3JS to provide a more expressive framework that, at the same time, focuses on web standards and provides improved performance.<br />Mike Bostock now works at The New York Times who sponsors his open source work.",
+        "P4": "The most important part of D3′s success is the position and approach it takes. It is not a graphics library, nor is it a data processing library. It doesn’t have pre-built charts that limit creativity. Instead, it has tools that make the connection between data and graphics easy. It sits right between the two, the perfect place for a library meant for data visualization."
       }
     },
     "FRONTEND": {
