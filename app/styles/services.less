@@ -5,7 +5,7 @@
   @import './services/headroom';
   @import './services/splash';
 
-  .javascript .javascript1, #datavisualization, #backend {
+  .javascript .javascript1, #datavisualization, #backend, .contact {
     background-image: url('/images/pattern-dot-grey.png');
     background-color: @light-grey;
   }
@@ -21,4 +21,7 @@
     }
   }
   #datavisualization img { max-width: none; }
+  .contact {
+    a { .fade-link(@light-grey, @red); }
+  }
 }
