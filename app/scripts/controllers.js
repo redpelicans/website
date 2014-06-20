@@ -46,6 +46,25 @@ controllers.controller("HomeCtrl", function($scope, MenuSrvc) {
 
 controllers.controller("ServicesCtrl", function($scope, MenuSrvc, $routeParams, $document) {
   MenuSrvc.select("services");
+
+  $scope.xAxisTickFormat = function() {
+    return function(d, i) { return d; };
+  }
+  $scope.exampleData = [
+                  {
+                      "key": "Series 1",
+                      "values": [ [ 1025409600000 , 0] , [ 1028088000000 , -6] ]
+  }
+  ]
+});
+
+controllers.controller("LogoCtrl", function($scope) {
+  $scope.logo = {
+    icon: 'send'
+  , size: 256
+  , color: 'cd4436'
+  , background: 'ffffff'
+  };
 });
 
 controllers.controller("StoriesCtrl", function($scope, MenuSrvc) {

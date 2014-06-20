@@ -4,62 +4,21 @@
   @import './services/nav';
   @import './services/headroom';
   @import './services/splash';
-  @import './services/glide';
 
-  .javascript {
-    .javascript1 {
-      background-image: url('/images/pattern-dot-grey.png');
-      background-color: @light-grey;
-    }
-    .javascript2 {
-      background-image: url('/images/pattern-dot-light-grey.png');
-      background-color: @white;
-      .strip.top { padding-bottom: 20px; }
-    }
-  }
-  .hex {
-    div {
-      margin: 95px 0 65px 0;
-      min-height: 205px;
-      p {
-        margin: 0;
-        padding-top: 5px;
-        span { color: @dark-grey; }
-      }
-    }
-  }
-  .center-row {
-    position: relative;
-    height: 205px;
-    margin-bottom: 60px;
-    &>.row {
-      margin: 0;
-      position: absolute;
-      top: -42%;
-    }
-  }
-
-  #nosql, #datavisualization {
+  .javascript .javascript1, #datavisualization, #backend {
     background-image: url('/images/pattern-dot-grey.png');
     background-color: @light-grey;
   }
-
-  #nosql, #datavisualization {
-    .glide {
-      background-repeat: no-repeat;
-      background-size: auto 20%;
-      background-position: bottom right;
-      img { margin-bottom: 30px; }
+  .javascript .javascript2, #frontend, #nosql {
+    background-image: url('/images/pattern-dot-light-grey.png');
+    background-color: @white;
+  }
+  #datavisualization, #frontend, #backend, #nosql {
+    img {
+      width: auto;
+      max-width: 500px;
+      padding-bottom: 40px;
     }
   }
-  #nosql {
-    .glide {
-      background-image: url('/images/mongodb-alpha.png');
-    }
-  }
-  #datavisualization {
-    .glide {
-      background-image: url('/images/d3js-alpha.png');
-    }
-  }
+  #datavisualization img { max-width: none; }
 }

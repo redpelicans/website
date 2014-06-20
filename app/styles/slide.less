@@ -41,7 +41,10 @@
     font-size: 20px;
     span { color: @dark-grey; }
   }
-  h4 { padding: 60px 0 0 0; }
+  h4 {
+    color: @semi-dark-grey;
+    padding: 60px 0 0 0;
+  }
   .head {
     span {
       font-size: 60px;
@@ -56,9 +59,17 @@
       padding: 20px 0 25px 0;
       font-size: 22px;
     }
+    h4 {
+      padding: 20px 0 25px 0;
+      font-size: 16px;
+    }
     p {
       margin: 0 30px 40px 30px;
       color: @dark-grey;
+      &.fat {
+        margin-left: 0;
+        margin-right: 0;
+      }
     }
     a.fade-link {
       margin-top: 30%;

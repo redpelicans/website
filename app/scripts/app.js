@@ -25,6 +25,10 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
       templateUrl: 'views/services.html'
     , controller: 'ServicesCtrl'
     })
+    .when('/logo', {
+      templateUrl: 'views/logo.html'
+    , controller: 'LogoCtrl'
+    })
     .otherwise({
       redirectTo: '/'
     });
@@ -37,3 +41,5 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
     .fallbackLanguage('en')
     .useCookieStorage();
 });
+
+app.value('duScrollEasing', function (t) { return t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1 });
