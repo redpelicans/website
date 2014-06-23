@@ -99,6 +99,17 @@
       "H": "NoSQL",
       "P": "MongoDB",
       "CONTENT": {
+        "P1": "A NoSQL database environment is a non-relational and largely distributed database system that enables rapid, ad-hoc organization and analysis of extremely high-volume, disparate data types.<br /><br /><span>Big Data is one of the key forces driving the growth and popularity of NoSQL for business.</span><br />The almost limitless array of data collection technologies ranging from simple online actions to point of sale systems to GPS tools to smartphones and tablets to sophisticated sensors – and many more – act as force multipliers for data growth.<br /><br />But you don't need to be Google or having Big Data problem to take benefits of NoSQL databases.",
+        "H2": "NoSQL is about performance and scalability",
+        "P2": "Because the way they are structured, relational databases usually scale vertically – a single server has to host the entire database to ensure reliability and continuous availability of data. This gets expensive quickly, places limits on scale, and creates a relatively small number of failure points for database infrastructure.<br />The solution is to scale horizontally, by adding servers instead of concentrating more capacity in a single server. NoSQL databases are cloud-friendly, offering high performance, high availability of data and high scalability at a little cost.",
+        "H3": "NoSQL is agile and pragmatic",
+        "P3": "Long gone is the twelve-to-eighteen month waterfall development cycle. Now small teams work in agile sprints, iterating quickly and pushing code every week or two, even every day. Relational databases requires schemas and may cause significant downtime each time a migration is needed. NoSQL databases are built to allow the insertion of data without a predefined schema. That makes it easy to make significant application changes in real-time, without worrying about service interruptions – which means development is faster, code integration is more reliable, and less database administrator time is needed.",
+        "H4": "MongoDB is cost-friendly",
+        "P4": "No more license.<br />Deploying MongoDB drastically lowers operational costs, since it's free, it's reduce administration time and it's speed up development time because it maps directly stored data to objects in modern objects-oriented languages.",
+        "H5": "MongoDB is our choice",
+        "P5": "Among all the NoSQL databases",
+        "P5": "MongoDB is technically on the cutting edge, has the largest and the most active community and is backed by a solid company even if the technology is open-source. We also have a 7 years/man experience implementing a portfolio management system that relies on MongoDB, that make us confident and fluent about the technology.",
+        "P6": "<span>MongoDB is currently used by big names, such as Cisco, LinkedIn, SAP and MTV.</span><br /><br /> But, NoSQL is a completely new approach and may not suit all the cases, we can help to understand it better and offer you some guidance in your decision making."
       }
     },
     "DATAVISUALIZATION": {
