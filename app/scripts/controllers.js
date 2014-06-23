@@ -5,19 +5,14 @@ var controllers = angular.module(
 , []
 );
 
-controllers.controller('AppCtrl', function($scope, $routeParams, $document, $location, $anchorScroll) {
+controllers.controller('AppCtrl', function($scope, $routeParams, $document, $location, $anchorScroll, $timeout) {
   $scope.$on('$viewContentLoaded', function() {
-    // console.log(document.getElementById('#'+$routeParams.id))
-    // var element = angular.element.find('#'+$routeParams.id);
-    // console.log(angular.element.find('#'+$routeParams.id))
-    // if ($routeParams.id) $document.scrollTo(element[0].height());
-
-    // var someElement = angular.element(document.getElementById($routeParams.id));
-    // console.log(someElement)
-    // $document.scrollToElement(someElement, 0, 2000);
-
-    $location.hash($routeParams.id);
-    $anchorScroll();
+    $document.scrollTop(0, 0);
+    if ($routeParams.id) {
+      $timeout(function() {
+        $document.scrollToElement(angular.element(document.getElementById($routeParams.id)), 120, 2000);
+      }, 1000);
+    }
   });
 });
 

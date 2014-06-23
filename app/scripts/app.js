@@ -43,3 +43,9 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
 });
 
 app.value('duScrollEasing', function (t) { return t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1 });
+
+app.run(function($rootScope, $location) {
+  $rootScope.$on('duScrollspy:becameActive', function($event, $element) {
+    // todo
+  });
+});
