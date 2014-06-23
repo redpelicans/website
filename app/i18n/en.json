@@ -5,7 +5,7 @@
   "TALKUS": "We want to help you, work with and make your ambitions a reality.<br /><span>Have an idea ? A project to be done ?</span>",
   "MENU": {
     "HOME": "Home",
-    "SERVICES": "Technologies",
+    "TECHNOLOGIES": "Technologies",
     "STORIES": "Stories",
     "LAB": "Lab"
   },
@@ -62,7 +62,7 @@
       }
     }
   },
-  "SERVICES": {
+  "TECHNOLOGIES": {
     "SPLASH": {
       "H1": "We offer you solutions that really work"
     , "H2": "We use tools that enhance your <span>agility</span> and deliver <span>more value effectively</span>"

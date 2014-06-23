@@ -21,9 +21,9 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
       templateUrl: 'views/home.html'
     , controller: 'HomeCtrl'
     })
-    .when('/services/:id?', {
-      templateUrl: 'views/services.html'
-    , controller: 'ServicesCtrl'
+    .when('/technologies/:id?', {
+      templateUrl: 'views/technologies.html'
+    , controller: 'TechnologiesCtrl'
     })
     .when('/logo', {
       templateUrl: 'views/logo.html'

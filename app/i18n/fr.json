@@ -5,7 +5,7 @@
   "TALKUS": "Want to talk to us about your project?",
   "MENU": {
     "HOME": "Home",
-    "SERVICES": "Services",
+    "TECHNOLOGIES": "Technologies",
     "STORIES": "Stories",
     "LAB": "Lab"
   },
@@ -40,7 +40,7 @@
       "P": "Vous souhaitez profiter des solutions FullStack Javascript, mais préférez être accompagnés, RedPelicans est présent et à votre service pour vous faire profiter de l’expérience de ses consultants."
     }
   },
-  "SERVICES": {
+  "TECHNOLOGIES": {
     "SPLASH": {
       "CATCH": "We offer you solutions that really work"
     , "MISSION": "We rely on Open Source and Javascript technologies to bring you efficient and powerful Information Systems which make the difference in your business."

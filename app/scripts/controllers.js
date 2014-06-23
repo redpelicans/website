@@ -44,8 +44,8 @@ controllers.controller("HomeCtrl", function($scope, MenuSrvc) {
   MenuSrvc.select("home");
 });
 
-controllers.controller("ServicesCtrl", function($scope, MenuSrvc, $routeParams, $document) {
-  MenuSrvc.select("services");
+controllers.controller("TechnologiesCtrl", function($scope, MenuSrvc, $routeParams, $document) {
+  MenuSrvc.select("technologies");
 
   $scope.xAxisTickFormat = function() {
     return function(d, i) { return d; };
