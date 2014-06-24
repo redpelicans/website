@@ -39,18 +39,16 @@ controllers.controller("HomeCtrl", function($scope, MenuSrvc) {
   MenuSrvc.select("home");
 });
 
-controllers.controller("TechnologiesCtrl", function($scope, MenuSrvc, $routeParams, $document) {
+controllers.controller("TechnologiesCtrl", function($scope, MenuSrvc, moment) {
   MenuSrvc.select("technologies");
 
-  $scope.xAxisTickFormat = function() {
-    return function(d, i) { return d; };
-  }
-  $scope.exampleData = [
-                  {
-                      "key": "Series 1",
-                      "values": [ [ 1025409600000 , 0] , [ 1028088000000 , -6] ]
-  }
-  ]
+  $scope.adoption = {};
+  $scope.adoption.data = [
+    {'key': 'Javascript', values: [[2014, 487971],[2013,327467],[2012,156521],[2011,60754],[2010,23095],[2009,8119],[2008,2060]]}
+  , {'key': 'Java', values: [[2014, 394101],[2013,230600],[2012,111277],[2011,46227],[2010,14342],[2009,4157],[2008,596]]}
+  ];
+  $scope.adoption.xAxisTickFormat = function() { return function(d, i) { return d; }; };
+  $scope.adoption.yAxisTickFormat = function() { return function(d, i) { return parseInt(d/1000)+'k'; }; };
 });
 
 controllers.controller("LogoCtrl", function($scope) {

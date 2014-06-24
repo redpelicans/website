@@ -37,7 +37,7 @@
     },
     "CONSULTING": {
       "H": "Consulting",
-      "P1": "You want to benefit from Full Stack Javascript solutions with some guidances? We are able to carry out for you the implementation of such solutions.",
+      "P1": "You want to benefit from <a href='/#/technologies/full-stack-javascript'>Full Stack Javascript</a> solutions with some guidances? We are able to carry out for you the implementation of such solutions.",
       "P2": "We can also help you to reach your next ambitious business vision thanks to a strong knowledge of IT workflows and methodologies."
     },
     "CONSULTING1": {
@@ -78,10 +78,10 @@
         "S1": "<a href='http://krakenbenchmark.mozilla.org/'>krakenbenchmark</a>",
         "H2": "Ecosystem",
         "P2": "The official package manager for NodeJS is npm. Over the last year it has grown to the tune of 10x in packages and traffic.",
-        "S2": "<a href='https://github.com/'>github</a>",
+        "S2": "<a href='http://modulecounts.com/'>modulecounts</a>",
         "H3": "Adoption",
         "P3": "Some studies show that JavaScript has supplanted Ruby as the language of choice for the plurality of new projects.",
-        "S3": "<a href='http://modulecounts.com/'>modulecounts</a>"
+        "S3": "<a href='https://github.com/'>github</a>"
       }
     },
     "JAVASCRIPT2": {
@@ -108,7 +108,7 @@
         "P4": "MongoDB is free, No more license.<br />Deploying MongoDB drastically lowers operational costs, since it's free, it's reduce administration time and it's speed up development time because it maps directly stored data to objects in modern objects-oriented languages.",
         "H5": "MongoDB is our choice",
         "P5": "Among all the NoSQL databases",
-        "P5": "MongoDB is technically on the cutting edge, has the largest and the most active community and is backed by a solid company even if the technology is open-source. We also have a 7 man-years experience implementing a portfolio management system that relies on MongoDB, that make us confident and fluent about the technology.",
+        "P5": "MongoDB is technically on the cutting edge, has the largest and the most active community and is backed by a solid company even if the technology is open-source. We also have a 7 man-year experience implementing a portfolio management system that relies on MongoDB, that make us confident and fluent about the technology.",
         "P6": "<span>MongoDB is currently used by big names, such as Cisco, LinkedIn, SAP and MTV.</span><br /><br /> But, NoSQL is a completely new approach and may not suit all the cases, we can help to understand it better and offer you some guidance in your decision making."
       }
     },

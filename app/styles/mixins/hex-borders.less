@@ -1,6 +1,10 @@
 @import '../globals';
 
 .hex {
+  a {
+    border-bottom: 1px dotted;
+    text-decoration: none;
+  }
   &.full-red {
     background: url('../images/hex-border-dark-red-bg-red.svg') center center no-repeat;
     background-size: cover;
@@ -10,6 +14,10 @@
     background: url('../images/hex-border-dark-red.svg') center center no-repeat;
     background-size: cover;
     color: @dark-red;
+    a {
+      color: @dark-red;
+      &:hover { color: @dark-grey; }
+    }
   }
   &.full-dark-grey {
     background: url('../images/hex-border-darker-grey-bg-dark-grey.svg') center center no-repeat;
@@ -20,5 +28,9 @@
     background: url('../images/hex-border-darker-grey.svg') center center no-repeat;
     background-size: cover;
     color: @dark-grey;
+    a {
+      color: @dark-grey;
+      &:hover { color: @red; }
+    }
   }
 }
