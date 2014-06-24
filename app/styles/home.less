@@ -32,8 +32,22 @@
           font-size: 18px;
           text-transform: uppercase;
           padding-top: 20px;
+          a {
+            border-bottom: 1px dotted;
+            text-decoration: none;
+            color: @grey;
+            &:hover { color: @white; }
+          }
         }
-        p { padding-top: 5px; }
+        p {
+          padding-top: 5px;
+          a {
+            border-bottom: 1px dotted;
+            text-decoration: none;
+            color: @dark-grey;
+            &:hover { color: @red; }
+          }
+        }
         span.glyphicon { font-size: 70px; }
       }
     }
