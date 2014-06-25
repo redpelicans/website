@@ -17,7 +17,18 @@
           <h3 translate>{{ "TECHNOLOGIES.JAVASCRIPT1.CONTENT.H1" }}</h3>
           <p translate>{{ "TECHNOLOGIES.JAVASCRIPT1.CONTENT.P1" }}</p>
           <span translate>{{ "TECHNOLOGIES.JAVASCRIPT1.CONTENT.S1" }}</span>
-          <img src="images/performance.png" />
+          <!-- <img src="images/performance.png" /> -->
+          <nvd3-multi-bar-horizontal-chart
+            class="rp-multi-bar-horizontal-chart"
+            data="performance.data"
+            xAxisTickFormat="performance.xAxisTickFormat()"
+            yAxisTickFormat="performance.yAxisTickFormat()"
+            color="performance.color()"
+            showXAxis="true"
+            showYAxis="false"
+            height="400"
+            margin="{left:120,top:0,bottom:0,right:0}">
+          </nvd3-multi-bar-horizontal-chart>
         </div>
       </div>
       <div class="col-lg-4">
@@ -28,7 +39,19 @@
           <h3 translate>{{ "TECHNOLOGIES.JAVASCRIPT1.CONTENT.H2" }}</h3>
           <p translate>{{ "TECHNOLOGIES.JAVASCRIPT1.CONTENT.P2" }}</p>
           <span translate>{{ "TECHNOLOGIES.JAVASCRIPT1.CONTENT.S2" }}</span>
-          <img src="images/ecosystem.png" />
+          <!-- <img src="images/ecosystem.png" /> -->
+          <nvd3-line-chart
+            class="rp-nvd3-line-chart"
+            data="ecosystem.data"
+            xAxisTickFormat="ecosystem.xAxisTickFormat()"
+            yAxisTickFormat="ecosystem.yAxisTickFormat()"
+            showXAxis="true"
+            showYAxis="true"
+            height="400"
+            margin="{left:25,top:0,bottom:14,right:12}"
+            showLegend="true"
+            interpolate="monotone">
+          </nvd3-line-chart>
         </div>
       </div>
       <div class="col-lg-4">
@@ -39,7 +62,19 @@
           <h3 translate>{{ "TECHNOLOGIES.JAVASCRIPT1.CONTENT.H3" }}</h3>
           <p translate>{{ "TECHNOLOGIES.JAVASCRIPT1.CONTENT.P3" }}</p>
           <span translate>{{ "TECHNOLOGIES.JAVASCRIPT1.CONTENT.S3" }}</span>
-          <img src="images/adoption.png" />
+          <!-- <img src="images/adoption.png" /> -->
+          <nvd3-line-chart
+            class="rp-nvd3-line-chart"
+            data="adoption.data"
+            xAxisTickFormat="adoption.xAxisTickFormat()"
+            yAxisTickFormat="adoption.yAxisTickFormat()"
+            showXAxis="true"
+            showYAxis="true"
+            height="400"
+            margin="{left:25,top:0,bottom:14,right:12}"
+            showLegend="true"
+            interpolate="monotone">
+          </nvd3-line-chart>
         </div>
       </div>
     </div>

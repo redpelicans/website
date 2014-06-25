@@ -1,0 +1,21 @@
+@import './globals';
+
+.rp-nvd3-line-chart, .rp-multi-bar-horizontal-chart {
+  svg text {
+    font-size: 10px;
+    fill: @dark-grey;
+    fill-opacity: .75;
+  }
+  .nv-y.nv-axis g g g.tick:first-child { visibility: hidden; }
+  .nv-x.nv-axis path.domain { stroke-opacity: .5; }
+  .nv-axis {
+    path.domain { stroke: @dark-grey; }
+    line { stroke: @grey; stroke-opacity: .5; }
+    .nv-axisMaxMin text { font-weight: normal; }
+  }
+}
+.rp-multi-bar-horizontal-chart {
+  .nv-axis {
+    line { visibility: hidden; }
+  }
+}

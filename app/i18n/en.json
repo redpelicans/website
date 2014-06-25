@@ -75,24 +75,24 @@
       "CONTENT": {
         "H1": "Performance",
         "P1": "This chart shows performance on the Kraken benchmark, for browsers from Firefox 3.5 to Chrome 23, on the same hardware.",
-        "S1": "<a href='http://krakenbenchmark.mozilla.org/'>krakenbenchmark</a>",
+        "S1": "Kraken Benchmark performance<br /><a href='https://github.com/idleberg/JavaScript-Performance-Charts'>(source krakenbenchmarkdata)</a>",
         "H2": "Ecosystem",
         "P2": "The official package manager for NodeJS is npm. Over the last year it has grown to the tune of 10x in packages and traffic.",
-        "S2": "<a href='http://modulecounts.com/'>modulecounts</a>",
+        "S2": "Monthly added modules<br /><a href='http://modulecounts.com/'>(source modulecounts)</a>",
         "H3": "Adoption",
         "P3": "Some studies show that JavaScript has supplanted Ruby as the language of choice for the plurality of new projects.",
-        "S3": "<a href='https://github.com/'>github</a>"
+        "S3": "New Github repositories by years<br /><a href='http://redmonk.com/dberkholz/2014/05/02/github-language-trends-and-the-fragmenting-landscape/'>(source redmonk)</a>"
       }
     },
     "JAVASCRIPT2": {
       "H1": "What is Full Stack Javascript?",
-      "P1": "We are currently witnessing two major changes on the software development scene which lead to a certitude:<br /><span>JavaScript will rule the world (wide web).</span>",
+      "P1": "We are currently witnessing two major changes on the software development industry which lead to a certitude:<br /><span>JavaScript will rule the world (wide web).</span>",
       "P2": "The whole offers an extremely competitive Full Stack Javascript ecosystem compared to existings solutions like .net, Java, Ruby or Python.<br /><br />You want to use technologies that allow for rapid development, constant iteration, maximal efficiency, speed, robustness and more.<br /><span>You want to be lean and you want to be agile.</span><br />You want to use technologies that will help you succeed in the short and long term.<br /><br /><span>Full Stack Javascript hits all the marks.</span>",
       "CONTENT": {
         "H1": "Rise of the client",
-        "P1": "The browser becomes the evident and trusted execution platform (no more security issue).<br />More and more functionality has moved to the client along with the rise of client-side frameworks which heavily rely on Javascript, HTML5 and CSS3.<br />This process is not new but solutions (like AngularJS and D3JS) are now mature and ready for serious business.",
+        "P1": "The browser becomes the evident and trusted execution platform.<br />More and more functionality has moved to the client along with the rise of client-side frameworks which heavily rely on Javascript, HTML5 and CSS3.<br />This process is not new but solutions (like AngularJS and D3JS) are now mature and ready for serious business.",
         "H2": "Back on the server",
-        "P2": "Javascript is back on the server.<br />This isn't a new phenomenon; Netscape already stuck Javascript in the server way back in 1996, without success. But the emergence of new frameworks like NodeJS or the new breed of NOSQL databases like MongoDB are likely to prove that Javascript, given the quality and speed of resulting apps, is about to become predominant on the server."
+        "P2": "Javascript is back on the server.<br />This isn't a new phenomenon; Netscape already stuck Javascript in the server way back in 1996. The emergence of new frameworks like NodeJS or the new breed of NOSQL databases like MongoDB are likely to prove that Javascript, given the quality and speed of resulting apps, is about to become a major server-side language."
       }
     },
     "NOSQL": {
@@ -108,7 +108,7 @@
         "P4": "MongoDB is free, No more license.<br />Deploying MongoDB drastically lowers operational costs, since it's free, it's reduce administration time and it's speed up development time because it maps directly stored data to objects in modern objects-oriented languages.",
         "H5": "MongoDB is our choice",
         "P5": "Among all the NoSQL databases",
-        "P5": "MongoDB is technically on the cutting edge, has the largest and the most active community and is backed by a solid company even if the technology is open-source. We also have a 7 man-year experience implementing a portfolio management system that relies on MongoDB, that make us confident and fluent about the technology.",
+        "P5": "MongoDB is technically on the cutting edge, has the largest and the most active community and is backed by a solid company even if the technology is open-source. <strong>We also have a 7 man-year experience implementing a portfolio management system that relies on MongoDB, that make us confident and fluent about the technology.</strong>",
         "P6": "<span>MongoDB is currently used by big names, such as Cisco, LinkedIn, SAP and MTV.</span><br /><br /> But, NoSQL is a completely new approach and may not suit all the cases, we can help to understand it better and offer you some guidance in your decision making."
       }
     },
@@ -137,7 +137,7 @@
         "P3": "Having the ability to scaffold a project quickly with all that you need is key to getting started and producing efficiently. AngularJS came about to standardize web application structure and provide a future template for how client-side apps should be developed. This not only allows you to quickly assemble something up, but it lays the roots for something way bigger to evolve.",
         "H4": "Focus on testing",
         "P4": "Having testable code is part of AngularJS philosophy.<br />Making it easy to write tests is crucial.<br />No matter how good the code is – if it’s not testable, it’s useless in the long run.",
-        "P5": "<span>AngularJS is a very high quality foundation for building great apps, and doing it quickly.</span><br /><br />The growing popularity of the framework is huge,<br />companies as big as Bank of America want to switch to AngularJS.",
+        "P5": "<span>AngularJS is a very high quality foundation for building great apps, and doing it quickly.</span><br /><br />The growing popularity of the framework is huge,<br />companies as big as well-known Banks want to switch to AngularJS.",
         "P6": "<br /><span>The reality is that AngularJS is winning the frontend framework war.</span>"
       }
     },
@@ -147,7 +147,7 @@
       "CONTENT": {
         "P1": "<span>Javascript is the Internet</span> since it's no longer just a client-side programming language.<br /><br />NodeJS is a way of running JavaScript on the server relying on the powerful Google Javascript runtime.<br />Created in 2009, it definitely left the early adopters behind to become a fully operational software platform for scalable server-side and network applications.<br /><br /><span>NodeJS</span> is in competition with Java, .Net, Python, Ruby and PHP solutions and has already be chosen by a number of large companies including <span>Groupon, Oracle, SAP, LinkedIn, Microsoft, Yahoo!, Walmart and PayPal</span>.",
         "H2": "High performance",
-        "P2": "Paypal chose to migrate of its most trafficked apps of from Java to NodeJs. They double the requests per second and decrease by 35% the average response time.<br />Groupon has decrease by 50% the loading time of their pages after rewrote their application server with NodeJS.<br />We became 6 times faster after a migration from MySQL/Rails to MongoDB/NodeJS.<br />LinkedIn moved from Rails to NodeJS and have a 27 servers cut (on 30).<br />The ability to process many requests/seconds with low response times make NodeJS a great choice for modern web applications that do lots of processing on the client.",
+        "P2": "Paypal chose to migrate of its most trafficked apps of from Java to NodeJs. They double the requests per second and decrease by 35% the average response time.<br />Groupon has decrease by 50% the loading time of their pages after rewrote their application server with NodeJS.<br /><strong>We became 6 times faster after a migration from MySQL/Rails to MongoDB/NodeJS.</strong><br />LinkedIn moved from Rails to NodeJS and have a 27 servers cut (on 30).<br />The ability to process many requests/seconds with low response times make NodeJS a great choice for modern web applications that do lots of I/O processing on the client.",
         "H3": "High productivity",
         "P3": "Paypal observes that a NodeJS application is built almost twice as fast with fewer people.<br />The NodeJS ecosystem is extremely prolific: new tools appear almost every day, increasing productivity. More than 65000 modules are currently available and its growth rate is faster than other’s ecosystems.<br />Since the framework was built for the commonly used JavaScript, the barriers to entry are remarkably low<br />and using one language allows code reuse between client and server, reducing the gap among front-end and back-end developers, introducing full stack developers.",
         "H4": "Flexible and Cost effective",
