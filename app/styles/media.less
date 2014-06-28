@@ -2,6 +2,25 @@
   .container { max-width: 970px; }
 }
 
+@media (max-width: 990px) {
+  .slide .body p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .home .content {
+    .center-row {
+      height: 176px;
+      .row { top: -54%; }
+    }
+    .hex {
+      div {
+        min-height: 207px;
+        p { font-size: 13px; }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .splash h1 { font-size: 130px; }
   .home .content .hex {
@@ -15,6 +34,7 @@
       p {
         font-size: 13px;
         padding: 0 5px;
+        &.thin { padding: 0; }
       }
     }
   }
