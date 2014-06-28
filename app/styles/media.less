@@ -19,6 +19,14 @@
       }
     }
   }
+  .technologies {
+    #datavisualization, #frontend, #backend, #nosql {
+      img {
+        max-height: 150px;
+        max-width: initial;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -35,6 +43,16 @@
         font-size: 13px;
         padding: 0 5px;
         &.thin { padding: 0; }
+      }
+    }
+  }
+  .technologies {
+    .headroom nav .row > div > div h3 { font-size: 9px; }
+    .slide .head { margin-top: 40px; }
+    #datavisualization, #frontend, #backend, #nosql {
+      img {
+        width: 100%;
+        max-width: initial;
       }
     }
   }
