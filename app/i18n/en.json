@@ -1,6 +1,8 @@
 {
   "REDPELICANS": "redpelicans",
   "CONTACTUS": "Contact us",
+  "HIRING": "We are hiring !",
+  "APPLYNOW": "Apply now",
   "EMAILUS": "Email us at contact@redplicans.com",
   "TALKUS": "We want to help you, work with and make your ambitions a reality.<br /><span>Have an idea ? A project to be done ?</span>",
   "MENU": {
@@ -60,6 +62,13 @@
         "P1": "Web-Apps and Mobile development<br /><br />Projects management<br /><br />Projects rescue<br /><br />Porting solutions to web-based technologies",
         "H2": "We also can help you to",
         "P2": "Define your IT master plan<br /><br />Write your technical specifications<br /><br />Normalize your workflow<br />(Agile methodology)<br /><br />Benchmark and Prototype to make your choices sharper"
+      }
+    },
+    "HIRING": {
+      "H": "We are looking for <span>fullstack javascript gurus</span> or <span>young talents</span> that are passionate about next generation web technologies.",
+      "CONTENT": {
+        "H": "We need you",
+        "P": "Expert in JavaScript and JavaScript frameworks such as Angularjs, having strong programming skills with experience in server-side with Node.js or genuinely motivated developer eager to learn new things are welcome.<br /><br />If you pay a strong attention to detail and have exceptional communication skills, can thrive in fast-paced, start-up environment where passion for great experience is at the forefront of all design & development, you'll feel at ease with us."
       }
     }
   },

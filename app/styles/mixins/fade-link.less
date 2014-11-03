@@ -1,10 +1,10 @@
 @import '../globals';
 
-.fade-link(@base: @red, @hover: @grey) {
+.fade-link(@base: @red, @hover: @light-grey, @border: @light-grey) {
   font-size: 16px;
   color: @hover;
   background-color: @base;
-  border: 1px solid @hover;
+  border: 1px solid @border;
   padding: 15px 25px;
   display: inline-block;
   position: relative;
@@ -12,6 +12,7 @@
   &:hover, &:active {
     color: @base;
     background-color: @hover;
+    border-color: @base;
     text-decoration: none;
   }
   &:after {

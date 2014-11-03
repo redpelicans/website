@@ -39,6 +39,9 @@
   h4 {
     margin-top: 25px;
     margin-bottom: 50px;
-    a { .fade-link(); }
+    a {
+      .fade-link();
+      &.hiring { .fade-link(@light-grey, @red, @light-grey); }
+    }
   }
 }
