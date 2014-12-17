@@ -37,6 +37,7 @@ controllers.controller('MenuCtrl', function($scope, MenuSrvc) {
 
 controllers.controller("HomeCtrl", function($scope, MenuSrvc) {
   MenuSrvc.select("home");
+  $scope.ready();
 });
 
 controllers.controller("TechnologiesCtrl", function($scope, MenuSrvc, moment) {

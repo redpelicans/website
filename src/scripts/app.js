@@ -47,7 +47,22 @@ app.value('duScrollEasing', function (t) { return t<.5 ? 4*t*t*t : (t-1)*(2*t-2)
 app.constant('moment', moment);
 
 app.run(function($rootScope, $location) {
-  $rootScope.$on('duScrollspy:becameActive', function($event, $element) {
-    // todo
-  });
+  var _getTopScope = function() { return $rootScope; };
+
+  $rootScope.ready = function() {
+    var $scope = _getTopScope();
+    $scope.status = 'ready';
+    console.log('ready');
+    if (!$scope.$$phase) $scope.$apply();
+  };
+
+  $rootScope.loading = function() {
+    var $scope = _getTopScope();
+    $scope.status = 'loading';
+    console.log('loading');
+    if (!$scope.$$phase) $scope.$apply();
+  };
+
+  $rootScope.$on('$routeChangeStart', function() { _getTopScope().loading(); });
+  $rootScope.$on('duScrollspy:becameActive', function($event, $element) { /* todo */ });
 });
