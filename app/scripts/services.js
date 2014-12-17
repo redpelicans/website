@@ -9,9 +9,9 @@ services.service("MenuSrvc", function() {
   var that = this;
   that.items = [
     { name: 'home', icon: 'home', url: '/' }
-  , { name: 'technologies', icon: 'briefcase', url: '/#/technologies' }
-  // , { name: 'stories', icon: 'book', url: '/#/stories' }
-  // , { name: 'lab', icon: 'cog', url: '/#/lab' }
+  , { name: 'technologies', icon: 'briefcase', url: '/#!/technologies' }
+  // , { name: 'stories', icon: 'book', url: '/#!/stories' }
+  // , { name: 'lab', icon: 'cog', url: '/#!/lab' }
   ];
   that.current;
   that.select = function(name) {

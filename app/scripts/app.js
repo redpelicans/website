@@ -33,7 +33,7 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
       redirectTo: '/'
     });
 
-  // $locationProvider.html5Mode(true);
+  $locationProvider.hashPrefix('!');
 
   $translateProvider
     .useStaticFilesLoader({ prefix: 'i18n/', suffix: '.json' })
