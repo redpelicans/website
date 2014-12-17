@@ -1,0 +1,262 @@
+@font-face {
+  font-family: 'amble-regular';
+  src: url("/fonts/amble-regular.eot");
+  src: url("/fonts/amble-regular.eot?iefix") format('embedded-opentype'), url("/fonts/amble-regular.woff") format('woff'), url("/fonts/amble-regular.ttf") format('truetype'), url("/fonts/amble-regular.svg#amble-regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+}
+@font-face {
+  font-family: 'roboto-regular';
+  src: url("/fonts/roboto-regular.eot");
+  src: url("/fonts/roboto-regular.eot?iefix") format('embedded-opentype'), url("/fonts/roboto-regular.woff") format('woff'), url("/fonts/roboto-regular.ttf") format('truetype'), url("/fonts/roboto-regular.svg#roboto-regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+}
+@imports '../globals';
+.hex a {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}
+.hex.full-red {
+  background: url('../images/hex-border-dark-red-bg-red.svg') center center no-repeat;
+  background-size: cover;
+  color: #dcddd8;
+}
+.hex.full-red a {
+  color: #dcddd8;
+}
+.hex.full-red a:hover {
+  color: #ffffff;
+}
+.hex.partial-red {
+  background: url('../images/hex-border-dark-red.svg') center center no-repeat;
+  background-size: cover;
+  color: #bb3c2f;
+}
+.hex.partial-red a {
+  color: #bb3c2f;
+}
+.hex.partial-red a:hover {
+  color: #424242;
+}
+.hex.full-dark-grey {
+  background: url('../images/hex-border-darker-grey-bg-dark-grey.svg') center center no-repeat;
+  background-size: cover;
+  color: #dcddd8;
+}
+.hex.full-dark-grey a {
+  color: #dcddd8;
+}
+.hex.full-dark-grey a:hover {
+  color: #ffffff;
+}
+.hex.partial-dark-grey {
+  background: url('../images/hex-border-darker-grey.svg') center center no-repeat;
+  background-size: cover;
+  color: #424242;
+}
+.hex.partial-dark-grey a {
+  color: #424242;
+}
+.hex.partial-dark-grey a:hover {
+  color: #cd4436;
+}
+.splash {
+  background-image: url('/images/pattern-dot-dark-red.png');
+  background-color: #cd4436;
+  color: #dcddd8;
+}
+.splash ::selection {
+  color: #cd4436;
+  background: #ffffff;
+}
+.splash .separator-dark-red span {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 11.54700538px;
+  background-color: #bb3c2f;
+  margin: 6.66666667px 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.splash .separator-dark-red span:before,
+.splash .separator-dark-red span:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.splash .separator-dark-red span:before {
+  bottom: 100%;
+  border-bottom: 6.66666667px solid #bb3c2f;
+}
+.splash .separator-dark-red span:after {
+  top: 100%;
+  width: 0;
+  border-top: 6.66666667px solid #bb3c2f;
+}
+.splash .separator-grey {
+  position: relative;
+  top: 12px;
+}
+.splash .separator-grey span {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 11.54700538px;
+  background-color: #dcddd8;
+  margin: 6.66666667px 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.splash .separator-grey span:before,
+.splash .separator-grey span:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.splash .separator-grey span:before {
+  bottom: 100%;
+  border-bottom: 6.66666667px solid #dcddd8;
+}
+.splash .separator-grey span:after {
+  top: 100%;
+  width: 0;
+  border-top: 6.66666667px solid #dcddd8;
+}
+.splash h1 {
+  margin-top: 40px;
+  font-size: 200px;
+}
+.splash h2 {
+  font-size: 50px;
+  margin-top: 0;
+  font-family: 'roboto-regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, Tahoma, sans-serif, Times;
+}
+.splash h3 {
+  color: #dcddd8;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.splash h4 {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.splash h4 a {
+  font-size: 16px;
+  color: #f4f5f3;
+  background-color: #cd4436;
+  border: 1px solid #f4f5f3;
+  padding: 15px 25px;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.splash h4 a:hover,
+.splash h4 a:active {
+  color: #cd4436;
+  background-color: #f4f5f3;
+  border-color: #cd4436;
+  text-decoration: none;
+}
+.splash h4 a:after {
+  content: '';
+  position: absolute;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.splash h4 a.hiring {
+  font-size: 16px;
+  color: #cd4436;
+  background-color: #f4f5f3;
+  border: 1px solid #f4f5f3;
+  padding: 15px 25px;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.splash h4 a.hiring:hover,
+.splash h4 a.hiring:active {
+  color: #f4f5f3;
+  background-color: #cd4436;
+  border-color: #f4f5f3;
+  text-decoration: none;
+}
+.splash h4 a.hiring:after {
+  content: '';
+  position: absolute;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.home .slide.consulting {
+  background-image: url('/images/pattern-dot-grey.png');
+  background-color: #f4f5f3;
+}
+.home .slide.hiring {
+  background-image: url('/images/pattern-dot-light-grey.png');
+  background-color: #ffffff;
+}
+.home .content {
+  background-image: url('/images/pattern-dot-light-grey.png');
+  background-color: #ffffff;
+  padding: 50px 0;
+}
+.home .content .center-row {
+  position: relative;
+  height: 135px;
+}
+.home .content .center-row > .row {
+  position: absolute;
+  top: -55%;
+}
+.home .content .hex div {
+  margin: 80px 0;
+  min-height: 125px;
+}
+.home .content .hex div h3,
+.home .content .hex div h4,
+.home .content .hex div p {
+  margin: 0;
+  text-align: center;
+}
+.home .content .hex div h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+.home .content .hex div h3 a {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+  color: #dcddd8;
+}
+.home .content .hex div h3 a:hover {
+  color: #ffffff;
+}
+.home .content .hex div p {
+  padding-top: 5px;
+}
+.home .content .hex div span.glyphicon {
+  font-size: 70px;
+}
