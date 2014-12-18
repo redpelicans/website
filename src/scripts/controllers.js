@@ -429,6 +429,8 @@ controllers.controller("TechnologiesCtrl", function($scope, MenuSrvc, moment) {
   $scope.performance.xAxisTickFormat = function() { return function(d, i) { return d; }; };
   $scope.performance.yAxisTickFormat = function() { return function(d, i) { return d; }; };
   $scope.performance.color = function() { return function(d, i) { return '#cd4436'; }; };
+
+  $scope.ready();
 });
 
 controllers.controller("LogoCtrl", function($scope) {

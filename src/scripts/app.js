@@ -52,14 +52,12 @@ app.run(function($rootScope, $location) {
   $rootScope.ready = function() {
     var $scope = _getTopScope();
     $scope.status = 'ready';
-    console.log('ready');
     if (!$scope.$$phase) $scope.$apply();
   };
 
   $rootScope.loading = function() {
     var $scope = _getTopScope();
     $scope.status = 'loading';
-    console.log('loading');
     if (!$scope.$$phase) $scope.$apply();
   };
 
