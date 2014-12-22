@@ -66,5 +66,6 @@ var generateSnapshot = function(url, snapshotPath, cb) {
 
 app.use(escapedFragment(__dirname + '/snapshots'));
 app.use(express.static(__dirname + '/src'));
+app.use(function(req, res, next) { res.sendFile(__dirname + '/sitemap.xml') });
 
 app.listen(port, function() { console.log('Listening on port: %d', port); });
