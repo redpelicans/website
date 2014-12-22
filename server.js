@@ -10,7 +10,7 @@ var escapedFragment = function(snapshotsDir) {
     var fragment = req.query._escaped_fragment_;
     if (!fragment) return next();
 
-    if (fragment === '' || fragment === '/') fragment = '/index.html';
+    if (fragment === '' || fragment === '/') fragment = '/home.html';
     if (fragment.charAt(0) !== '/') fragment = '/' + fragment;
     if (fragment.indexOf('.html') == -1) fragment += '.html';
 
