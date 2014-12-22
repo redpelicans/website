@@ -17,7 +17,7 @@ var escapedFragment = function(snapshotsDir) {
     var snapshotPath = snapshotsDir + fragment;
     if (!fs.existsSync(snapshotPath)) {
       generateSnapshot(req.protocol + '://' + req.get('Host') + req.originalUrl, snapshotPath, function(err) {
-        if (err) res.send(404);
+        if (err) res.sendStatus(404);
         res.sendFile(snapshotPath);
       });
     } else {
