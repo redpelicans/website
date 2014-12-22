@@ -17,7 +17,7 @@ var escapedFragment = function(snapshotsDir) {
     var snapshotPath = snapshotsDir + fragment;
     if (!fs.existsSync(snapshotPath)) {
       generateSnapshot(req.protocol + '://' + req.get('Host') + req.originalUrl, snapshotPath, function(err) {
-        if (err) res.send(404);
+        if (err) res.sendStatus(404);
         res.sendFile(snapshotPath);
       });
     } else {
@@ -66,5 +66,6 @@ var generateSnapshot = function(url, snapshotPath, cb) {
 
 app.use(escapedFragment(__dirname + '/snapshots'));
 app.use(express.static(__dirname + '/src'));
+app.use(function(req, res, next) { res.sendFile(__dirname + '/sitemap.xml'); });
 
 app.listen(port, function() { console.log('Listening on port: %d', port); });
