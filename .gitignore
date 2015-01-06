@@ -12,3 +12,5 @@ app/.styles
 .DS_Store
 
 npm-debug.log
+
+snapshots
