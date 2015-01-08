@@ -1,6 +1,7 @@
 var express = require('express')
   , app = express()
   , port = process.env.PORT || 3004
+  , staticFolder = process.env.ENV == 'production' ? 'dist' : 'src'
   , phantom = require('phantom')
   , fs = require('fs')
   , async = require('async');
@@ -10,7 +11,7 @@ var escapedFragment = function(snapshotsDir) {
     var fragment = req.query._escaped_fragment_;
     if (!fragment) return next();
 
-    if (fragment === '' || fragment === '/') fragment = '/index.html';
+    if (fragment === '' || fragment === '/') fragment = '/home.html';
     if (fragment.charAt(0) !== '/') fragment = '/' + fragment;
     if (fragment.indexOf('.html') == -1) fragment += '.html';
 
@@ -47,7 +48,7 @@ var generateSnapshot = function(url, snapshotPath, cb) {
         });
 
         function getHTML(cb, result) {
-          page.evaluate(function () {
+          page.evaluate(function() {
             return document.getElementsByTagName('body')[0].getAttribute('data-status') == 'ready'
               ? document.getElementsByTagName('html')[0].outerHTML
               : false;
@@ -56,7 +57,7 @@ var generateSnapshot = function(url, snapshotPath, cb) {
               // add a delay to make tries more relevant
               return cb(new Error('Page not ready'));
             }
-            cb(null, result);
+            cb(null, result.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, ''));
           });
         }
       });
@@ -64,8 +65,10 @@ var generateSnapshot = function(url, snapshotPath, cb) {
   });
 };
 
-app.use(escapedFragment(__dirname + '/snapshots'));
-app.use(express.static(__dirname + '/src'));
-app.use(function(req, res, next) { res.sendFile(__dirname + '/sitemap.xml'); });
+if (process.env.ENV == 'production') app.use(escapedFragment(__dirname + '/snapshots'));
+app.use(express.static(__dirname + (process.env.ENV == 'production' ? '/dist' : '/src')));
 
-app.listen(port, function() { console.log('Listening on port: %d', port); });
+app.get('/', function(req, res) { res.sendFile(__dirname + '/index.html') });
+app.get('/sitemap.xml', function(req, res) { res.sendFile(__dirname + '/sitemap.xml'); });
+
+app.listen(port, function() { console.log('Env: %s\nListening on port: %d', process.env.ENV, port); });

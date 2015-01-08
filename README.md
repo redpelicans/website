@@ -4,19 +4,21 @@ Website of redpelicans: [http://redpelicans.github.io/](http://redpelicans.githu
 
 Usage
 ===
-You may need to update modules:
+You may need to install/update modules:
 ```bash
 npm install
 bower install
 ```
 
-In development, run `grunt serve`.  
-(HOST & PORT can be used as follow `PORT=5000 grunt serve`)
+```bash
+node server.js
+ENV=production PORT=5000 node server.js
+```
 
-Use `grunt serve-dist` to build and test locally.
-
-Run `grunt deploy` to update remote website.  
-([https://github.com/redpelicans/redpelicans.github.io](https://github.com/redpelicans/redpelicans.github.io))
+Snapshots
+===
+In *production*, snapshots are generated of they not already exists for search engine optimization.  
+It relies on [escaped_fragment](https://developers.google.com/webmasters/ajax-crawling/docs/specification).  
 
 Requirement
 ===

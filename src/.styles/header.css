@@ -1,6 +1,17 @@
 .header {
   
 }@imports '../globals';
+.header .nav {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+  background-image: url('/images/pattern-dot-dark-red.png');
+  background-color: #cd4436;
+  border-bottom: 1px solid #bb3c2f;
+}
 @font-face {
   font-family: 'amble-regular';
   src: url("/fonts/amble-regular.eot");
@@ -64,17 +75,6 @@
 }
 .header .hex.partial-dark-grey a:hover {
   color: #cd4436;
-}
-.header .nav {
-  z-index: 1000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 45px;
-  background-image: url('/images/pattern-dot-dark-red.png');
-  background-color: #cd4436;
-  border-bottom: 1px solid #bb3c2f;
 }
 .header .toggle a {
   z-index: 1002;

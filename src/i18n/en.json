@@ -23,24 +23,24 @@
     },
     "UNDERLINE": "We carry out IT consultancy assignments and we develop your strategic applications... <span>In the javascript way.</span>",
     "NOSQL": {
-      "H": "<a href='/#!/technologies/nosql'>NoSQL</a>",
-      "P": "NoSQL databases, like <a href='/#!/technologies/nosql'>MongoDB</a>, the leading solution, evolve businesses to be more agile, cost effective and perfectly scalable to satisfy big data needs."
+      "H": "<a href='#!technologies/nosql'>NoSQL</a>",
+      "P": "NoSQL databases, like <a href='#!technologies/nosql'>MongoDB</a>, the leading solution, evolve businesses to be more agile, cost effective and perfectly scalable to satisfy big data needs."
     },
     "DATAVISUALIZATION": {
-      "H": "<a href='/#!/technologies/datavisualization'>Data-Visualization</a>",
-      "P": "Data is the new oil.<br /><a href='/#!/technologies/datavisualization'>D3.js</a> the solution to enlighten your web applications, reports, financial dashboard and quant tools in a HTML5 manner."
+      "H": "<a href='#!technologies/datavisualization'>Data-Visualization</a>",
+      "P": "Data is the new oil.<br /><a href='#!technologies/datavisualization'>D3.js</a> the solution to enlighten your web applications, reports, financial dashboard and quant tools in a HTML5 manner."
     },
     "FRONTEND": {
-      "H": "<a href='/#!/technologies/frontend'>Rich Web Application</a>",
-      "P": "Today's HTML5 framework like <a href='/#!/technologies/frontend'>AngularJS</a> provides a robust set of features for building rich web applications extraordinarily expressive, readable, and quick to develop."
+      "H": "<a href='#!technologies/frontend'>Rich Web Application</a>",
+      "P": "Today's HTML5 framework like <a href='#!technologies/frontend'>AngularJS</a> provides a robust set of features for building rich web applications extraordinarily expressive, readable, and quick to develop."
     },
     "BACKEND": {
-      "H": "<a href='/#!/technologies/backend'>Application server</a>",
-      "P": "<a href='/#!/technologies/backend'>NodeJS</a> is a platform built on Google's JavaScript runtime for building fast, scalable, cost effective network applications, capable of delivering better results than existing solutions."
+      "H": "<a href='#!technologies/backend'>Application server</a>",
+      "P": "<a href='#!technologies/backend'>NodeJS</a> is a platform built on Google's JavaScript runtime for building fast, scalable, cost effective network applications, capable of delivering better results than existing solutions."
     },
     "CONSULTING": {
       "H": "Consulting",
-      "P1": "You want to benefit from <a href='/#!/technologies/full-stack-javascript'>Full Stack Javascript</a> solutions with some guidances? We are able to carry out for you the implementation of such solutions.",
+      "P1": "You want to benefit from <a href='#!technologies/full-stack-javascript'>Full Stack Javascript</a> solutions with some guidances? We are able to carry out for you the implementation of such solutions.",
       "P2": "We can also help you to reach your next ambitious business vision thanks to a strong knowledge of IT workflows and methodologies."
     },
     "CONSULTING1": {
