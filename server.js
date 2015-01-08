@@ -4,7 +4,12 @@ var express = require('express')
   , staticFolder = process.env.ENV == 'production' ? 'dist' : 'src'
   , phantom = require('phantom')
   , fs = require('fs')
-  , async = require('async');
+  , async = require('async')
+  , minimist = require('minimist')
+  , argv = minimist(process.argv.slice(2))
+  , port = argv.port || 3004
+  , env = argv.env || 'dev';
+
 
 var escapedFragment = function(snapshotsDir) {
   return function(req, res, next) {
