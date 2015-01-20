@@ -10,6 +10,12 @@ npm install
 bower install
 ```
 
+Build with grunt for dev or dist:
+```bash
+grunt dev
+grunt dist
+```
+
 ```bash
 node server.js
 ENV=production PORT=5000 node server.js
