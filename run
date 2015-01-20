@@ -1,0 +1,5 @@
+npm install
+bower --allow-root install
+grunt dist
+
+ENV=production PORT=3004 node server.js
