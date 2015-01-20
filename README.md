@@ -16,6 +16,7 @@ grunt dev
 grunt dist
 ```
 
+Launch server (express)
 ```bash
 node server.js
 ENV=production PORT=5000 node server.js
