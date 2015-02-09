@@ -45,7 +45,7 @@ npm install -g grunt-cli bower
 Docker
 ===
 
-Create an image:
+Create an image, push it and run it:
 
     # docker build -t redpelicans/website .
     # docker push redpelicans/website
