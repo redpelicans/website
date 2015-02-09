@@ -16,6 +16,7 @@ RUN git clone https://github.com/redpelicans/website.git \
 
 EXPOSE 80
 WORKDIR /opt/website 
-ENV NODE_ENV=production
-ENV PORT=80
+ENV NODE_ENV production
+ENV PORT 80
+ENV DEBUG main:*
 CMD node server

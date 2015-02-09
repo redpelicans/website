@@ -6,7 +6,7 @@ var express = require('express')
   , PORT = process.env.PORT || 80
   , staticFolder = MODE == 'production' ? 'dist' : 'src'
   , phantom = require('phantom')
-  , morgan = require('morgan')
+  , logger = require('morgan')
   , fs = require('fs')
   , async = require('async');
 
