@@ -3,7 +3,7 @@ FROM node:latest
 RUN apt-get update && apt-get install -y git vim-tiny
 
 RUN npm install -g grunt-cli bower \
-&& npm install -g n_ \
+&& npm install -g phantomjs n_ \
 && npm cache clear
 
 WORKDIR /opt

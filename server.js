@@ -46,7 +46,7 @@ var generateSnapshot = function(url, snapshotPath, cb) {
           fs.writeFile(snapshotPath, html, function(err) {
             if (err) return cb(err);
             ph.exit();
-            debug.log('Snapshot of %s done.', url);
+            debug('Snapshot of %s done.', url);
             cb();
           })
         });
