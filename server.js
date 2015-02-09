@@ -1,8 +1,12 @@
 var express = require('express')
   , app = express()
-  , port = process.env.PORT || 3004
-  , staticFolder = process.env.ENV == 'production' ? 'dist' : 'src'
+  , debug = require('debug')('main:init')
+  , util = require('util')
+  , MODE = process.env.NODE_ENV || 'production'
+  , PORT = process.env.PORT || 80
+  , staticFolder = MODE == 'production' ? 'dist' : 'src'
   , phantom = require('phantom')
+  , morgan = require('morgan')
   , fs = require('fs')
   , async = require('async');
 
@@ -32,7 +36,7 @@ var generateSnapshot = function(url, snapshotPath, cb) {
   if (!url || !url.length) return;
   url = url.replace('?_escaped_fragment_=', '#!');
 
-  console.log('Snapshoting ' + url);
+  debug('Snapshoting: %s', url);
   phantom.create(function (ph) {
     ph.createPage(function (page) {
       page.open(url, function (status) {
@@ -42,7 +46,7 @@ var generateSnapshot = function(url, snapshotPath, cb) {
           fs.writeFile(snapshotPath, html, function(err) {
             if (err) return cb(err);
             ph.exit();
-            console.log('Snapshot of ' + url + ' done');
+            debug.log('Snapshot of %s done.', url);
             cb();
           })
         });
@@ -65,10 +69,12 @@ var generateSnapshot = function(url, snapshotPath, cb) {
   });
 };
 
-if (process.env.ENV == 'production') app.use(escapedFragment(__dirname + '/snapshots'));
-app.use(express.static(__dirname + (process.env.ENV == 'production' ? '/dist' : '/src')));
+require('./ping').init(app);
+app.use(logger('dev'));
+if (MODE == 'production') app.use(escapedFragment(__dirname + '/snapshots'));
+app.use(express.static(__dirname + (MODE == 'production' ? '/dist' : '/src')));
 
 app.get('/', function(req, res) { res.sendFile(__dirname + '/index.html') });
 app.get('/sitemap.xml', function(req, res) { res.sendFile(__dirname + '/sitemap.xml'); });
 
-app.listen(port, function() { console.log('Env: %s\nListening on port: %d', process.env.ENV, port); });
+app.listen(PORT, function() { debug("on '%s', listening on PORT: %d", MODE, PORT) });
