@@ -21,7 +21,6 @@ config = {
                   auth: {
                       user: 'postmaster@mg.redpelicans.com', // mailgun username
                       pass: 'd106e33ac6f97c28a7c6c94305dbe3fe'  // mailgun
-password
                   }
               }
           },
@@ -59,7 +58,6 @@ password
                   auth: {
                       user: 'postmaster@mg.redpelicans.com', // mailgun username
                       pass: 'd106e33ac6f97c28a7c6c94305dbe3fe'  // mailgun
-password
                   }
               }
           },
