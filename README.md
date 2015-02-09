@@ -40,3 +40,15 @@ Installation
 ```bash
 npm install -g grunt-cli bower
 ```
+
+
+Docker
+===
+
+Create an image:
+
+    # docker build -t redpelicans/website .
+    # docker push redpelicans/website
+    # docker run -d --restart=always --name website -h website  redpelicans/website
+
+
