@@ -1,0 +1,26 @@
+@import './globals';
+
+.partners {
+  ::selection {
+    color: @dark-grey;
+    background: @white;
+  }
+
+  background-color: @dark-grey;
+  background-image: url('/images/pattern-dot-darker-grey.png');
+
+  img {
+    border: 1px solid @dark-grey;
+    margin: 35px 30px 60px 30px;
+    max-height: 115px;
+  }
+
+  .separator-grey {
+    position: relative;
+    top: -12px;
+    span {
+      display: block;
+      .hexagon(20, @grey);
+    }
+  }
+}
