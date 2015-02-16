@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'amble-regular';
+  src: url("/fonts/amble-regular.eot");
+  src: url("/fonts/amble-regular.eot?iefix") format('embedded-opentype'), url("/fonts/amble-regular.woff") format('woff'), url("/fonts/amble-regular.ttf") format('truetype'), url("/fonts/amble-regular.svg#amble-regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+}
+@font-face {
+  font-family: 'roboto-regular';
+  src: url("/fonts/roboto-regular.eot");
+  src: url("/fonts/roboto-regular.eot?iefix") format('embedded-opentype'), url("/fonts/roboto-regular.woff") format('woff'), url("/fonts/roboto-regular.ttf") format('truetype'), url("/fonts/roboto-regular.svg#roboto-regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+}
+@imports '../globals';
+.hex a {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}
+.hex.full-red {
+  background: url('../images/hex-border-dark-red-bg-red.svg') center center no-repeat;
+  background-size: cover;
+  color: #dcddd8;
+}
+.hex.full-red a {
+  color: #dcddd8;
+}
+.hex.full-red a:hover {
+  color: #ffffff;
+}
+.hex.partial-red {
+  background: url('../images/hex-border-dark-red.svg') center center no-repeat;
+  background-size: cover;
+  color: #bb3c2f;
+}
+.hex.partial-red a {
+  color: #bb3c2f;
+}
+.hex.partial-red a:hover {
+  color: #424242;
+}
+.hex.full-dark-grey {
+  background: url('../images/hex-border-darker-grey-bg-dark-grey.svg') center center no-repeat;
+  background-size: cover;
+  color: #dcddd8;
+}
+.hex.full-dark-grey a {
+  color: #dcddd8;
+}
+.hex.full-dark-grey a:hover {
+  color: #ffffff;
+}
+.hex.partial-dark-grey {
+  background: url('../images/hex-border-darker-grey.svg') center center no-repeat;
+  background-size: cover;
+  color: #424242;
+}
+.hex.partial-dark-grey a {
+  color: #424242;
+}
+.hex.partial-dark-grey a:hover {
+  color: #cd4436;
+}
+.contact a {
+  z-index: 1000;
+  text-decoration: none;
+  color: #dcddd8;
+  position: fixed;
+  top: 10px;
+  font-size: 20px;
+  display: block;
+  right: 15px;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.contact a:hover,
+.contact a:active {
+  color: #ffffff;
+}

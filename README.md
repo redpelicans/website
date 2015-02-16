@@ -4,19 +4,28 @@ Website of redpelicans: [http://redpelicans.github.io/](http://redpelicans.githu
 
 Usage
 ===
-You may need to update modules:
+You may need to install/update modules:
 ```bash
 npm install
 bower install
 ```
 
-In development, run `grunt serve`.  
-(HOST & PORT can be used as follow `PORT=5000 grunt serve`)
+Build with grunt for dev or dist:
+```bash
+grunt dev
+grunt dist
+```
 
-Use `grunt serve-dist` to build and test locally.
+Launch server (express)
+```bash
+node server.js
+NODE_ENV=production PORT=5000 node server.js
+```
 
-Run `grunt deploy` to update remote website.  
-([https://github.com/redpelicans/redpelicans.github.io](https://github.com/redpelicans/redpelicans.github.io))
+Snapshots
+===
+In *production*, snapshots are generated of they not already exists for search engine optimization.  
+It relies on [escaped_fragment](https://developers.google.com/webmasters/ajax-crawling/docs/specification).  
 
 Requirement
 ===
@@ -31,3 +40,15 @@ Installation
 ```bash
 npm install -g grunt-cli bower
 ```
+
+
+Docker
+===
+
+Create an image, push it and run it:
+
+    # docker build -t redpelicans/website .
+    # docker push redpelicans/website
+    # docker run -d --restart=always --name website -h website  redpelicans/website
+
+

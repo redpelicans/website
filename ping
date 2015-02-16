@@ -1,0 +1,9 @@
+module.exports.init = function(app){
+  app.get('/ping', function(req, res, next){
+    res.json({
+        pong: 'website' 
+      , ip: req.ip
+    });
+  });
+}
+

@@ -1,0 +1,72 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 990px) {
+  .slide .body p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .home .content .center-row {
+    height: 176px;
+  }
+  .home .content .center-row .row {
+    top: -54%;
+  }
+  .home .content .hex div {
+    min-height: 207px;
+  }
+  .home .content .hex div p {
+    font-size: 13px;
+  }
+  .technologies #datavisualization img,
+  .technologies #frontend img,
+  .technologies #backend img,
+  .technologies #nosql img {
+    max-height: 150px;
+    max-width: initial;
+  }
+}
+@media (max-width: 768px) {
+  .splash h1 {
+    font-size: 130px;
+  }
+  .home .content .hex {
+    width: 277px;
+  }
+  .home .content .hex div {
+    padding: 65px 0;
+    margin: 0;
+  }
+  .home .content .hex div.fat {
+    padding: 55px 0 75px 0;
+  }
+  .home .content .hex div span.glyphicon {
+    font-size: 50px;
+  }
+  .home .content .hex div h3 {
+    padding-bottom: 10px;
+  }
+  .home .content .hex div p {
+    font-size: 13px;
+    padding: 0 5px;
+  }
+  .home .content .hex div p.thin {
+    padding: 0;
+  }
+  .technologies .headroom nav .row > div > div h3 {
+    font-size: 9px;
+  }
+  .technologies .slide .head {
+    margin-top: 40px;
+  }
+  .technologies #datavisualization img,
+  .technologies #frontend img,
+  .technologies #backend img,
+  .technologies #nosql img {
+    width: 100%;
+    max-height: initial;
+    max-width: initial;
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "REDPELICANS": "redpelicans",
+  "CONTACTUS": "Contact us",
+  "HIRING": "We are hiring !",
+  "APPLYNOW": "Apply now",
+  "EMAILUS": "Email us at contact@redplicans.com",
+  "TALKUS": "We want to help you, work with and make your ambitions a reality.<br /><span>Have an idea ? A project to be done ?</span>",
+  "MENU": {
+    "HOME": "Home",
+    "TECHNOLOGIES": "Technologies",
+    "STORIES": "Stories",
+    "LAB": "Lab"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Copyright &copy;2014",
+    "RIGHTS": "All rights reserved"
+  },
+  "HOME": {
+    "SPLASH": {
+      "CATCH": "The Full Stack Javascript Company",
+      "MISSION": "We are dedicated to helping businesses succeed with full stack javascript through strategic consulting and support.",
+      "WHO": "We are a French company based in Paris."
+    },
+    "UNDERLINE": "We carry out IT consultancy assignments and we develop your strategic applications... <span>In the javascript way.</span>",
+    "NOSQL": {
+      "H": "<a href='#!technologies/nosql'>NoSQL</a>",
+      "P": "NoSQL databases, like <a href='#!technologies/nosql'>MongoDB</a>, the leading solution, evolve businesses to be more agile, cost effective and perfectly scalable to satisfy big data needs."
+    },
+    "DATAVISUALIZATION": {
+      "H": "<a href='#!technologies/datavisualization'>Data-Visualization</a>",
+      "P": "Data is the new oil.<br /><a href='#!technologies/datavisualization'>D3.js</a> the solution to enlighten your web applications, reports, financial dashboard and quant tools in a HTML5 manner."
+    },
+    "FRONTEND": {
+      "H": "<a href='#!technologies/frontend'>Rich Web Application</a>",
+      "P": "Today's HTML5 framework like <a href='#!technologies/frontend'>AngularJS</a> provides a robust set of features for building rich web applications extraordinarily expressive, readable, and quick to develop."
+    },
+    "BACKEND": {
+      "H": "<a href='#!technologies/backend'>Application server</a>",
+      "P": "<a href='#!technologies/backend'>NodeJS</a> is a platform built on Google's JavaScript runtime for building fast, scalable, cost effective network applications, capable of delivering better results than existing solutions."
+    },
+    "CONSULTING": {
+      "H": "Consulting",
+      "P1": "You want to benefit from <a href='#!technologies/full-stack-javascript'>Full Stack Javascript</a> solutions with some guidances? We are able to carry out for you the implementation of such solutions.",
+      "P2": "We can also help you to reach your next ambitious business vision thanks to a strong knowledge of IT workflows and methodologies."
+    },
+    "CONSULTING1": {
+      "H": "Our mission is to bring you <span>outstanding tools</span> that let you win your business challenges and upscale your activity faster and safer.",
+      "P": "We strongly believe in <span>Javascript</span> and <span>Open Source</span> to bring your ideas to life.",
+      "CONTENT": {
+        "H1": "Pragmatic",
+        "P1": "Relying on open source allow us to always be on the cutting edge of the latest tools, frameworks, and libraries.<br /><br />We are able to build highly-maintainable software with a focus on solving domain problems.<br /><br /> We don't reinvent the wheels.",
+        "H2": "Cost-effective",
+        "P2": "You want to benefit from latest Javascript technologies such as MongoDB, NodeJS, AngularJS and D3.js without taking any risk ?<br /><br />We are here for you.<br /><br />We can advice you, guide you to your next successful business solution.",
+        "H3": "Skilled",
+        "P3": "We are experienced.<br /><br />Since we account more than 30 years crafting information systems in the finance sector, included 20 in management among key players, we know what matters.<br /><br />This expertise could be yours."
+      }
+    },
+    "CONSULTING2": {
+      "H": "Our engineers can work <span>on-site</span> or <span>by contract</span> to fulfill your needs and make your vision a reality.",
+      "CONTENT": {
+        "H1": "What we can do",
+        "P1": "Web-Apps and Mobile development<br /><br />Projects management<br /><br />Projects rescue<br /><br />Porting solutions to web-based technologies",
+        "H2": "We also can help you to",
+        "P2": "Define your IT master plan<br /><br />Write your technical specifications<br /><br />Normalize your workflow<br />(Agile methodology)<br /><br />Benchmark and Prototype to make your choices sharper"
+      }
+    },
+    "HIRING": {
+      "H": "We are looking for <span>fullstack javascript gurus</span> or <span>young talents</span> that are passionate about next generation web technologies.",
+      "CONTENT": {
+        "H": "We need you",
+        "P": "Expert in JavaScript and JavaScript frameworks such as Angularjs, having strong programming skills with experience in server-side with Node.js or genuinely motivated developer eager to learn new things are welcome.<br /><br />If you pay a strong attention to detail and have exceptional communication skills, can thrive in fast-paced, start-up environment where passion for great experience is at the forefront of all design & development, you'll feel at ease with us."
+      }
+    }
+  },
+  "TECHNOLOGIES": {
+    "SPLASH": {
+      "H1": "We offer you solutions that really work"
+    , "H2": "We use tools that enhance your <span>agility</span> and deliver <span>more value effectively</span>"
+    , "H3": "We rely on <span>Open Source</span> and <span>Javascript</span> technologies to bring you efficient and powerful Information Systems which make the difference in your business."
+    },
+    "JAVASCRIPT1": {
+      "H1": "Why choosing Javascript?",
+      "P1": "Announced in 1995 by Netscape and Sun, Javascript has come a long way.<br />It was primilary used to make page elements... blink!<br /><br />A lot has changed since then, now <span>Javascript is the Internet</span>.<br /><br />The language is pervasive in our browsers, our operating systems and tomorrow in the Internet of Things.<br />Javascript provides a firm foundation for your business since it steadily increase its performance, ecosystem size and adoption rate.",
+      "H2": "Last but not least, <span>big players</span> have joined the game.<br />Companies like Google, Yahoo, PayPal, LinkedIn, Netflix, DailyMail, Microsoft and Wallmart have invested a lot of resources into adopting it.<br /><br />Javascript is now considered as a mature and stable language.<br /><br /><span>Javascript is enterprise ready.</span>",
+      "CONTENT": {
+        "H1": "Performance",
+        "P1": "This chart shows performance on the Kraken benchmark, for browsers from Firefox 3.5 to Chrome 23, on the same hardware.",
+        "S1": "Kraken Benchmark performance<br /><a href='https://github.com/idleberg/JavaScript-Performance-Charts'>(source krakenbenchmarkdata)</a>",
+        "H2": "Ecosystem",
+        "P2": "The official package manager for NodeJS is npm. Over the last year it has grown to the tune of 10x in packages and traffic.",
+        "S2": "Monthly added modules<br /><a href='http://modulecounts.com/'>(source modulecounts)</a>",
+        "H3": "Adoption",
+        "P3": "Some studies show that JavaScript has supplanted Ruby as the language of choice for the plurality of new projects.",
+        "S3": "New Github repositories by years<br /><a href='http://redmonk.com/dberkholz/2014/05/02/github-language-trends-and-the-fragmenting-landscape/'>(source redmonk)</a>"
+      }
+    },
+    "JAVASCRIPT2": {
+      "H1": "What is Full Stack Javascript?",
+      "P1": "We are currently witnessing two major changes on the software development industry which lead to a certitude:<br /><span>JavaScript will rule the world (wide web).</span>",
+      "P2": "The whole offers an extremely competitive Full Stack Javascript ecosystem compared to existings solutions like .net, Java, Ruby or Python.<br /><br />You want to use technologies that allow for rapid development, constant iteration, maximal efficiency, speed, robustness and more.<br /><span>You want to be lean and you want to be agile.</span><br />You want to use technologies that will help you succeed in the short and long term.<br /><br /><span>Full Stack Javascript hits all the marks.</span>",
+      "CONTENT": {
+        "H1": "Rise of the client",
+        "P1": "The browser becomes the evident and trusted execution platform.<br />More and more functionality has moved to the client along with the rise of client-side frameworks which heavily rely on Javascript, HTML5 and CSS3.<br />This process is not new but solutions (like AngularJS and D3.js) are now mature and ready for serious business.",
+        "H2": "Back on the server",
+        "P2": "Javascript is back on the server.<br />This isn't a new phenomenon; Netscape already stuck Javascript in the server way back in 1996. The emergence of new frameworks like NodeJS or the new breed of NOSQL databases like MongoDB are likely to prove that Javascript, given the quality and speed of resulting apps, is about to become a major server-side language."
+      }
+    },
+    "NOSQL": {
+      "H": "NoSQL",
+      "P": "MongoDB",
+      "CONTENT": {
+        "P1": "A NoSQL database environment is a non-relational and largely distributed database system that enables rapid, ad-hoc organization and analysis of extremely high-volume, disparate data types.<br /><br /><span>Big Data is one of the key forces driving the growth and popularity of NoSQL for business.</span><br />The almost limitless array of data collection technologies ranging from simple online actions to point of sale systems to GPS tools to smartphones and tablets to sophisticated sensors – and many more – act as force multipliers for data growth.<br /><br />But you don't need to be Google or having Big Data problem to take benefits of NoSQL databases.",
+        "H2": "NoSQL is about performance and scalability",
+        "P2": "Because the way they are structured, relational databases usually scale vertically – a single server has to host the entire database to ensure reliability and continuous availability of data. This gets expensive quickly, places limits on scale, and creates a relatively small number of failure points for database infrastructure.<br />The solution is to scale horizontally, by adding servers instead of concentrating more capacity in a single server. NoSQL databases are cloud-friendly, offering high performance, high availability of data and high scalability at a little cost.",
+        "H3": "NoSQL is agile and pragmatic",
+        "P3": "Long gone is the twelve-to-eighteen month waterfall development cycle. Now small teams work in agile sprints, iterating quickly and pushing code every week or two, even every day. Relational databases requires schemas and may cause significant downtime each time a migration is needed. NoSQL databases are built to allow the insertion of data without a predefined schema. That makes it easy to make significant application changes in real-time, without worrying about service interruptions – which means development is faster, code integration is more reliable, and less database administrator time is needed.",
+        "H4": "MongoDB is cost-friendly",
+        "P4": "MongoDB is free, No more license.<br />Deploying MongoDB drastically lowers operational costs, since it's free, it's reduce administration time and it's speed up development time because it maps directly stored data to objects in modern objects-oriented languages.",
+        "H5": "MongoDB is our choice",
+        "P5": "Among all the NoSQL databases",
+        "P5": "MongoDB is technically on the cutting edge, has the largest and the most active community and is backed by a solid company even if the technology is open-source. <strong>We also have a 7 man-year experience implementing a portfolio management system that relies on MongoDB, that make us confident and fluent about the technology.</strong>",
+        "P6": "<span>MongoDB is currently used by big names, such as Cisco, LinkedIn, SAP and MTV.</span><br /><br /> But, NoSQL is a completely new approach and may not suit all the cases, we can help to understand it better and offer you some guidance in your decision making."
+      }
+    },
+    "DATAVISUALIZATION": {
+      "H": "Data-Visualization",
+      "P": "D3.js",
+      "CONTENT": {
+        "P1": "Gigantic amounts of data are being generated on a daily basis let us think that <span>Big Data is a big deal.</span><br /><br />With the impending rise of wearable technology and The Internet of Things, it appears the pace of data creation will only increase.<br />This has lead big data analysts to posit that <span>Data is the new Oil</span>.",
+        "H2": "A picture is worth a thousand words.",
+        "P2": "The ability to understand and extract value from data is hugely easier and efficient when done through a Data Visualization rather than from looking at the raw data. It exposes something new about the underlying patterns and relationships contained within the data.",
+        "H3": "Accessible everywhere",
+        "P3": "D3.js is the perfect tool for Data-Visualization by helping you to bring your data to life using HTML5, CSS3 and SVG. It is an Open Source Javascript framework that works seamlessly with existing web technologies, making your data accessible from everwhere through your browser.",
+        "H4": "Cost-effective and relevant",
+        "P4": "D3.js is not a graphics library, nor a data processing library. It does not have pre-built charts that limit creativity. Instead, it has tools that make the connection between data and graphics easy. It sits right between the two, the perfect place for a library meant for data-visualization.",
+        "P5": "We use <span>D3.js</span> to help you to understand and <span>extract value</span> from your data.<br /><br />We let us take advantage of your refined data by interacting with it<br /><span>everywhere, at everytime, on everything</span>."
+      }
+    },
+    "FRONTEND": {
+      "H": "Rich Web Application",
+      "P": "AngularJS",
+      "CONTENT": {
+        "P1": "Gmail, first released in 2004, was a pioneer as a rich web application.<br />Crafting such applications was considered expensive to develop and complicated to maintain, and only big web players like Google were able to invested in it.<br /><br />Since then numerous frameworks were created; EmberJS, BackboneJS, KnockoutJS are the most recognized, and among them AngularJS is becoming predominant for professional web development.",
+        "H2": "Backed by Google",
+        "P2": "AngularJS is built by Google which has one of the strongest engineering cultures.<br />Combine that with the resources that they have and with the power of open source and you get a really powerful mix.",
+        "H3": "Increase productivity, reducing costs",
+        "P3": "Having the ability to scaffold a project quickly with all that you need is key to getting started and producing efficiently. AngularJS came about to standardize web application structure and provide a future template for how client-side apps should be developed. This not only allows you to quickly assemble something up, but it lays the roots for something way bigger to evolve.",
+        "H4": "Focus on testing",
+        "P4": "Having testable code is part of AngularJS philosophy.<br />Making it easy to write tests is crucial.<br />No matter how good the code is – if it’s not testable, it’s useless in the long run.",
+        "P5": "<span>AngularJS is a very high quality foundation for building great apps, and doing it quickly.</span><br /><br />The growing popularity of the framework is huge,<br />companies as big as well-known Banks want to switch to AngularJS.",
+        "P6": "<br /><span>The reality is that AngularJS is winning the frontend framework war.</span>"
+      }
+    },
+    "BACKEND": {
+      "H": "Application server",
+      "P": "NodeJS",
+      "CONTENT": {
+        "P1": "<span>Javascript is the Internet</span> since it's no longer just a client-side programming language.<br /><br />NodeJS is a way of running JavaScript on the server relying on the powerful Google Javascript runtime.<br />Created in 2009, it definitely left the early adopters behind to become a fully operational software platform for scalable server-side and network applications.<br /><br /><span>NodeJS</span> is in competition with Java, .Net, Python, Ruby and PHP solutions and has already be chosen by a number of large companies including <span>Groupon, Oracle, SAP, LinkedIn, Microsoft, Yahoo!, Walmart and PayPal</span>.",
+        "H2": "High performance",
+        "P2": "Paypal chose to migrate of its most trafficked apps of from Java to NodeJs. They double the requests per second and decrease by 35% the average response time.<br />Groupon has decrease by 50% the loading time of their pages after rewrote their application server with NodeJS.<br /><strong>We became 6 times faster after a migration from MySQL/Rails to MongoDB/NodeJS.</strong><br />LinkedIn moved from Rails to NodeJS and have a 27 servers cut (on 30).<br />The ability to process many requests/seconds with low response times make NodeJS a great choice for modern web applications that do lots of I/O processing on the client.",
+        "H3": "High productivity",
+        "P3": "Paypal observes that a NodeJS application is built almost twice as fast with fewer people.<br />The NodeJS ecosystem is extremely prolific: new tools appear almost every day, increasing productivity. More than 65000 modules are currently available and its growth rate is faster than other’s ecosystems.<br />Since the framework was built for the commonly used JavaScript, the barriers to entry are remarkably low<br />and using one language allows code reuse between client and server, reducing the gap among front-end and back-end developers, introducing full stack developers.",
+        "H4": "Flexible and Cost effective",
+        "P4": "JavaScript is widely standardized, simple and has a quick learning curve that implies easy and natural migration from more complex languages.<br />One language all the way down makes it easier for a single programmer to work on either side of the wire; there's less of a mental shift.<br />For project managers, the trend would make it easier to move developer resources between the front end and the back end if a common language is used on both.",
+        "H5": "Polyvalent and attractive",
+        "P5": "There are numerous domains where NodeJS can be the right choice (if not the best): Rich Web Applications, Data-Visualization, E-Commerce, Payment processing, Social media, Real-time services.<br />By mastering streams, NodeJS has all the keys to perfectly handle medias (videos, audios).<br />In addition, choosing NodeJS is the guarantee to attract great developers, who are versatile, agile and able to build great applications in less time due to their broad spectrum of knowledge and skills.",
+        "P6": "NodeJS use non-blocking, event-driven I/O to remain lightweight and efficient in the face of data-intensive real-time applications that run across distributed devices.<br /><br /><span>You want fast and scalable network applications, you want real-time web.</span><br /><br />We can bring you all through our NodeJS expertise just in a blink of an eye."
+      }
+    }
+  }
+}

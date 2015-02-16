@@ -1,14 +1,13 @@
 node_modules
-bower_modules
+bower_components
 
 *.swp
 *~
 .tmp
-
-dist
-app/index.html
-app/.styles
-
 .DS_Store
 
-npm-debug.log
+dist
+snapshots/*.html
+
+src/index.html
+src/compiled_styles
