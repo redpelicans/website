@@ -18,8 +18,7 @@ grunt dist
 
 Launch server (express)
 ```bash
-node server.js
-NODE_ENV=production PORT=5000 node server.js
+NODE_ENV=production DEBUG=main:* PORT=3004 node server
 ```
 
 Snapshots
