@@ -1,6 +1,6 @@
 Website of redpelicans
 ======================
-Website of redpelicans: [http://redpelicans.github.io/](http://redpelicans.github.io/)
+Website of redpelicans: [redpelicans.com](redpelicans.com)
 
 Usage
 ===
@@ -24,7 +24,7 @@ NODE_ENV=production PORT=5000 node server.js
 
 Snapshots
 ===
-In *production*, snapshots are generated of they not already exists for search engine optimization.  
+In *production*, snapshots are generated if they not already exist for search engine optimization.  
 It relies on [escaped_fragment](https://developers.google.com/webmasters/ajax-crawling/docs/specification).  
 
 Requirement
