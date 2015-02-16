@@ -10,6 +10,7 @@ services.service("MenuSrvc", function() {
   that.items = [
     { name: 'home', icon: 'home', url: '#!home' }
   , { name: 'technologies', icon: 'briefcase', url: '#!technologies' }
+  , { name: 'blog', icon: 'book', url: '//blog.redpelicans.com' }
   // , { name: 'stories', icon: 'book', url: '#!stories' }
   // , { name: 'lab', icon: 'cog', url: '#!lab' }
   ];

@@ -1,0 +1,16 @@
+@import '../globals';
+
+.blog {
+  a {
+    z-index: 1000;
+    text-decoration: none;
+    color: @grey;
+    position: fixed;
+    top: 10px;
+    font-size: 20px;
+    display: block;
+    right: 50px;
+    .transition();
+    &:hover, &:active { color: @white; }
+  }
+}
