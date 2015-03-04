@@ -46,6 +46,6 @@ Docker
 
 Create an image, push it and run it:
 
-    # docker build -t redpelicans/website .
+    # docker build --no-cache -t redpelicans/website .
     # docker push redpelicans/website
     # docker run -d --restart=always --name website -h website redpelicans/website

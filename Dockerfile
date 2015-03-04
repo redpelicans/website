@@ -9,7 +9,6 @@ RUN npm install -g grunt-cli bower \
 WORKDIR /opt
 RUN git clone https://github.com/redpelicans/website.git \
 && cd website \
-&& git checkout seo \
 && npm install \
 && bower --force-latest --allow-root install \
 && grunt dist
