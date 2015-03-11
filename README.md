@@ -46,6 +46,11 @@ Docker
 
 Create an image, push it and run it:
 
+    # cd website
     # docker build --no-cache -t redpelicans/website .
     # docker push redpelicans/website
+    # docker rm -f website
+    # docker rm -f proxy
     # docker run -d --restart=always --name website -h website redpelicans/website
+    # cd /opt/proxy
+    # docker run -d --restart=always --link website:website --link ghost:ghost --name proxy -p 80:80 -v "/opt/proxy":/opt -w /opt node sh run
