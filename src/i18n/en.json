@@ -65,6 +65,16 @@
         "P2": "Define your IT master plan<br /><br />Write your technical specifications<br /><br />Normalize your workflow<br />(Agile methodology)<br /><br />Benchmark and Prototype to make your choices sharper"
       }
     },
+    "DEVOPS": {
+      "H1": "We bring your idea to the market by relying on the <span>DevOps</span> approach.",
+      "H2": "<span>We want to reduce the fear of change and avoid risky deployments</span> <br />while delivering quality.<br /><br /><br /><span>DevOps</span> is just a natural extension of our Full Stack philosophy.",
+      "CONTENT": {
+        "H1": "DevOps",
+        "P1": "The DevOps movement emphasizes communication, collaboration and integration between software developers and IT operations. <br /><br />Instead of having a siloisation of these two groups who exchange critical information but don't really work together, <br />DevOps promotes a multi-disciplinary approach to accomplish faster time to market, with lower costs and higher quality and continual improvement.",
+        "H2": "Docker",
+        "P2": "Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications. <br />It is a perfect tool to apply DevOps philosophy. <br />While virtualization helps to isolate from hardware, Docker helps to isolate from Operating System. <br />It is a new abstraction layer that enjoys the resource isolation and allocation benefits of VMs but is much more portable and efficient."
+      }
+    },
     "HIRING": {
       "H": "We are looking for <span>fullstack javascript gurus</span> or <span>young talents</span> that are passionate about next generation web technologies.",
       "CONTENT": {

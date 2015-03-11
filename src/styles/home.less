@@ -3,13 +3,17 @@
 
 .home {
   .slide {
-    &.consulting {
+    &.grey {
       background-image: url('/images/pattern-dot-grey.png');
       background-color: @light-grey;
     }
-    &.hiring {
+    &.light-grey {
       background-image: url('/images/pattern-dot-light-grey.png');
       background-color: @white;
+    }
+    &.devops {
+      .glyphicon-cloud-upload { font-size: 70px; }
+      .row:last-child h2 { padding: 60px 0 30px 0; }
     }
   }
   .content {
