@@ -442,10 +442,6 @@ controllers.controller("LogoCtrl", function($scope) {
   };
 });
 
-controllers.controller("StoriesCtrl", function($scope, MenuSrvc) {
-  MenuSrvc.select("stories");
-});
-
-controllers.controller("LabCtrl", function($scope, MenuSrvc) {
-  MenuSrvc.select("lab");
+controllers.controller("PortfolioCtrl", function($scope, MenuSrvc) {
+  MenuSrvc.select("portfolio");
 });

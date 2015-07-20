@@ -25,6 +25,10 @@ app.config(function($routeProvider, $locationProvider, $translateProvider) {
       templateUrl: 'views/technologies.html'
     , controller: 'TechnologiesCtrl'
     })
+    .when('/portfolio', {
+      templateUrl: 'views/portfolio.html'
+    , controller: 'PortfolioCtrl'
+    })
     .when('/logo', {
       templateUrl: 'views/logo.html'
     , controller: 'LogoCtrl'

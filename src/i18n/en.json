@@ -9,9 +9,8 @@
   "MENU": {
     "HOME": "Home",
     "TECHNOLOGIES": "Technologies",
-    "BLOG": "Blog",
-    "STORIES": "Stories",
-    "LAB": "Lab"
+    "PORTFOLIO": "Portfolio",
+    "BLOG": "Blog"
   },
   "FOOTER": {
     "COPYRIGHT": "Copyright &copy;2014",
@@ -178,6 +177,23 @@
         "P5": "There are numerous domains where NodeJS can be the right choice (if not the best): Rich Web Applications, Data-Visualization, E-Commerce, Payment processing, Social media, Real-time services.<br />By mastering streams, NodeJS has all the keys to perfectly handle medias (videos, audios).<br />In addition, choosing NodeJS is the guarantee to attract great developers, who are versatile, agile and able to build great applications in less time due to their broad spectrum of knowledge and skills.",
         "P6": "NodeJS use non-blocking, event-driven I/O to remain lightweight and efficient in the face of data-intensive real-time applications that run across distributed devices.<br /><br /><span>You want fast and scalable network applications, you want real-time web.</span><br /><br />We can bring you all through our NodeJS expertise just in a blink of an eye."
       }
+    }
+  },
+  "PORTFOLIO": {
+    "SPLASH": {
+      "H1": "Our clients"
+    },
+    "CLIENT1": {
+      "P": "Rothschild Bank is a leading company in asset management.<br /><br />We developed a full stack javascript Portfolio Management System based on Angularjs, Node and MongoDB. Product covers the entire investment process, risks calculation, return and financial indicators statistics, peer group analysis, fund trading, positions valuation and compliance risk management."
+    },
+    "CLIENT2": {
+      "P": "Factset is a leading financial market data provider.<br /><br />We helped them to transform and develop the Rothschild's solution as an ultimate product for Factset's investment managers.<br /><br /><br /><br />"
+    },
+    "CLIENT3": {
+      "P": "Plateform5 is a software company and a web agency.<br /><br /><br />They coped with performance issues with a product developed under PHP/Mysql.<br />We helped and trained them to migrate to Node/MongoDB."
+    },
+    "CLIENT4": {
+      "P": "Lexsi is a major actor in cybersecurity and has a leadership position in the realm of threat intelligence.<br /><br />We build for us an AngularJS application in ES6 with a gulp automation workflow. The application is used as the GUI of interactive security kiosks."
     }
   }
 }
