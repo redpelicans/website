@@ -33,7 +33,7 @@
     },
     "FRONTEND": {
       "H": "<a href='#!technologies/frontend'>Rich Web Application</a>",
-      "P": "Today's HTML5 framework like <a href='#!technologies/frontend'>AngularJS</a> provides a robust set of features for building rich web applications extraordinarily expressive, readable, and quick to develop."
+      "P": "Today's JavaScript frameworks like <a href='#!technologies/frontend'>AngularJS</a> and <a href='#!technologies/frontend'>React</a> provide a robust set of features for building rich web applications extraordinarily expressive, reactive and quick to develop."
     },
     "BACKEND": {
       "H": "<a href='#!technologies/backend'>Application server</a>",
@@ -151,15 +151,25 @@
       "H": "Rich Web Application",
       "P": "AngularJS",
       "CONTENT": {
-        "P1": "Gmail, first released in 2004, was a pioneer as a rich web application.<br />Crafting such applications was considered expensive to develop and complicated to maintain, and only big web players like Google were able to invested in it.<br /><br />Since then numerous frameworks were created; EmberJS, BackboneJS, KnockoutJS are the most recognized, and among them AngularJS is becoming predominant for professional web development.",
-        "H2": "Backed by Google",
-        "P2": "AngularJS is built by Google which has one of the strongest engineering cultures.<br />Combine that with the resources that they have and with the power of open source and you get a really powerful mix.",
-        "H3": "Increase productivity, reducing costs",
-        "P3": "Having the ability to scaffold a project quickly with all that you need is key to getting started and producing efficiently. AngularJS came about to standardize web application structure and provide a future template for how client-side apps should be developed. This not only allows you to quickly assemble something up, but it lays the roots for something way bigger to evolve.",
-        "H4": "Focus on testing",
-        "P4": "Having testable code is part of AngularJS philosophy.<br />Making it easy to write tests is crucial.<br />No matter how good the code is – if it’s not testable, it’s useless in the long run.",
-        "P5": "<span>AngularJS is a very high quality foundation for building great apps, and doing it quickly.</span><br /><br />The growing popularity of the framework is huge,<br />companies as big as well-known Banks want to switch to AngularJS.",
-        "P6": "<br /><span>The reality is that AngularJS is winning the frontend framework war.</span>"
+        "P1": "Gmail, first released in 2004, was a pioneer as a rich web application.<br />Crafting such applications was considered expensive to develop and complicated to maintain, and only big web players like Google were able to invested in it.<br /><br />Since then numerous frameworks were created; EmberJS, BackboneJS, KnockoutJS are the most recognized, and among them <span>AngularJS</span> and <span>React</span> are becoming predominant for professional web development.",
+        "P2": "<span>AngularJS and React are a very high quality foundation for building great apps, and doing it quickly.</span><br /><br />The growing popularity of these frameworks is huge and companies as big as well-known Banks are on the verge to take the plunge.",
+        "P3": "<br /><span>The reality is that AngularJS and React are winning the frontend framework war.</span>",
+        "ANGULARJS": {
+          "H1": "Backed by Google",
+          "P1": "AngularJS is built by Google which has one of the strongest engineering cultures.<br />Combine that with the resources that they have and with the power of open source and you get a really powerful mix.",
+          "H2": "Increase productivity, reducing costs",
+          "P2": "Having the ability to scaffold a project quickly with all that you need is key to getting started and producing efficiently. AngularJS came about to standardize web application structure and provide a future template for how client-side apps should be developed. This not only allows you to quickly assemble something up, but it lays the roots for something way bigger to evolve.",
+          "H3": "Focus on testing",
+          "P3": "Having testable code is part of AngularJS philosophy.<br />Making it easy to write tests is crucial.<br />No matter how good the code is – if it’s not testable, it’s useless in the long run."
+        },
+        "REACT": {
+          "H1": "Supported by Facebook",
+          "P1": "React is now open source, but it was first developed at Facebook for internal purposes. After a while, Facebook engineers realized that they created something truly awesome and decided to share their project with the world. It is currently, in addition to Facebook, used by Instagram, The New York Times and Khan Academy in production.",
+          "H2": "Blazing fast",
+          "P2": "React creates its own virtual DOM where the components actually live. This approach gives an enormous flexibility and an amazing gains in performance because React calculates what changes need to be made in the DOM beforehand and updates the DOM tree accordingly. This way, React avoids costly DOM operations and makes updates in a very efficient manner.",
+          "H3": "Reusable and cost-effective",
+          "P3": "React gives the ability to create our own components that can be later reused and combined. This is a tremendeous productivity boost and let React scale better with complexity by only dealing with small components with encapsulated behavior."
+        }
       }
     },
     "BACKEND": {
