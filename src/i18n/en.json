@@ -23,6 +23,9 @@
       "WHO": "We are a French software company based in Paris."
     },
     "UNDERLINE": "We carry out IT consultancy assignments and we develop your strategic applications... <span>In the javascript way.</span>",
+    "STACK": {
+      "H": "Our wonderful stack"
+    },
     "NOSQL": {
       "H": "<a href='#!technologies/nosql'>NoSQL</a>",
       "P": "NoSQL databases, like <a href='#!technologies/nosql'>MongoDB</a>, the leading solution, evolve businesses to be more agile, cost effective and perfectly scalable to satisfy big data needs."

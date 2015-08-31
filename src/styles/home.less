@@ -54,4 +54,45 @@
       }
     }
   }
+  #stack {
+    .wrapper {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    a {
+      color: @red;
+      font-size: 20px;
+      text-decoration: none;
+      display: inline-block;
+      &:hover {
+        &:before {
+          left: 0;
+          right: 0;
+        }
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        background: @red;
+        height: 2px;
+        transition-property: left, right;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+      }
+      img {
+        display: block;
+        margin-bottom: 20px;
+        transition: all .6s ease-in 0s;
+        &:hover {
+          transform: translateY(10px);
+        }
+      }
+      span {
+        display: block;
+      }
+    }
+  }
 }
