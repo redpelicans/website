@@ -206,7 +206,10 @@
       "P": "Plateform5 is a software company and a web agency.<br /><br /><br />They coped with performance issues with a product developed under PHP/Mysql.<br />We helped and trained them to migrate to Node/MongoDB."
     },
     "CLIENT4": {
-      "P": "Lexsi is a major actor in cybersecurity and has a leadership position in the realm of threat intelligence.<br /><br />We build for us an AngularJS application in ES6 with a gulp automation workflow. The application is used as the GUI of interactive security kiosks."
+      "P": "Lexsi is a major actor in cybersecurity and has a leadership position in the realm of threat intelligence.<br /><br />We build for them an AngularJS application in ES6 with a gulp automation workflow. The application is used as the GUI of interactive security kiosks."
+    },
+    "CLIENT5": {
+      "P": "The Organisation for Economic Co-operation and Development (OECD) is an international economic organisation of 34 countries, founded in 1961 to stimulate economic progress and world trade.<br /><br />We are currently developing for them a framework of web components with a high reusability to modernize some key applications."
     }
   }
 }
